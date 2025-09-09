@@ -19,22 +19,32 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <header>
-        <div>
-            <img src="./assets/images/logo.png" alt="logo">
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Our Fleets</a></li>
-                    <li><a href="">Career</a></li>
-                    <li><a href="">Blogs</a></li>
-                </ul>
-            </nav>
+<body class="text-white">
+    <header class="bg-black px-5">
+        <div class="container flex mx-auto items-center justify-between">
+            <div class="flex items-center gap-8">
+                <img src="./assets/images/logo.png" alt="logo">
+                <nav class="ml-3">
+                    <ul class="flex items-center gap-10 text-sm">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Our Fleets</a></li>
+                        <li><a href="">Career</a></li>
+                        <li><a href="">Blogs</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex items-center gap-5">
+                <button class="px-6 py-2 border border-white rounded  cursor-pointer hover:bg-[var(--color-primary)]">
+                    Log In
+                </button>
+                <button
+                    class="px-6 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white rounded cursor-pointer hover:bg-transparent">
+                    Book Now
+                </button>
+            </div>
         </div>
-        <div></div>
     </header>
 
 
