@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    img {
+    .logo-img {
         width: 90px;
         /* height */
     }

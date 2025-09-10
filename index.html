@@ -22,9 +22,9 @@
 <body class="text-white">
     <!-- header -->
     <header class="bg-gradient-to-b from-black/20 to-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="container flex mx-auto items-center justify-between">
+        <div class="container max-w-[1380px] flex mx-auto items-center justify-between">
             <div class="flex items-center gap-8">
-                <img src="./assets/images/logo.png" alt="logo">
+                <img src="./assets/images/logo.png" alt="logo" class="logo-img">
                 <nav class="ml-3">
                     <ul class="flex items-center gap-12 text-base">
                         <li><a href="">Home</a></li>
@@ -37,17 +37,17 @@
                 </nav>
             </div>
             <div class="flex items-center gap-5">
-                <div class="flex items-center gap-0 px-2 py-1  bg-blue-400">
-                    <img src="./assets/svg-icons/global.svg" alt="global" class="w-5 h-5">
-                    <!-- <span class="text-lg text-white">EN</span> -->
+                <div class="flex items-center gap-1 px-2 py-1">
+                    <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                    <span class="text-md text-white text-light">EN</span>
                 </div>
                 <button
-                    class="px-8 py-2 border border-white/50 rounded  cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
-                    Log In
+                    class="px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
+                    <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
                 </button>
                 <button
                     class="px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
-                    Book Now
+                    <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
                 </button>
             </div>
         </div>
