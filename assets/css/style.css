@@ -15,7 +15,7 @@ body {
 .sub-title {
     font-weight: 350;
     font-size: 3.4rem;
-    line-height: 4.5rem;
+    line-height: normal;
 }
 
 header {
