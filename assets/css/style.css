@@ -23,14 +23,14 @@ body {
     align-items: center;
     justify-content: end;
     gap: 2rem;
-    padding: 6px;
-    width: 244px;
+    padding: 4px 6px;
+    width: 234px;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 8px;
     color: #fff;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03));
     backdrop-filter: blur(8px);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     transition: all ease 0.3s;
 
