@@ -53,3 +53,27 @@ header {
         /* height */
     }
 }
+
+.our-benefits {
+    .know-more {
+
+        span,
+        img {
+            transition: all ease 0.3s;
+        }
+
+        &:hover {
+            span {
+                font-weight: 300;
+            }
+
+            .arrow-default {
+                display: none;
+            }
+
+            .arrow-hover {
+                display: block;
+            }
+        }
+    }
+}
