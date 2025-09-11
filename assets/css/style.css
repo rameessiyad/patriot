@@ -14,7 +14,7 @@ body {
 
 .sub-title {
     font-weight: 350;
-    font-size: 3.4rem;
+    font-size: 3.3rem;
     line-height: normal;
 }
 
@@ -31,12 +31,19 @@ body {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03));
     backdrop-filter: blur(8px);
     font-size: 1.5rem;
-    margin-top: 10px;
     transition: all ease 0.3s;
 
     &:hover {
         background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.02));
         color: var(--color-primary);
+
+        .arrow-default {
+            display: none;
+        }
+
+        .arrow-hover {
+            display: block;
+        }
     }
 }
 
