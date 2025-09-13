@@ -98,5 +98,15 @@ header {
         flex-direction: column;
         justify-content: space-between;
         gap: 1rem;
+        transition: all ease 0.4s;
+
+        &:hover {
+            background: var(--color-primary);
+            box-shadow:
+                0 0 10px var(--color-primary),
+                0 0 20px var(--color-primary),
+                0 0 40px var(--color-primary),
+                0 0 56px var(--color-primary);
+        }
     }
 }
