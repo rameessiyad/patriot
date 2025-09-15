@@ -55,7 +55,6 @@ body {
 header {
     .logo-img {
         width: 90px;
-        /* height */
     }
 }
 
@@ -108,5 +107,11 @@ header {
                 0 0 40px var(--color-primary),
                 0 0 56px var(--color-primary);
         }
+    }
+}
+
+footer {
+    .logo {
+        width: 170px;
     }
 }
