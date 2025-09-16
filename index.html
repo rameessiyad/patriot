@@ -9,6 +9,9 @@
     <!-- tailwind css cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -234,6 +237,86 @@
                         Enjoy Extra Miles <span class="ml-42">With Our Best Deal</span>
                     </h1>
                 </div>
+            </div>
+
+            <!-- slider -->
+            <div class="swiper myOffersSlider mt-8">
+                <div class="swiper-wrapper relative">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="relative">
+                            <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
+                                class="w-full rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 bg-black/60 text-white p-3 rounded-lg">
+                                <p class="text-xs">Valid only on 12 May–25 Jun 2025</p>
+                                <h3 class="text-lg font-semibold">Experience the holidays with Our Festive Promotions
+                                </h3>
+                                <p class="text-4xl font-bold mt-2">40%</p>
+                                <p class="text-xs">*with Terms and Conditions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="relative">
+                            <img src="assets/images/home/our-offers-slider/our-offers-slider02.png"
+                                class="w-full rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 bg-black/60 text-white p-3 rounded-lg">
+                                <p class="text-xs">Valid only on 12 May–25 Jun 2025</p>
+                                <h3 class="text-lg font-semibold">Experience the holidays with Our Festive Promotions
+                                </h3>
+                                <p class="text-4xl font-bold mt-2">60%</p>
+                                <p class="text-xs">*with Terms and Conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="relative">
+                            <img src="assets/images/home/our-offers-slider/our-offers-slider02.png"
+                                class="w-full rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 bg-black/60 text-white p-3 rounded-lg">
+                                <p class="text-xs">Valid only on 12 May–25 Jun 2025</p>
+                                <h3 class="text-lg font-semibold">Experience the holidays with Our Festive Promotions
+                                </h3>
+                                <p class="text-4xl font-bold mt-2">60%</p>
+                                <p class="text-xs">*with Terms and Conditions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="relative">
+                            <img src="assets/images/home/our-offers-slider/our-offers-slider02.png"
+                                class="w-full rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 bg-black/60 text-white p-3 rounded-lg">
+                                <p class="text-xs">Valid only on 12 May–25 Jun 2025</p>
+                                <h3 class="text-lg font-semibold">Experience the holidays with Our Festive Promotions
+                                </h3>
+                                <p class="text-4xl font-bold mt-2">60%</p>
+                                <p class="text-xs">*with Terms and Conditions</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="absolute top-0 right-0 flex gap-2 z-10 p-4">
+                    <div
+                        class="swiper-button-prev !static inline-flex items-center justify-center">
+                        <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow">
+                    </div>
+                    <div
+                        class="swiper-button-next !static inline-flex items-center justify-center">
+                        <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow">
+                    </div>
+                </div>
+
+                <!-- Pagination dots -->
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
@@ -516,6 +599,9 @@
         </div>
     </footer>
 
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script>
         // play and pause video
         const video = document.getElementById('heroVideo');
@@ -542,6 +628,28 @@
         //     pauseBtn.classList.remove('hidden');
         //     playBtn.classList.add('hidden');
         // });
+
+        const swiper = new Swiper(".myOffersSlider", {
+            slidesPerView: 2,       // show 2 slides like in your screenshot
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1, // mobile
+                },
+                768: {
+                    slidesPerView: 2, // tablet & above
+                }
+            }
+        });
     </script>
 </body>
 
