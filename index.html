@@ -533,6 +533,15 @@
             playBtn.classList.add('hidden');
             pauseBtn.classList.remove('hidden');
         })
+
+        pauseBtn.addEventListener('mouseover', () => {
+            playBtn.classList.remove('hidden');
+            pauseBtn.classList.add('hidden');
+        });
+        playBtn.addEventListener('mouseover', () => {
+            pauseBtn.classList.remove('hidden');
+            playBtn.classList.add('hidden');
+        });
     </script>
 </body>
 
