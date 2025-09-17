@@ -40,8 +40,12 @@ body {
 
 .swiper-button-prev,
 .swiper-button-next {
-  width: auto !important;
-  height: auto !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+.swiper-container {
+    overflow: visible !important;
 }
 
 
@@ -94,11 +98,12 @@ header {
     .swiper {
         .book-now {
             transition: all ease 0.3s;
+
             &:hover {
                 .arrow-default {
                     display: none;
                 }
-                
+
                 .arrow-hover {
                     display: block;
                 }
