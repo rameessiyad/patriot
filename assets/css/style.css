@@ -125,6 +125,14 @@ header {
     }
 }
 
+.our-offers {
+    .swiper {
+        .offer-rate {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
 .pricing {
     .pricing-card {
         max-width: 400px;
