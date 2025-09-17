@@ -117,7 +117,7 @@
     </section>
 
     <!-- our services section -->
-    <section class="min-h-screen py-8"
+    <section class="our-services min-h-screen py-8"
         style="background: url('./assets/images/home/ourservices-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container max-w-[95%] mx-auto px-10">
             <div class="flex justify-between items-center">
@@ -141,7 +141,90 @@
             </div>
 
             <!-- slider -->
-             <div class="ml-auto max-w-3xl">sdfd</div>
+            <div class="ml-auto max-w-3xl mt-2 !w-auto">
+                <div class="swiper ourServicesSlider">
+
+                    <div class="swiper-wrapper">
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img01.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                    <a href="" class="ml-auto mb-2 book-now">
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" alt="arrow" class="arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg" alt="arrow" class="hidden arrow-hover">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img02.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img03.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img04.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img05.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slide 6 -->
+                        <div class="swiper-slide">
+                            <div class="relativev">
+                                <img src="./assets/images/home/our-services/slider-img02.png" alt="slider" class="">
+                                <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
+                                    <h2 class="text-3xl">Airport Transfers</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation buttons -->
+                    <div class="absolute top-0 right-0 flex gap-2 z-10 p-4">
+                        <div class="swiper-button-prev !static inline-flex items-center justify-center">
+                            <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow">
+                        </div>
+                        <div class="swiper-button-next !static inline-flex items-center justify-center">
+                            <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow">
+                        </div>
+                    </div>
+
+                    <!-- pagination dots -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -250,7 +333,7 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
-                                class="w-full rounded-lg" alt="">
+                                class="w-full rounded-lg" alt="slider">
                             <div class="absolute top-4 left-4 bg-black/60 text-white p-3 rounded-lg">
                                 <p class="text-xs">Valid only on 12 May–25 Jun 2025</p>
                                 <h3 class="text-lg font-semibold">Experience the holidays with Our Festive Promotions
@@ -293,12 +376,10 @@
 
                 <!-- Navigation buttons -->
                 <div class="absolute top-0 right-0 flex gap-2 z-10 p-4">
-                    <div
-                        class="swiper-button-prev !static inline-flex items-center justify-center">
+                    <div class="swiper-button-prev !static inline-flex items-center justify-center">
                         <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow">
                     </div>
-                    <div
-                        class="swiper-button-next !static inline-flex items-center justify-center">
+                    <div class="swiper-button-next !static inline-flex items-center justify-center">
                         <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow">
                     </div>
                 </div>
@@ -637,6 +718,22 @@
                     slidesPerView: 2, // tablet & above
                 }
             }
+        });
+
+        // Second slider (services)
+        const servicesSwiper = new Swiper(".ourServicesSlider", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            slidesPerGroup: 3, // jump 3 at a time
+            loop: false,
+            pagination: {
+                el: ".ourServicesSlider .swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".ourServicesSlider .swiper-button-next",
+                prevEl: ".ourServicesSlider .swiper-button-prev",
+            },
         });
     </script>
 </body>

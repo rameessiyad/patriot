@@ -84,6 +84,23 @@ header {
     }
 }
 
+.our-services {
+    .swiper {
+        .book-now {
+            transition: all ease 0.3s;
+            &:hover {
+                .arrow-default {
+                    display: none;
+                }
+                
+                .arrow-hover {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 .our-benefits {
     .know-more {
 
