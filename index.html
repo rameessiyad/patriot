@@ -25,36 +25,75 @@
 <body class="text-white bg-black/70">
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="container max-w-[95%] flex mx-auto items-center justify-between">
+        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
-                <nav class="ml-3">
-                    <ul class="flex items-center gap-12 text-base">
-                        <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
-                        <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
-                        <li><a href="" class="hover:text-[var(--color-primary)]">Services</a></li>
-                        <li><a href="" class="hover:text-[var(--color-primary)]">Our Fleets</a></li>
-                        <li><a href="" class="hover:text-[var(--color-primary)]">Career</a></li>
-                        <li><a href="" class="hover:text-[var(--color-primary)]">Blogs</a></li>
+                <nav class="ml-3 hidden lg:block">
+                    <ul class="nav-items flex items-center gap-12 text-base">
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Home</a></li>
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">About Us</a></li>
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Services</a></li>
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Our Fleets</a></li>
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Career</a></li>
+                        <li><a href="" class="nav-item hover:text-[var(--color-primary)]">Blogs</a></li>
                     </ul>
                 </nav>
             </div>
-            <div class="flex items-center gap-5">
-                <div class="flex items-center gap-1 px-2 py-1">
-                    <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
-                    <span class="text-base text-white font-light cursor-pointer">EN</span>
+            <!-- hamburger icon -->
+            <img id="hamburger-icon" src="./assets/svg-icons/hamburger.svg" alt="menu-icon"
+                class="block lg:hidden cursor-pointer">
+
+            <!-- close icon -->
+            <img id="close-icon" src="./assets/svg-icons/close-icon.svg" alt="close-icon"
+                class="hidden lg:hidden cursor-pointer">
+
+            <div class="hidden lg:block">
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-1 px-2 py-1">
+                        <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                        <span class="text-base text-white font-light cursor-pointer">EN</span>
+                    </div>
+                    <button
+                        class="header-button px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
+                        <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
+                    </button>
+                    <button
+                        class="header-button px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
+                        <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
+                    </button>
                 </div>
-                <button
-                    class="px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
-                    <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
-                </button>
-                <button
-                    class="px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
-                    <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
-                </button>
             </div>
         </div>
     </header>
+
+    <!-- mobile menu -->
+    <div id="mobile-menu"
+        class="lg:hidden fixed top-22 left-0 w-full h-full pb-10 bg-black/40 backdrop-blur-md z-100 transform -translate-x-full transition-transform duration-300">
+        <div class="flex flex-col items-center justify-center gap-6 h-full text-white text-lg">
+            <ul class="flex flex-col items-center gap-6">
+                <li><a href="" class="hover:text-[var(--color-primary)]">Home</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">About Us</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Services</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Our Fleets</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Career</a></li>
+                <li><a href="" class="hover:text-[var(--color-primary)]">Blogs</a></li>
+            </ul>
+
+            <div class="flex items-center gap-2 px-3 py-2">
+                <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
+                <span class="text-sm text-white font-light cursor-pointer">EN</span>
+            </div>
+
+            <button
+                class="px-6 py-2 bg-black/30 border border-white/50 rounded hover:bg-[var(--color-primary)] transition duration-300">
+                Log In
+            </button>
+            <button
+                class="px-6 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] border border-white/50 rounded hover:bg-transparent">
+                Book Now
+            </button>
+        </div>
+    </div>
 
     <!-- hero section -->
     <section class="" id="home">
@@ -716,6 +755,8 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    
 
     <script>
         // play and pause video
