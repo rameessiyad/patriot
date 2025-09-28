@@ -23,6 +23,14 @@
 </head>
 
 <body class="text-white bg-black/70">
+
+    <!-- go to top button -->
+    <div id="goTopBtn" class="fixed bottom-10 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
+        <a href="#home">
+            <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
+        </a>
+    </div>
+
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
         <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
@@ -664,17 +672,31 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-black px-4">
-        <div class="flex flex-col gap-4 px-12">
-            <div class="flex gap-12 py-10">
-                <div>
+    <footer class="bg-black mb-0 px-4">
+        <div class="flex flex-col gap-4 px-4 md:px-12 pb-4">
+            <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 py-10">
+                <div class="hidden lg:block">
                     <img src="./assets/images/logo.png" alt="logo" class="logo">
                 </div>
-                <div class="flex mt-3 justify-around w-full">
+
+                <!-- mobile logo and social links  -->
+                <div class="flex flex-col items-center justify-center lg:hidden">
+                    <img src="./assets/images/logo.png" alt="logo" class="logo">
+                    <p class="font-thin text-base text-gray-300">Follow Us On</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href=""><img src="./assets/svg-icons/facebook.svg" alt="facebook" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/instagram.svg" alt="instagram" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/linkedin.svg" alt="linkedin" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/twitter.svg" alt="twitter" class="w-10"></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col lg:flex-row mt-3 justify-around w-full">
                     <!-- quick links -->
                     <div class="">
                         <p class="font-thin">Quick Links</p>
-                        <div class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-sm mt-2">
+                        <div
+                            class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-full lg:max-w-sm mt-2">
                             <a href="#home">Home</a> <span>/</span> <a href="">About Us</a> <span>/</span> <a
                                 href="">Services</a> <span>/</span>
                             <a href="">Our Fleets</a> <span>/</span> <a href="">Book Now</a> <span>/</span> <a
@@ -684,7 +706,7 @@
                     </div>
 
                     <!-- Contact Us -->
-                    <div class="">
+                    <div class="mt-8 lg:mt-0">
                         <p class="font-thin">Contact Us</p>
                         <div class="flex flex-col gap-1 font-light mt-2">
                             <a href="tel">+971 2 551 1255</a>
@@ -694,9 +716,9 @@
                     </div>
 
                     <!-- Location -->
-                    <div class="">
+                    <div class="mt-8 lg:mt-0">
                         <p class="font-thin">Location</p>
-                        <div class="mt-2 max-w-[10rem]">
+                        <div class="mt-2 max-w-full lg:max-w-[10rem]">
                             <p class="font-light">
                                 Office No.M4
                                 Building No. 5948
@@ -707,34 +729,49 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center justify-between">
-                <div class="flex w-[32%] justify-between ml-2 items-center">
-                    <div class="flex flex-col items-center gap-2">
-                        <a href="#home"><img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow"
-                                class="w-10 h-10"></a>
-                        <p class="text-xs font-extralight">Go to Top</p>
+
+            <!-- bottom content -->
+            <div
+                class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 md:px-8">
+                <!-- Left Section -->
+                <div
+                    class="hidden lg:flex w-full lg:w-[32%] justify-between sm:justify-start lg:justify-between ml-0 lg:ml-2 items-center sm:items-start">
+                    <!-- Go to Top -->
+                    <div class="flex flex-col items-center sm:items-start gap-2">
+                        <a href="#home">
+                            <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
+                        </a>
+                        <p class="text-xs font-extralight hidden md:block">Go to Top</p>
                     </div>
-                    <div class="pb-14">
-                        <p class="font-thin">Follow Us on</p>
-                        <!-- social icons -->
-                        <div class="flex gap-4 mt-2">
+
+                    <!-- Social Links -->
+                    <div class="pb-6 sm:pb-10 lg:pb-14 sm:ml-8 lg:ml-0">
+                        <p class="font-thin text-center sm:text-left">Follow Us on</p>
+                        <div class="flex gap-4 mt-2 justify-center sm:justify-start flex-wrap">
                             <a href="">
-                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                             <a href="">
-                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon" class="w-8 h-8">
+                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col gap-6 items-end">
-                    <div class="flex flex-col gap-1 justify-center pb-3">
+
+                <!-- Right Section -->
+                <div
+                    class="flex flex-col gap-4 sm:gap-6 items-left lg:items-end text-left lg:text-right w-full lg:w-auto -ml-[14px] md:-ml-[34px] lg:-ml-0">
+                    <div class="flex flex-col gap-1 justify-center pb-2 sm:pb-3">
                         <a href="" class="font-thin">Contact Us</a>
                         <a href="" class="">info@patriotlimo.ae</a>
                     </div>
@@ -743,21 +780,29 @@
                     <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousin</p>
                 </div>
             </div>
-        </div>
-        <div class="relative">
-            <img src="./assets/images/footer-bottom.png" alt="footer-bottom">
-            <div class="absolute inset-0 flex items-center justify-between">
-                <p class="text-xl px-10">Book a Ride Now</p>
-                <img src="./assets/svg-icons/footer-arrow.svg" alt="arrow" class="justify-end">
+
+            <!-- Footer Bottom -->
+            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto flex items-center rounded-lg"
+                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
+                <!-- <img src="./assets/images/footer-bottom.png" alt="footer-bottom" class="w-full object-cover"> -->
+                <div class="w-full flex items-center justify-between px-6 sm:px-10 footer-bottom-img">
+                    <p class="text-base md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">Book a Ride Now
+                    </p>
+                    <div class="w-16 h-full md:h-30 flex items-center justify-end border-l border-black/50">
+                        <a href="" class="mb-2"><img src="./assets/svg-icons/arrow-footer.svg" alt="arrow"
+                                class="mt-3 w-8 md:w-10"></a>
+                    </div>
+                </div>
             </div>
         </div>
+
     </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
-     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
     <script>
         // play and pause video
