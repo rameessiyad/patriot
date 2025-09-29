@@ -134,12 +134,27 @@
                     <form action=""></form>
                 </div>
 
+                <!-- call to action box -->
+                <div
+                    class="flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-6 md:mt-0 mb-10">
+                    <p class="text-lg sm:text-xl md:text-[1.5rem] lg:text-[2rem] text-center md:text-left lg:ml-14">
+                        “Arrive in style, on time, every time. Book your luxury ride now.”
+                    </p>
+                    <a href=""
+                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-3 lg:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
+                        <span class="">Book a Ride Now</span>
+                        <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
+                    </a>
+                </div>
+
             </div>
+
+
         </div>
     </section>
 
     <!-- our fleet section -->
-    <section class="min-h-screen py-8"
+    <section class="our-fleets min-h-screen py-8"
         style="background: url('./assets/images/home/ourfleet-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container max-w-[95%] mx-auto px-3 md:px-10">
             <div class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between items-center">
@@ -159,8 +174,294 @@
             </div>
 
             <!-- slider section -->
-            <div>
+            <div class="relative w-full mt-16">
+                <div class="w-full slider-container md:p-4 mt-12">
+                    <!-- Slider main container -->
+                    <div class="swiper fleetSwiper min-h-[10vh]">
+                        <div class="swiper-wrapper mt-16">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider01.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider02.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">GMC Yukon</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider03.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Lexus ES 350</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider04.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">BMW 5 Series 530i</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider01.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider01.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider01.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div
+                                    class="slider-card bg-white/20 backdrop-blur-md p-3 rounded-2xl flex flex-col gap-2 items-center">
+                                    <div class="flex ml-auto gap-1">
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">02 <span class="ml-2">Luggage</span>
+                                            </p>
+                                        </div>
+                                        <div class="rounded-lg bg-gradient-to-r from-white/30 to-white/10 px-3 py-1">
+                                            <p class="font-extralight text-xs">04 <span class="ml-2">Seater</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col gap-1 items-center">
+                                        <img src="./assets/images/home/fleet-options-slider/slider01.png"
+                                            alt="slider-img" class="w-64">
+                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                    </div>
+                                    <a href="" class="slider-book-now-btn">
+                                        <span>Book Now</span>
+                                        <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default w-6"
+                                            alt="arrow">
+                                        <img src="./assets/svg-icons/arrow-top-right-red.svg"
+                                            class="arrow-hover hidden w-6" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Navigation buttons -->
+                        <div class="absolute top-1.5 right-0 flex gap-2 z-10 p-4">
+                            <div class="swiper-button-prev !static inline-flex items-center justify-center">
+                                <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-12">
+                            </div>
+                            <div class="swiper-button-next !static inline-flex items-center justify-center">
+                                <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow" class="w-13">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden md:flex w-fit mx-auto bg-gradient-to-r from-white/20 to-white/7 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 mt-8">
+                    <!-- Tab 1 Active -->
+                    <button class="px-6 py-2 text-sm font-normal text-white bg-white/10 cursor-pointer">All</button>
+
+                    <!-- Other Tabs -->
+                    <button
+                        class="px-6 py-2 text-sm font-extralight text-gray-300 border-l border-white/20 hover:bg-white/10 cursor-pointer">Sedan</button>
+                    <button
+                        class="px-6 py-2 text-sm font-extralight text-gray-300 border-l border-white/20 hover:bg-white/10 cursor-pointer">SUV</button>
+                    <button
+                        class="px-6 py-2 text-sm font-extralight text-gray-300 border-l border-white/20 hover:bg-white/10 cursor-pointer">MPV</button>
+                    <button
+                        class="px-6 py-2 text-sm font-extralight text-gray-300 border-l border-white/20 hover:bg-white/10 cursor-pointer">Bus</button>
+                </div>
+
+                <!-- Mobile Filter -->
+                <div
+                    class="md:hidden relative flex w-72 mx-auto bg-gradient-to-r from-white/24 to-white/5 backdrop-blur-sm rounded-lg overflow-hidden border border-white/20 mt-8">
+
+                    <!-- Left Button -->
+                    <button onclick="toggleDropdown()"
+                        class="flex items-center gap-2 px-4 py-2 text-white text-sm font-medium hover:bg-white/10 transition">
+                        <img src="./assets/svg-icons/filterby.svg" alt="filter-by" class="w-3 h-3">
+                        <span class="text-lg">Filter By</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <!-- Right Selected Value -->
+                    <button
+                        class="flex-1 px-4 py-2 text-white text-sm font-medium border-l border-white/20 hover:bg-white/10 transition text-center text-lg"
+                        id="selectedValue">
+                        All
+                    </button>
+
+                    <!-- Dropdown Menu -->
+                    <div id="dropdownMenu"
+                        class="absolute top-full left-0 mt-2 w-full bg-white/10 backdrop-blur-md rounded-lg shadow-lg border border-white/20 hidden">
+                        <ul class="flex flex-col text-white text-sm">
+                            <li><button onclick="selectOption('All')"
+                                    class="px-4 py-2 hover:bg-white/20 w-full text-left">All</button></li>
+                            <li><button onclick="selectOption('Category 1')"
+                                    class="px-4 py-2 hover:bg-white/20 w-full text-left">Category 1</button></li>
+                            <li><button onclick="selectOption('Category 2')"
+                                    class="px-4 py-2 hover:bg-white/20 w-full text-left">Category 2</button></li>
+                            <li><button onclick="selectOption('Category 3')"
+                                    class="px-4 py-2 hover:bg-white/20 w-full text-left">Category 3</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -190,14 +491,14 @@
             </div>
 
             <!-- slider -->
-            <div class="ml-auto max-w-3xl mt-2 !w-auto">
+            <div class="relative hidden md:flex ml-auto max-w-3xl mt-2 h-[500px] justify-center items-center">
                 <div class="swiper ourServicesSlider">
 
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" style="overflow-y: visible !important;">
 
                         <!-- slide 1 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img01.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Airport Transfers</h2>
@@ -213,7 +514,7 @@
 
                         <!-- slide 2 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img02.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Hotel Transfers</h2>
@@ -229,7 +530,7 @@
 
                         <!-- slide 3 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img03.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Corporate Events</h2>
@@ -245,7 +546,7 @@
 
                         <!-- slide 4 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img04.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Airport Transfers</h2>
@@ -261,7 +562,7 @@
 
                         <!-- slide 5 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img05.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Hotel Transfers</h2>
@@ -277,7 +578,7 @@
 
                         <!-- slide 6 -->
                         <div class="swiper-slide">
-                            <div class="relativev">
+                            <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img02.png" alt="slider" class="">
                                 <div class="absolute top-2 left-4 text-white p-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl">Corporate Events</h2>
@@ -292,18 +593,186 @@
                         </div>
                     </div>
 
-                    <!-- Navigation buttons -->
-                    <div class="absolute top-0 right-0 flex gap-2 z-10 p-4">
-                        <div class="swiper-button-prev !static inline-flex items-center justify-center">
-                            <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow">
-                        </div>
-                        <div class="swiper-button-next !static inline-flex items-center justify-center">
-                            <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow">
-                        </div>
-                    </div>
-
                     <!-- pagination dots -->
                     <div class="swiper-pagination"></div>
+                </div>
+
+                <!-- Navigation buttons -->
+                <div class="absolute top-4 right-0 flex gap-2 z-50 p-4">
+                    <div class="swiper-button-prev !static inline-flex items-center justify-center">
+                        <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-12">
+                    </div>
+                    <div class="swiper-button-next !static inline-flex items-center justify-center">
+                        <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow" class="w-12">
+                    </div>
+                </div>
+            </div>
+
+            <!-- mobile slider -->
+            <div class="block md:hidden">
+                <div class="swiper keyOfferings-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img01.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Airport Transfers</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img02.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Hotel Transfers</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img03.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Coroporate Events</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img04.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">City Tour</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img05.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Point To Point</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img05.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Luxury Bus Rental</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img04.png" alt="slider-img"
+                                    class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Staff Transfers</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img02.png"
+                                    alt="slider-img" class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Wedding Events</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img03.png"
+                                    alt="slider-img" class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Intercity Transfer</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="p-3">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img01.png"
+                                    alt="slider-img" class="slider-img relative">
+                                <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
+                                    <p class="text-2xl font-light">Dedicated Chauffeurs</p>
+                                    <a href="" class="book-now ml-auto cursor-pointer">
+                                        <img src="./assets/svg-icons/arrow-top-white.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-default">
+                                        <img src="./assets/svg-icons/arrow-top-red.svg" alt="arrow"
+                                            class="w-10 h-10 arrow-hover hidden">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -341,7 +810,7 @@
             </div>
         </div>
         <div
-            class="absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
+            class="relative ml-auto mt-10 md:mt-0 md:absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
             <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-8 h-8 md:w-12 md:h-12">
             <p class="text-lg md:text-xl font-extralight leading-[24px] md:leading-[38px]">Trust Patriot Limousine for
                 superior benefits in premium
@@ -418,7 +887,8 @@
 
         <div class="grid grid-cols-2">
             <div class="relative">
-                <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles" class="w-full h-70 object-cover">
+                <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles"
+                    class="w-full h-70 object-cover">
                 <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
                     <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">900k</h2>
                     <p class="text-white text-xl ml-3">Total Miles</p>
@@ -437,7 +907,8 @@
 
         <div class="grid grid-cols-2">
             <div class="relative">
-                <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets" class="w-full h-70 object-cover">
+                <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets"
+                    class="w-full h-70 object-cover">
                 <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
                     <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">72+</h2>
                     <p class="text-white text-xl ml-3">Total Fleets</p>
@@ -475,18 +946,23 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
-                                class="w-full rounded-lg" alt="slider">
-                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm">
-                                <div class="flex gap-5 items-center"><img src="./assets/svg-icons/percentage-color.svg"
-                                        alt="percentage-icon" class="w-10 h-10">
-                                    <p class="offer-rate text-base bg-black/62 rounded-md px-4 py-2 font-extralight">
+                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="slider">
+                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
+                                <div class="flex gap-2 md:gap-5 items-center"><img
+                                        src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
+                                        class="w-8 md:w-10">
+                                    <p
+                                        class="offer-rate text-sm md:text-base bg-black/62 rounded-md px-4 py-1 md:py-2 font-extralight">
                                         Valid only on 12 May–25 Jun
                                         2025</p>
                                 </div>
-                                <h3 class="text-2xl my-4">Experience the holidays with Our Festive Promotions
-                                </h3>
-                                <p class="text-7xl font-semibold mt-2">40%</p>
-                                <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                <div class="mt-36 md:mt-0">
+                                    <h3 class="text-lg md:text-2xl my-4">Experience the holidays with Our Festive
+                                        Promotions
+                                    </h3>
+                                    <p class="text-6xl md:text-7xl font-semibold mt-2">40%</p>
+                                    <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -495,18 +971,23 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider02.png"
-                                class="w-full rounded-lg" alt="">
-                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm">
-                                <div class="flex gap-5 items-center"><img src="./assets/svg-icons/percentage-color.svg"
-                                        alt="percentage-icon" class="w-10 h-10">
-                                    <p class="offer-rate text-base bg-black/62 rounded-md px-4 py-2 font-extralight">
+                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
+                                <div class="flex gap-2 md:gap-5 items-center"><img
+                                        src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
+                                        class="w-8 md:w-10">
+                                    <p
+                                        class="offer-rate text-sm md:text-base bg-black/62 rounded-md px-4 py-1 md:py-2 font-extralight">
                                         Valid only on 12 May–25 Jun
                                         2025</p>
                                 </div>
-                                <h3 class="text-2xl my-4">Experience the holidays with Our Festive Promotions
-                                </h3>
-                                <p class="text-7xl font-semibold mt-2">60%</p>
-                                <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                <div class="mt-36 md:mt-0">
+                                    <h3 class="text-lg md:text-2xl my-4">Experience the holidays with Our Festive
+                                        Promotions
+                                    </h3>
+                                    <p class="text-6xl md:text-7xl font-semibold mt-2">60%</p>
+                                    <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -514,18 +995,23 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
-                                class="w-full rounded-lg" alt="">
-                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm">
-                                <div class="flex gap-5 items-center"><img src="./assets/svg-icons/percentage-color.svg"
-                                        alt="percentage-icon" class="w-10 h-10">
-                                    <p class="offer-rate text-base bg-black/62 rounded-md px-4 py-2 font-extralight">
+                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="">
+                            <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
+                                <div class="flex gap-2 md:gap-5 items-center"><img
+                                        src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
+                                        class="w-8 md:w-10">
+                                    <p
+                                        class="offer-rate text-sm md:text-base bg-black/62 rounded-md px-4 py-1 md:py-2 font-extralight">
                                         Valid only on 12 May–25 Jun
                                         2025</p>
                                 </div>
-                                <h3 class="text-2xl my-4">Experience the holidays with Our Festive Promotions
-                                </h3>
-                                <p class="text-7xl font-semibold mt-2">50%</p>
-                                <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                <div class="mt-36 md:mt-0">
+                                    <h3 class="text-lg md:text-2xl my-4">Experience the holidays with Our Festive
+                                        Promotions
+                                    </h3>
+                                    <p class="text-6xl md:text-7xl font-semibold mt-2">50%</p>
+                                    <p class="text-base font-light mt-4">*with Terms and Conditions</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -535,7 +1021,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <!-- Navigation buttons -->
-            <div class="absolute top-40 right-8 flex gap-2 z-10 p-4">
+            <div class="absolute top-30 md:top-40 right-0 md:right-8 flex gap-2 z-10 p-4">
                 <div class="swiper-button-prev !static inline-flex items-center justify-center">
                     <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-14 h-14">
                 </div>
@@ -549,8 +1035,8 @@
     <!-- pricing section -->
     <section class="pricing min-h-screen py-10"
         style="background: url('./assets/images/home/pricing-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-7xl mx-auto flex flex-col gap-4 items-center">
-            <h1 class="text-5xl">Professional Car Rental Solutions at the Best Price</h1>
+        <div class="container max-w-7xl mx-auto flex flex-col gap-4 items-center px-8 md:px-0">
+            <h1 class="text-[2rem] md:text-4xl text-5xl">Professional Car Rental Solutions at the Best Price</h1>
             <p class="text-base font-light">We Offer the best rates for all types of customers in Dubai</p>
         </div>
         <div class="max-w-6xl hidden md:flex flex-wrap gap-5 justify-center mx-auto mt-12">
@@ -900,7 +1386,8 @@
         <!-- Overlay -->
         <div class="bg-black/40 z-10 absolute inset-0 flex items-center justify-center text-white">
             <div class="flex flex-col items-center justify-center gap-8 max-w-4xl px-4">
-                <h1 class="text-3xl md:text-4xl text-5xl text-center">“Beyond Transportation, Creating Journeys to Remember”</h1>
+                <h1 class="text-[2rem] md:text-4xl lg:text-5xl text-center">“Beyond Transportation, Creating Journeys to
+                    Remember”</h1>
                 <a href="" class="book-now-btn">
                     <span>Book Now</span>
                     <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
@@ -1042,6 +1529,8 @@
 
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <script>
         // play and pause video
@@ -1092,6 +1581,40 @@
             }
         });
 
+        const mobileSwiper = new Swiper(".mobile-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            }
+        });
+
+        const keyOfferingsSwiper = new Swiper(".keyOfferings-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            loop: false,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                // small mobiles
+                0: {
+                    slidesPerView: 1,
+                },
+
+                375: {
+                    slidesPerView: 1.3,
+                },
+                // larger mobiles (≥480px)
+                480: {
+                    slidesPerView: 1.5,
+                },
+            },
+        });
+
         // Second slider (services)
         const servicesSwiper = new Swiper(".ourServicesSlider", {
             slidesPerView: 3,
@@ -1103,9 +1626,57 @@
                 clickable: true,
             },
             navigation: {
-                nextEl: ".ourServicesSlider .swiper-button-next",
-                prevEl: ".ourServicesSlider .swiper-button-prev",
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
+        });
+
+        var fleetSwiper = new Swiper(".fleetSwiper", {
+            slidesPerView: 4,   // desktop default
+            spaceBetween: 20,
+            loop: true,
+            autoheight: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {            // mobile
+                    slidesPerView: 1,
+                },
+                640: {          // small tablets
+                    slidesPerView: 2,
+                },
+                1024: {         // laptops
+                    slidesPerView: 3,
+                },
+                1280: {         // desktops
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        function toggleDropdown() {
+            const menu = document.getElementById('dropdownMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function selectOption(value) {
+            document.getElementById('selectedValue').innerText = value;
+            document.getElementById('dropdownMenu').classList.add('hidden');
+        }
+
+        // Optional: Close dropdown if clicking outside
+        window.addEventListener('click', function (e) {
+            const menu = document.getElementById('dropdownMenu');
+            const button = e.target.closest('button');
+            if (!e.target.closest('#dropdownMenu') && !button) {
+                menu.classList.add('hidden');
+            }
         });
     </script>
 </body>

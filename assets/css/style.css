@@ -88,9 +88,44 @@ body {
     }
 }
 
+.slider-book-now-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    padding: 4px;
+    width: 150px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    background: var(--color-primary);
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03)); */
+    /* backdrop-filter: blur(8px); */
+    font-size: 0.97rem;
+    transition: all ease 0.3s;
+}
+
 header {
     .logo-img {
         width: 90px;
+    }
+}
+
+.our-fleets {
+    .slider-container {
+        .slider-card {
+            border: 1px solid rgba(255, 255, 255, 0.6) !important;
+            transition: all ease 0.4s;
+
+            &:hover {
+                background: var(--color-primary);
+                box-shadow:
+                    0 0 10px var(--color-primary),
+                    0 0 20px var(--color-primary),
+                    0 0 40px var(--color-primary),
+                    0 0 56px var(--color-primary);
+            }
+        }
     }
 }
 
