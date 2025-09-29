@@ -110,7 +110,8 @@
                 <source src="./assets/videos/herobanner.mp4" type="video/mp4">
             </video>
 
-            <div class="max-w-[95%] mx-4 md:mx-10 absolute top-1/7 w-full md:px-10 flex flex-col justify-between h-[80%]">
+            <div
+                class="max-w-[95%] mx-4 md:mx-10 absolute top-1/7 w-full md:px-10 flex flex-col justify-between h-[80%]">
                 <div class="flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-between w-full">
                     <div class="max-w-xl">
                         <h1 class="sub-title">Comfort in Every Turn, Trust in Every Ride</h1>
@@ -120,7 +121,8 @@
                             id="pauseBtn">
                         <img src="./assets/svg-icons/video-play.svg" alt="video-play"
                             class="hidden w-8 h-8 cursor-pointer" id="playBtn">
-                        <span class="text-sm md:text-base font-extralight leading-tight">Experience unmatched luxury travel with
+                        <span class="text-sm md:text-base font-extralight leading-tight">Experience unmatched luxury
+                            travel with
                             professional chauffeurs, elegant
                             vehicles, and
                             comfort throughout Dubai and Abu Dhabi.</span>
@@ -308,22 +310,30 @@
     </section>
 
     <!-- our benefits section -->
-    <section class="our-benefits min-h-screen py-6 relative"
+    <section class="our-benefits min-h-screen h-auto py-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[95%] mx-auto px-10 flex flex-col justify-between">
-            <div class="flex justify-between items-center">
-                <div class="max-w-[45%]">
+        <div class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col justify-between">
+            <div class="flex flex-col md:flex-row gap-4 md:gap-0 justify-between md:items-center">
+                <div class="md:max-w-[45%] gap-4 md:gap-0">
                     <h3 class="font-thin text-2xl">Our Benefits</h3>
-                    <h1 class="sub-title">Benefits That <br /> <span class="ml-48">You Get With</span> <br /> <span>Our
+                    <h1 class="sub-title mt-4 md:mt-0">Benefits That <br /> <span class="ml-48">You Get With</span>
+                        <br /> <span>Our
                             Premium
                             Ride</span>
                     </h1>
+
+                    <p class="block md:hidden w-full text-sm font-thin mt-4">
+                        Patriot Limousine offers premium transportation solutions for every travel need. Our
+                        professional chauffeurs and luxury vehicles deliver airport services, corporate travel, special
+                        events, and point-to-point journeys with unmatched comfort, style, and complete reliability.
+                    </p>
                 </div>
-                <div class="max-w-xs flex-1">
-                    <a href="" class="know-more flex items-center gap-10"><span class="font-thin text-2xl">Know
+                <div class="max-w-xs md:flex-1">
+                    <a href="" class="know-more flex justify-end md:justify-start items-center gap-4 md:gap-10 "><span
+                            class="font-thin text-lg md:text-2xl">Know
                             More About Us</span>
                         <img src="./assets/svg-icons/arrow-top-right-big.svg" alt="top-arrow"
-                            class="arrow-default w-14 h-14">
+                            class="arrow-default w-10 h-10  md:w-14 md:h-14">
                         <img src="./assets/svg-icons/arrow-top-right-big-hover.svg" alt="top-arrow"
                             class="arrow-hover hidden w-14 h-14">
                     </a>
@@ -331,9 +341,10 @@
             </div>
         </div>
         <div
-            class="absolute bottom-0 right-0 max-w-2xl flex flex-col gap-6 px-10 py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
-            <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-12 h-12">
-            <p class="text-xl font-extralight leading-[38px]">Trust Patriot Limousine for superior benefits in premium
+            class="absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
+            <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-8 h-8 md:w-12 md:h-12">
+            <p class="text-lg md:text-xl font-extralight leading-[24px] md:leading-[38px]">Trust Patriot Limousine for
+                superior benefits in premium
                 transportation. With 9 years of expertise and 72
                 professional chauffeurs, we guarantee punctual, safe, and comfortable journeys. Our advantages include
                 competitive pricing, 24/7 availability, premium fleet, and exceptional service for all your travel
@@ -342,14 +353,14 @@
         </div>
     </section>
 
-    <!-- achievements section -->
-    <section class="achievements h-auto">
+    <!-- achievements section desktop -->
+    <section class="hidden md:block achievements h-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             <div class="relative">
                 <img src="./assets/images/home/achievements-images/img-1.png" alt="Years of Excellence"
                     class="w-full h-full object-cover">
                 <div class="absolute bottom-12 left-12 flex flex-col gap-3 px-6">
-                    <h2 class="text-8xl text-white">12+</h2>
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">12+</h2>
                     <p class="text-white text-xl ml-3">Years of Excellence</p>
                 </div>
             </div>
@@ -357,7 +368,7 @@
             <div class="relative">
                 <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles" class="w-full h-full">
                 <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-8xl text-white">900k</h2>
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">900k</h2>
                     <p class="text-white text-xl ml-3">Total Miles</p>
                 </div>
             </div>
@@ -366,7 +377,7 @@
                 <img src="./assets/images/home/achievements-images/img-3.png" alt="Happy Customers"
                     class="w-full h-full">
                 <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-8xl text-white">50k</h2>
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">50k</h2>
                     <p class="text-white text-xl ml-3">Happy Customers</p>
                 </div>
             </div>
@@ -376,7 +387,7 @@
             <div class="relative">
                 <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets" class="w-full h-full">
                 <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-8xl text-white">72+</h2>
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">72+</h2>
                     <p class="text-white text-xl ml-3">Total Fleets</p>
                 </div>
             </div>
@@ -385,7 +396,59 @@
                 <img src="./assets/images/home/achievements-images/img-5.png" alt="Qualified Chauffeurs"
                     class="w-full h-full object-cover">
                 <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-8xl text-white">100k</h2>
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">100k</h2>
+                    <p class="text-white text-xl ml-3">Qualified Chauffeurs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- achievements section mobile -->
+    <section class="block md:hidden achievements h-auto">
+        <div class="grid grid-cols-1">
+            <div class="relative">
+                <img src="./assets/images/home/achievements-images/img-1.png" alt="Years of Excellence"
+                    class="w-full h-60 object-cover">
+                <div class="absolute bottom-8 left-8 flex flex-col gap-3 px-6">
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">12+</h2>
+                    <p class="text-white text-xl ml-3">Years of Excellence</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <div class="relative">
+                <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles" class="w-full h-70 object-cover">
+                <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">900k</h2>
+                    <p class="text-white text-xl ml-3">Total Miles</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/images/home/achievements-images/img-3.png" alt="Happy Customers"
+                    class="w-full h-70 object-cover">
+                <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">50k</h2>
+                    <p class="text-white text-xl ml-3">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <div class="relative">
+                <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets" class="w-full h-70 object-cover">
+                <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">72+</h2>
+                    <p class="text-white text-xl ml-3">Total Fleets</p>
+                </div>
+            </div>
+
+            <div class="relative">
+                <img src="./assets/images/home/achievements-images/img-5.png" alt="Qualified Chauffeurs"
+                    class="w-full h-70 object-cover">
+                <div class="absolute bottom-12 left-1 flex flex-col gap-3 justify-center px-4">
+                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">100k</h2>
                     <p class="text-white text-xl ml-3">Qualified Chauffeurs</p>
                 </div>
             </div>
@@ -393,12 +456,12 @@
     </section>
 
     <!-- our offers section -->
-    <section class="our-offers relative min-h-[86vh] py-8 bg-black/40">
-        <div class="container relative max-w-[95%] mx-auto px-10">
+    <section class="our-offers relative min-h-screen md:min-h-[86vh] py-8 bg-black/40">
+        <div class="container relative max-w-[95%] mx-auto px-3 md:px-10">
             <div class="flex justify-between items-center">
                 <div class="max-w-2xl">
                     <h3 class="font-thin text-2xl">Our Offers</h3>
-                    <h1 class="sub-title">
+                    <h1 class="sub-title mt-4 md:mt-0">
                         Enjoy Extra Miles <span class="ml-42">With Our Best Deal</span>
                     </h1>
                 </div>
@@ -837,7 +900,7 @@
         <!-- Overlay -->
         <div class="bg-black/40 z-10 absolute inset-0 flex items-center justify-center text-white">
             <div class="flex flex-col items-center justify-center gap-8 max-w-4xl px-4">
-                <h1 class="text-5xl text-center">“Beyond Transportation, Creating Journeys to Remember”</h1>
+                <h1 class="text-3xl md:text-4xl text-5xl text-center">“Beyond Transportation, Creating Journeys to Remember”</h1>
                 <a href="" class="book-now-btn">
                     <span>Book Now</span>
                     <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
