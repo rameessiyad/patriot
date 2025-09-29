@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="text-white bg-black/70">
+<body class="relative text-white bg-black/70">
 
     <!-- go to top button -->
     <div id="goTopBtn" class="fixed bottom-10 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
@@ -1418,16 +1418,16 @@
                 </div>
 
                 <div class="flex flex-col lg:flex-row mt-3 justify-around w-full">
-                    <!-- quick links -->
+                    <!-- OUr Services -->
                     <div class="">
-                        <p class="font-thin">Quick Links</p>
+                        <p class="font-thin">Our Services</p>
                         <div
-                            class="text-base font-extralight flex flex-wrap space-x-6 space-y-3 max-w-full lg:max-w-sm mt-2">
-                            <a href="#home">Home</a> <span>/</span> <a href="">About Us</a> <span>/</span> <a
-                                href="">Services</a> <span>/</span>
-                            <a href="">Our Fleets</a> <span>/</span> <a href="">Book Now</a> <span>/</span> <a
-                                href="">Blogs</a>
-                            <span>/</span> <a href="">Contact Us</a>
+                            class="text-base font-extralight flex flex-col space-x-6 space-y-3 max-w-full lg:max-w-sm mt-2">
+                            <a href="">Airport Transfers</a>
+                            <a href="">Hotel Transfers</a>
+                            <a href="">Corporate Events</a>
+                            <a href="">City Tour</a>
+                            <a href="">Intercity Transfer</a>
                         </div>
                     </div>
 
@@ -1533,6 +1533,18 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
     <script>
+        // go to top button
+        window.addEventListener("scroll", () => {
+            // Show after scrolling 200vh
+            if (window.scrollY > window.innerHeight * 2) {
+                goTopBtn.classList.remove("hidden");
+                goTopBtn.classList.add("block");
+            } else {
+                goTopBtn.classList.remove("block");
+                goTopBtn.classList.add("hidden");
+            }
+        });
+
         // play and pause video
         const video = document.getElementById('heroVideo');
         const pauseBtn = document.getElementById('pauseBtn');
