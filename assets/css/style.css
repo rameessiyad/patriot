@@ -250,6 +250,10 @@ footer {
 
 @media screen and (max-width: 1025px) {
     .sub-title {
+        font-weight: 350;
+        font-size: 2.8rem;
+        line-height: normal;
+
         span {
             margin: 0 !important;
         }
@@ -291,7 +295,7 @@ footer {
 @media screen and (max-width: 991px) {
     .sub-title {
         font-weight: 350;
-        font-size: 2.9rem;
+        font-size: 2.7rem;
         line-height: normal;
     }
 

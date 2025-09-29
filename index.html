@@ -433,7 +433,7 @@
                     <button onclick="toggleDropdown()"
                         class="flex items-center gap-2 px-4 py-2 text-white text-sm font-medium hover:bg-white/10 transition">
                         <img src="./assets/svg-icons/filterby.svg" alt="filter-by" class="w-3 h-3">
-                        <span class="text-lg">Filter By</span>
+                        <span id="selectedValue" class="text-lg">Filter By</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-1" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -727,8 +727,8 @@
 
                         <div class="swiper-slide">
                             <div class="p-3">
-                                <img src="./assets/images/home/key-offerings-slider/slider-img02.png"
-                                    alt="slider-img" class="slider-img relative">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img02.png" alt="slider-img"
+                                    class="slider-img relative">
                                 <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
                                     <p class="text-2xl font-light">Wedding Events</p>
                                     <a href="" class="book-now ml-auto cursor-pointer">
@@ -743,8 +743,8 @@
 
                         <div class="swiper-slide">
                             <div class="p-3">
-                                <img src="./assets/images/home/key-offerings-slider/slider-img03.png"
-                                    alt="slider-img" class="slider-img relative">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img03.png" alt="slider-img"
+                                    class="slider-img relative">
                                 <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
                                     <p class="text-2xl font-light">Intercity Transfer</p>
                                     <a href="" class="book-now ml-auto cursor-pointer">
@@ -759,8 +759,8 @@
 
                         <div class="swiper-slide">
                             <div class="p-3">
-                                <img src="./assets/images/home/key-offerings-slider/slider-img01.png"
-                                    alt="slider-img" class="slider-img relative">
+                                <img src="./assets/images/home/key-offerings-slider/slider-img01.png" alt="slider-img"
+                                    class="slider-img relative">
                                 <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
                                     <p class="text-2xl font-light">Dedicated Chauffeurs</p>
                                     <a href="" class="book-now ml-auto cursor-pointer">
@@ -946,7 +946,7 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
-                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="slider">
+                                class="w-full h-100 lg:h-auto object-cover rounded-lg" alt="slider">
                             <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
                                 <div class="flex gap-2 md:gap-5 items-center"><img
                                         src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
@@ -971,7 +971,7 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider02.png"
-                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="">
+                                class="w-full h-100 lg:h-auto object-cover rounded-lg" alt="">
                             <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
                                 <div class="flex gap-2 md:gap-5 items-center"><img
                                         src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
@@ -995,7 +995,7 @@
                     <div class="swiper-slide">
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
-                                class="w-full h-100 md:h-auto object-cover rounded-lg" alt="">
+                                class="w-full h-100 lg:h-auto object-cover rounded-lg" alt="">
                             <div class="absolute top-4 left-4 text-white p-3 rounded-lg max-w-sm h-full">
                                 <div class="flex gap-2 md:gap-5 items-center"><img
                                         src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
@@ -1575,7 +1575,7 @@
                 0: {
                     slidesPerView: 1, // mobile
                 },
-                768: {
+                1000: {
                     slidesPerView: 2, // tablet & above
                 }
             }
@@ -1660,22 +1660,22 @@
             },
         });
 
+        const dropdownToggle = document.querySelector('button[onclick="toggleDropdown()"]');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
         function toggleDropdown() {
-            const menu = document.getElementById('dropdownMenu');
-            menu.classList.toggle('hidden');
+            dropdownMenu.classList.toggle('hidden');
         }
 
         function selectOption(value) {
             document.getElementById('selectedValue').innerText = value;
-            document.getElementById('dropdownMenu').classList.add('hidden');
+            dropdownMenu.classList.add('hidden');
         }
 
-        // Optional: Close dropdown if clicking outside
+        // Close dropdown if clicking outside
         window.addEventListener('click', function (e) {
-            const menu = document.getElementById('dropdownMenu');
-            const button = e.target.closest('button');
-            if (!e.target.closest('#dropdownMenu') && !button) {
-                menu.classList.add('hidden');
+            if (!dropdownMenu.contains(e.target) && !dropdownToggle.contains(e.target)) {
+                dropdownMenu.classList.add('hidden');
             }
         });
     </script>
