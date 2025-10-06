@@ -414,6 +414,35 @@ footer {
         }
     }
 
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 400px;
+            height: auto !important;
+            border-radius: 20px;
+        }
+
+        .our-story-card {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 16px;
+            padding: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            transition: all ease 0.4s;
+
+            &:hover {
+                background: var(--color-primary);
+                box-shadow:
+                    0 0 10px var(--color-primary),
+                    0 0 20px var(--color-primary),
+                    0 0 40px var(--color-primary),
+                    0 0 56px var(--color-primary);
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 450px) {
