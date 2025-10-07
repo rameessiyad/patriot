@@ -443,7 +443,7 @@ footer {
 
         .our-story-card,
         .our-story-man {
-            width: 400px;
+            width: auto !important;
             height: auto !important;
             border-radius: 20px;
         }
