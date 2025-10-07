@@ -61,10 +61,10 @@
                         <img src="./assets/svg-icons/global.svg" alt="global" class="w-7 h-7">
                         <span class="text-base text-white font-light cursor-pointer">EN</span>
                     </div>
-                    <button
+                    <!-- <button
                         class="header-button px-8 py-2 bg-black/30 border border-white/50 rounded cursor-pointer hover:bg-[var(--color-primary)] transition duration-300">
                         <span class="inline-block transition-transform duration-300 hover:scale-110">Log In</span>
-                    </button>
+                    </button> -->
                     <button
                         class="header-button px-8 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]  border border-white/50 rounded cursor-pointer hover:bg-transparent">
                         <span class="inline-block transition-transform duration-300 hover:scale-110">Book Now</span>
@@ -302,12 +302,12 @@
                 <div class="flex flex-col md:flex-row gap-8">
                     <div class="flex flex-col gap-8 w-80">
 
-                        <div class="rounded-2xl overflow-hidden h-[70%]">
+                        <div class="rounded-2xl overflow-hidden h-[70%] our-vision-card-img">
                             <img src="./assets/images/about/our-vision/our-vision-card-img01.png" alt="Card 1"
                                 class="w-80 object-cover">
                         </div>
 
-                        <div class="bg-gradient-to-br from-red-600 to-red-800 text-white p-3 rounded-2xl ">
+                        <div class="bg-gradient-to-br from-red-600 to-red-800 text-white p-3 rounded-2xl hover:bg-gray-600 our-vision-card">
                             <h3 class="text-4xl font-normal mb-2">Client Commitment & Trust</h3>
                             <p class="text-xl font-light">
                                 "At Patriot Limousine, our mission is to deliver more than just transportation—we
@@ -318,14 +318,14 @@
 
                     <div class="flex flex-col gap-8 w-80">
 
-                        <div class="bg-gradient-to-br from-red-600 to-red-800 text-white p-3 rounded-2xl">
+                        <div class="bg-gradient-to-br from-red-600 to-red-800 text-white p-3 rounded-2xl hover:bg-gray-600 our-vision-card">
                             <h3 class="text-4xl font-normal mb-2">Service Excellence & Safety</h3>
                             <p class="text-xl font-light">
                                 "At Patriot Limousine, our mission is to deliver more than just transportation—we
                             </p>
                         </div>
 
-                        <div class="rounded-2xl overflow-hidden h-[70%]">
+                        <div class="rounded-2xl overflow-hidden h-[70%] our-vision-card-img">
                             <img src="./assets/images/about/our-vision/our-vision-card-img02.png" alt="Card 4"
                                 class="w-80 object-cover">
                         </div>
@@ -344,63 +344,57 @@
             <h1 class="text-3xl md:text-4xl lg:text-5xl text-[var(--color-about-section-title)]">Why Choose Us</h1>
             <h1 class="text-3xl md:text-4xl lg:text-5xl mt-6">Committed to Comfort and Reliability</h1>
 
-            <div class="flex flex-col gap-8">
-                <div class="grid grid-cols-1 md:grid-cols-3 mt-4 gap-4">
-                    <div class="w-full relative">
-                        <img src="./assets//images/about/why-choose-us/why-choose-card-img01.png" alt="why-choose-card"
-                            class="why-choose-card-img">
-                        <div class="absolute top-0 flex flex-col p-4 justify-between h-full">
-                            <h2 class="text-3xl font-light">Professional Chauffeurs</h2>
-                            <p class="text-sm font-extralight">Experienced, courteous, and trained to provide the
-                                highest
-                                level
-                                of service.</p>
-                        </div>
-                    </div>
-
-                    <div class="w-full relative">
-                        <img src="./assets//images/about/why-choose-us/why-choose-card-img02.png" alt="why-choose-card"
-                            class="why-choose-card-img">
+            <div class="flex flex-col gap-6 mt-10 w-[90%]">
+                <div class="flex gap-6">
+                    <div class="flex gap-6 relative">
+                        <img src="./assets/images/about/why-choose-us/why-choose-card-img01.png" alt="why-choose-card">
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
-                            <h2 class="text-3xl font-light">Female Chauffeurs</h2>
-                            <p class="text-sm font-extralight">Female Chauffeurs Available for Your Comfort and Choice
+                            <h2 class="text-3xl">Professional Chauffeurs</h2>
+                            <p class="text-lg font-light max-w-xs">Female Chauffeurs Available for Your Comfort and
+                                Choice
                             </p>
                         </div>
                     </div>
-
-                    <div class="w-full relative">
-                        <img src="./assets//images/about/why-choose-us/why-choose-card-img03.png" alt="why-choose-card"
-                            class="why-choose-card-img">
-                        <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
-                            <h2 class="text-3xl font-light">24/7 Availability</h2>
-                            <p class="text-sm font-extralight">Round-the-Clock Support for Every Ride
-                            </p>
+                    <div class="flex gap-6">
+                        <div class="relative">
+                            <img src="./assets/images/about/why-choose-us/why-choose-card-img02.png"
+                                alt="why-choose-card">
+                            <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
+                                <h2 class="text-3xl">Female Chauffeurs</h2>
+                                <p class="text-lg font-light max-w-xs">Female Chauffeurs Available for Your Comfort
+                                    and
+                                    Choice
+                                </p>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img src="./assets/images/about/why-choose-us/why-choose-card-img03.png"
+                                alt="why-choose-card">
+                            <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
+                                <h2 class="text-3xl">24/7 Availability</h2>
+                                <p class="text-lg font-light max-w-xs">Round-the-Clock Support for Every Ride
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2">
-                    <div class="w-full relative">
-                        <img src="./assets//images/about/why-choose-us/why-choose-card-img04.png" alt="why-choose-card"
-                            class="why-choose-card-img">
+                <div class="flex gap-6">
+                    <div class="relative">
+                        <img src="./assets/images/about/why-choose-us/why-choose-card-img04.png" alt="why-choose-card">
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
-                            <h2 class="text-3xl font-light">Luxury Fleet</h2>
-                            <p class="text-sm font-extralight">A diverse range of premium vehicles designed for every
-                                occasion,
-                                from business trips to special events
+                            <h2 class="text-3xl">Luxury Fleet</h2>
+                            <p class="text-lg font-light max-w-xs">A diverse range of premium vehicles designed for
+                                every occasion, from business trips to special events
                             </p>
                         </div>
                     </div>
-
-                    
-                    <div class="w-full relative">
-                        <img src="./assets//images/about/why-choose-us/why-choose-card-img05.png" alt="why-choose-card"
-                            class="why-choose-card-img">
+                    <div class="relative">
+                        <img src="./assets/images/about/why-choose-us/why-choose-card-img05.png" alt="why-choose-card">
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="text-3xl font-light">On-Time Guarantee</h2>
-                            <p class="text-sm font-extralight">We respect your time—every ride is punctual, reliable,
-                                and
-                                stress-free.
+                            <p class="text-lg font-extralight max-w-xs">We respect your time—every ride is punctual,
+                                reliable, and stress-free.
                             </p>
                         </div>
                     </div>
