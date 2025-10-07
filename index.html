@@ -1398,11 +1398,24 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-black mb-0 px-4">
-        <div class="flex flex-col gap-4 px-4 md:px-12 pb-4">
-            <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 py-10">
+    <footer class="bg-black mb-0 px-1">
+        <div class="flex flex-col gap-4 px-2 md:px-4 pb-4">
+            <!-- Footer top cta -->
+            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto flex items-center rounded-lg"
+                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
+                <div class="w-full flex items-center justify-between px-6 sm:px-10 footer-bottom-img">
+                    <p class="text-base font-extralight md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">
+                        Book a Ride Now
+                    </p>
+                    <div class="w-16 h-full md:h-30 flex items-center justify-end border-l border-black/50">
+                        <a href="" class="mb-2"><img src="./assets/svg-icons/arrow-footer.svg" alt="arrow"
+                                class="mt-3 w-8 md:w-8"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 py-10 lg:ml-10">
                 <div class="hidden lg:block">
-                    <img src="./assets/images/logo.png" alt="logo" class="logo">
+                    <img src="./assets/images/logo.png" alt="logo" class="logo" style="width: 200px">
                 </div>
 
                 <!-- mobile logo and social links  -->
@@ -1419,29 +1432,31 @@
 
                 <div class="flex flex-col lg:flex-row mt-3 justify-around w-full">
                     <!-- OUr Services -->
-                    <div class="">
-                        <p class="font-thin text-lg text-gray-300">Our Services</p>
-                        <div class="text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                            <a href="">Airport Transfers</a>
-                            <a href="">Hotel Transfers</a>
-                            <a href="">Corporate Events</a>
-                            <a href="">City Tour</a>
-                            <a href="">Intercity Transfer</a>
+                    <div class="flex flex-col lg:flex-row gap-10">
+                        <div class="">
+                            <p class="font-thin text-lg text-gray-300">Our Services</p>
+                            <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                                <a href="">Airport Transfers</a>
+                                <a href="">Hotel Transfers</a>
+                                <a href="">Corporate Events</a>
+                                <a href="">City Tour</a>
+                                <a href="">Intercity Transfer</a>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm lg:mt-8">
-                        <a href="">Point To Point</a>
-                        <a href="">Luxury Bus Rental</a>
-                        <a href="">Staff Transfers</a>
-                        <a href="">Wedding Events</a>
-                        <a href="">Dedicated Chaufferus</a>
+                        <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm lg:mt-10">
+                            <a href="">Point To Point</a>
+                            <a href="">Luxury Bus Rental</a>
+                            <a href="">Staff Transfers</a>
+                            <a href="">Wedding Events</a>
+                            <a href="">Dedicated Chaufferus</a>
+                        </div>
                     </div>
 
                     <!-- Quick Links -->
                     <div class="mt-5 lg:mt-0">
                         <p class="font-thin text-lg text-gray-300">Quick Links</p>
-                        <div class="text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                        <div class="text-sm font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
                             <a href="">Home</a>
                             <a href="">About</a>
                             <a href="">Services</a>
@@ -1453,28 +1468,28 @@
                     </div>
 
                     <!-- Contact Us -->
-                    <div class="mt-8 lg:mt-0 lg:w-[20%]">
+                    <div class="mt-8 lg:mt-0">
                         <p class="font-thin text-lg text-gray-300 lg:ml-8">Contact Us</p>
                         <div class="flex flex-col gap-1 font-light mt-2">
                             <div class="flex gap-2"> <img src="./assets/svg-icons/footer-call-icon.svg" alt="call"
-                                    class="w-6"><span><a href="tel">+971 2 551 1255</a></span></div>
-                            <a href="tel" class="ml-8">+971 56 409 0108</a>
-                            <a href="tel" class="ml-8">+971 56 334 0108</a>
+                                    class="w-6"><span><a href="tel" class="text-sm">+971 2 551 1255</a></span></div>
+                            <a href="tel" class="ml-8 text-sm">+971 56 409 0108</a>
+                            <a href="tel" class="ml-8 text-sm">+971 56 334 0108</a>
 
-                            <div class="mt-4 flex gap-2">
+                            <div class="mt-2 flex gap-2">
                                 <img src="./assets/svg-icons/footer-mail-icon.svg" alt="mail" class="w-6"><span><a
-                                        href="mailto:info@patriotlimo.ae">info@patriotlimo.ae</a></span>
+                                        href="mailto:info@patriotlimo.ae" class="text-sm">info@patriotlimo.ae</a></span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Location -->
-                    <div class="mt-8 lg:mt-0 lg:w-[20%]">
+                    <div class="mt-8 lg:mt-0">
                         <p class="font-thin text-lg text-gray-300 lg:ml-8">Location</p>
                         <div class="flex items-start justify-start gap-2">
                             <img src="./assets/svg-icons/footer-location-icon.svg" alt="location" class="w-6 mt-2">
                             <div class="mt-2 max-w-full lg:max-w-[10rem]">
-                                <p class="font-light">
+                                <p class="font-light text-sm">
                                     Office No.M4
                                     Building No. 5948
                                     8- Azha St - E11
@@ -1533,19 +1548,7 @@
                 </div>
             </div>
 
-            <!-- Footer Bottom -->
-            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto flex items-center rounded-lg"
-                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
-                <!-- <img src="./assets/images/footer-bottom.png" alt="footer-bottom" class="w-full object-cover"> -->
-                <div class="w-full flex items-center justify-between px-6 sm:px-10 footer-bottom-img">
-                    <p class="text-base md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">Book a Ride Now
-                    </p>
-                    <div class="w-16 h-full md:h-30 flex items-center justify-end border-l border-black/50">
-                        <a href="" class="mb-2"><img src="./assets/svg-icons/arrow-footer.svg" alt="arrow"
-                                class="mt-3 w-8 md:w-10"></a>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </footer>
