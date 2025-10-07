@@ -248,6 +248,13 @@ header {
     }
 }
 
+.why-choose-us {
+    .why-choose-card-img {
+        /* width: 700px; */
+        height: 200px;
+    }
+}
+
 
 footer {
     .logo {
