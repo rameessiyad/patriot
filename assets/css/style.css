@@ -307,6 +307,58 @@ footer {
             font-size: 0.9rem !important;
         }
     }
+
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 400px;
+            height: 500px;
+            border-radius: 20px;
+            object-fit: cover;
+
+            h2 {
+                font-size: 1.7rem !important;
+                ;
+            }
+
+            p {
+                font-size: 1.2rem !important;
+                line-height: 1.5 !important;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 380px;
+            height: 470px;
+            border-radius: 20px;
+            object-fit: cover;
+
+            h2 {
+                font-size: 1.5rem !important;
+                ;
+            }
+
+            p {
+                font-size: 1.1rem !important;
+                line-height: 1.5 !important;
+            }
+
+            img {
+                width: 50px;
+            }
+        }
+    }
 }
 
 
@@ -343,6 +395,30 @@ footer {
                         rgba(0, 0, 0, 0.4),
                         rgba(67, 4, 8, 0.9));
 
+            }
+        }
+    }
+
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 360px;
+            height: 440px;
+            border-radius: 20px;
+            object-fit: cover;
+
+            h2 {
+                font-size: 1.3rem !important;
+            }
+
+            p {
+                font-size: 1rem !important;
+                line-height: 1.4 !important;
+            }
+
+            img {
+                width: 50px;
             }
         }
     }
@@ -443,27 +519,22 @@ footer {
 
         .our-story-card,
         .our-story-man {
-            width: auto !important;
-            height: auto !important;
+            width: 300px;
+            height: 400px;
             border-radius: 20px;
-        }
+            object-fit: cover;
 
-        .our-story-card {
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 16px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            transition: all ease 0.4s;
+            h2 {
+                font-size: 1.1rem !important;
+            }
 
-            &:hover {
-                background: var(--color-primary);
-                box-shadow:
-                    0 0 10px var(--color-primary),
-                    0 0 20px var(--color-primary),
-                    0 0 40px var(--color-primary),
-                    0 0 56px var(--color-primary);
+            p {
+                font-size: 0.9rem !important;
+                line-height: 1.25 !important;
+            }
+
+            img {
+                width: 28px;
             }
         }
     }
@@ -500,6 +571,30 @@ footer {
     .sub-title {
         font-weight: 350;
         font-size: 1.7rem;
+    }
+
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 100%;
+            height: 400px;
+            border-radius: 20px;
+            object-fit: cover;
+
+            h2 {
+                font-size: 1.7rem !important;
+            }
+
+            p {
+                font-size: 1.1rem !important;
+                line-height: 1.4 !important;
+            }
+
+            img {
+                width: 36px;
+            }
+        }
     }
 }
 
