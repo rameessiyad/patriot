@@ -61,6 +61,16 @@ body {
     line-height: normal;
 }
 
+.title-red {
+    font-size: 50px;
+    color: var(--color-about-section-title);
+}
+
+.title-white {
+    font-size: 50px;
+    color: #fff;
+}
+
 .book-now-btn {
     display: inline-flex;
     align-items: center;
