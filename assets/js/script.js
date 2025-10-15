@@ -14,4 +14,6 @@ closeIcon.addEventListener("click", () => {
   mobileMenu.classList.add("-translate-x-full");
   closeIcon.classList.add("hidden");
   hamburgerIcon.classList.remove("hidden");
+
+  document.body.classList.remove("overflow-hidden");
 });
