@@ -138,8 +138,7 @@
             <!-- call to action box -->
             <div
                 class="flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-16 sm:mt-40 md:mt-50 mb-30 md:mb-20">
-                <p
-                    class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.9rem] text-center md:text-left xl:ml-14">
+                <p class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.9rem] text-center md:text-left xl:ml-14">
                     Luxury on Demand – Your Premium Limousine Ride is Just a Click Away.
                 </p>
                 <a href=""
@@ -782,6 +781,26 @@
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
     <script>
+
+        // header animation on scroll
+        const header = document.querySelector("header");
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastScrollY) {
+                // Scrolling down → hide header
+                header.style.transform = "translateY(-100%)";
+                header.style.backdropFilter = "none";
+                header.style.backgroundColor = "transparent";
+            } else {
+                // Scrolling up → show header + add blur
+                header.style.transform = "translateY(0)";
+                header.style.backdropFilter = "blur(5px)";
+                header.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+            }
+
+            lastScrollY = window.scrollY;
+        });
 
         const swiper = new Swiper(".ourVisionSwiper", {
             loop: true,
