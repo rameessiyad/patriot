@@ -303,6 +303,35 @@ footer {
 }
 
 /* responsive styles */
+@media screen and (min-height: 1023px) and (max-height: 1375px) {
+    section {
+        min-height: 60vh;
+    }
+
+    .ourFleetNav {
+        margin-top: 40px;
+    }
+
+    .ourOffersNav {
+        margin-top: 45px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-height: 1365px) {
+    .our-offers {
+        min-height: 44vh !important;
+
+        .ourOffersNav {
+            margin-top: 1px !important;
+        }
+    }
+
+}
+
 @media screen and (max-width: 1468px) {
     .sub-title {
         font-weight: 350;
@@ -741,7 +770,7 @@ footer {
         line-height: 1.2;
     }
 
-     .pricing {
+    .pricing {
         .pricing-card {
             max-width: 400px;
             height: auto;
