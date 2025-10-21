@@ -600,6 +600,26 @@ footer {
         }
     }
 
+    .our-vision {
+        .our-vision-card-img {
+            transition: all ease 0.3s;
+
+            &:hover {
+                background: none;
+                box-shadow: none;
+            }
+        }
+
+        .our-vision-card {
+            transition: all ease 0.3s;
+
+            /* &:hover {
+            background: black;
+
+        } */
+        }
+    }
+
 }
 
 @media screen and (max-width: 450px) {
