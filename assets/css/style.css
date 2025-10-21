@@ -100,6 +100,49 @@ body {
     }
 }
 
+.whatsapp-blink {
+    display: inline-block;
+    animation: fadeUpBlink 1.8s ease-in-out infinite;
+    -webkit-animation: fadeUpBlink 1.8s ease-in-out infinite;
+    will-change: transform, opacity;
+}
+
+/* Standard keyframes */
+@keyframes fadeUpBlink {
+    0% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+}
+
+/* Safari-prefixed keyframes */
+@-webkit-keyframes fadeUpBlink {
+    0% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-5px);
+    }
+
+    100% {
+        opacity: 0.3;
+        transform: translateY(5px);
+    }
+}
+
 .slider-book-now-btn {
     display: inline-flex;
     align-items: center;
