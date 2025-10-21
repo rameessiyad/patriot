@@ -25,7 +25,7 @@
 <body class="relative text-white bg-black/70">
 
     <!-- go to top button -->
-    <div id="goTopBtn" class="fixed bottom-10 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
+    <div id="goTopBtn" class="fixed bottom-20 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
         <a href="#home">
             <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
         </a>
@@ -148,10 +148,10 @@
                         <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
                     </a>
                 </div>
-                <div
-                    class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2">
+                <div class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
+                    id="mobile-book-bar">
                     <a href=""
-                        class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm">
+                        class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm" id="book-btn">
                         <span class="text-[1.3rem] font-semibold">Book a Ride Now</span>
                         <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-8 mr-2">
                     </a>
@@ -1923,6 +1923,23 @@
             }
 
             lastScrollY = window.scrollY;
+        });
+
+        const bookBtn = document.getElementById("book-btn");
+        let lastsScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastsScrollY) {
+                // Scrolling down → shrink the button
+                bookBtn.classList.remove("py-3");
+                bookBtn.classList.add("py-1");
+            } else {
+                // Scrolling up → restore normal size
+                bookBtn.classList.remove("py-1");
+                bookBtn.classList.add("py-3");
+            }
+
+            lastsScrollY = window.scrollY;
         });
 
         // go to top button
