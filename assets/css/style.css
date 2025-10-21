@@ -475,6 +475,23 @@ footer {
     }
 }
 
+@media screen and ((min-width: 1024px) and (max-width: 1200px)) {
+    .myOffersContent {
+        .top-content {
+            p {
+                font-size: 12px;
+            }
+        }
+        .bottom-content {
+            h3 {
+                font-size: 16px;
+            }
+
+
+        }
+    }
+}
+
 @media screen and ((min-width: 1000px) and (max-width: 1024px)) {
     .ourMissionCardIcon {
         margin-left: -10px !important;
