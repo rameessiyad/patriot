@@ -24,15 +24,22 @@
 
 <body class="relative text-white bg-black">
 
+    <!-- whatsapp icon -->
+    <div class="whatsapp-blink fixed bottom-14 md:bottom-12 right-3 md:right-5 z-100">
+        <a href="https://wa.me/+97125511255">
+            <img src="./assets/svg-icons/whatsapp-icon.svg" alt="whatsapp" class="w-10 md:w-12">
+        </a>
+    </div>
+
     <!-- go to top button -->
-    <div id="goTopBtn" class="fixed bottom-10 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
+    <div id="goTopBtn" class="fixed bottom-20 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
         <a href="#home">
             <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
         </a>
     </div>
 
     <!-- header -->
-    <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
+    <header class="lg:bg-black/40 lg:backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
         <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
@@ -76,7 +83,7 @@
 
     <!-- mobile menu -->
     <div id="mobile-menu"
-        class="lg:hidden fixed top-22 left-0 w-full h-full pb-10 z-100 transform -translate-x-full transition-transform duration-300">
+        class="lg:hidden fixed top-22 left-0 w-full h-full pb-10 bg-black/40 backdrop-blur-md z-100 transform -translate-x-full transition-transform duration-300">
         <div class="flex flex-col items-center justify-center gap-6 h-full text-white text-lg">
             <ul class="flex flex-col items-center gap-6">
                 <li><a href="index.html" class="hover:text-[var(--color-primary)]">Home</a></li>
@@ -93,10 +100,6 @@
             </div>
 
             <div class="flex gap-4">
-                <button
-                    class="px-6 py-2 bg-black/30 border border-white/50 rounded hover:bg-[var(--color-primary)] transition duration-300">
-                    Log In
-                </button>
                 <button
                     class="px-6 py-2 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] border border-white/50 rounded hover:bg-transparent">
                     Book Now
@@ -147,11 +150,12 @@
                     <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
                 </a>
             </div>
-            <div
-                class="fixed md:hidden bottom-1 z-50 w-[91%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2">
+            <div class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
+                id="mobile-book-bar">
                 <a href=""
-                    class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm">
-                    <span class="text-lg font-semibold">Book a Ride Now</span>
+                    class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm"
+                    id="book-btn">
+                    <span class="text-[1.3rem] font-semibold">Book a Ride Now</span>
                     <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-8 mr-2">
                 </a>
             </div>
@@ -802,6 +806,35 @@
             lastScrollY = window.scrollY;
         });
 
+        const bookBtn = document.getElementById("book-btn");
+        let lastsScrollY = window.scrollY;
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > lastsScrollY) {
+                // Scrolling down → shrink the button
+                bookBtn.classList.remove("py-3");
+                bookBtn.classList.add("py-1");
+            } else {
+                // Scrolling up → restore normal size
+                bookBtn.classList.remove("py-1");
+                bookBtn.classList.add("py-3");
+            }
+
+            lastsScrollY = window.scrollY;
+        });
+
+        // go to top button
+        window.addEventListener("scroll", () => {
+            // Show after scrolling 200vh
+            if (window.scrollY > window.innerHeight * 2) {
+                goTopBtn.classList.remove("hidden");
+                goTopBtn.classList.add("block");
+            } else {
+                goTopBtn.classList.remove("block");
+                goTopBtn.classList.add("hidden");
+            }
+        });
+
         const swiper = new Swiper(".ourVisionSwiper", {
             loop: true,
             spaceBetween: 30,
@@ -814,6 +847,19 @@
                 clickable: true,
             },
         });
+
+        const newSwiper = new Swiper(".whyChooseSwiper", {
+            loop: true,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        })
     </script>
 
 
