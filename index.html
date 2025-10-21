@@ -32,7 +32,7 @@
     </div>
 
     <!-- header -->
-    <header class="lg:bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
+    <header class="lg:bg-black/40 lg:backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
         <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
@@ -108,16 +108,16 @@
     <!-- hero section -->
     <section class="" id="home">
         <div class="relative">
-            <video autoplay muted class="hidden lg:block h-screen w-full object-cover mt-15" id="heroVideo">
+            <video autoplay muted playsinline p class="hidden lg:block h-screen w-full object-cover mt-15 heroVideo">
                 <source src="./assets/videos/herobanner.mp4" type="video/mp4">
             </video>
 
-            <video autoplay muted class="lg:hidden h-screen w-full object-cover mt-15">
+            <video autoplay muted playsinline preload="auto" class="lg:hidden h-screen w-full object-cover heroVideo">
                 <source src="./assets/videos/patriot mobile web.mp4" type="video/mp4">
             </video>
 
             <div
-                class="container max-w-[93%] md:max-w-[80%] md:max-w-[95%] mx-4 lg:mx-10 absolute top-1/9 w-full md:px-10 flex flex-col justify-between h-[80%]">
+                class="container mt-10 md:mt-0 max-w-[93%] md:max-w-[80%] md:max-w-[95%] mx-4 lg:mx-10 absolute top-1/9 w-full md:px-10 flex flex-col justify-between h-[80%]">
                 <div class="flex flex-col md:flex-row gap-6 md:gap-0 items-center justify-between w-full">
                     <div class="max-w-xl -mt-4">
                         <h1 class="sub-title">Comfort in Every Turn, Trust in Every Ride</h1>
@@ -880,8 +880,8 @@
                 <img src="./assets/images/home/achievements-images/img-1.png" alt="Years of Excellence"
                     class="w-full h-full object-cover" />
                 <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">12+</h2>
-                    <p class="text-white text-base sm:text-lg ml-2">Years of Excellence</p>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-white">12+</h2>
+                    <p class="text-white text-base sm:text-lg lg:text-xl ml-2">Years of Excellence</p>
                 </div>
             </div>
 
@@ -890,8 +890,8 @@
                 <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles"
                     class="w-full h-full object-cover" />
                 <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">900k</h2>
-                    <p class="text-white text-base sm:text-lg ml-2">Total Miles</p>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-white">900k</h2>
+                    <p class="text-white text-base sm:text-lg lg:text-xl ml-2">Total Miles</p>
                 </div>
             </div>
 
@@ -900,8 +900,8 @@
                 <img src="./assets/images/home/achievements-images/img-3.png" alt="Happy Customers"
                     class="w-full h-full object-cover" />
                 <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
-                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">50k</h2>
-                    <p class="text-white text-base sm:text-lg ml-2">Happy Customers</p>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-white">50k</h2>
+                    <p class="text-white text-base sm:text-lg lg:text-xl ml-2">Happy Customers</p>
                 </div>
             </div>
         </div>
@@ -912,8 +912,8 @@
                 <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets"
                     class="w-full h-full object-cover" />
                 <div class="absolute bottom-6 left-6 flex flex-col gap-2 justify-center">
-                    <h2 class="text-5xl md:text-7xl text-white">72+</h2>
-                    <p class="text-white text-lg ml-2">Total Fleets</p>
+                    <h2 class="text-5xl md:text-7xl lg:text-8xl text-white">72+</h2>
+                    <p class="text-white text-lg lg:text-xl ml-2">Total Fleets</p>
                 </div>
             </div>
 
@@ -921,8 +921,8 @@
                 <img src="./assets/images/home/achievements-images/img-5.png" alt="Qualified Chauffeurs"
                     class="w-full h-full object-cover" />
                 <div class="absolute bottom-6 left-6 flex flex-col gap-2 justify-center">
-                    <h2 class="text-5xl md:text-7xl text-white">100k</h2>
-                    <p class="text-white text-lg ml-2">Qualified Chauffeurs</p>
+                    <h2 class="text-5xl md:text-7xl lg:text-8xl text-white">100k</h2>
+                    <p class="text-white text-lg lg:text-xl ml-2">Qualified Chauffeurs</p>
                 </div>
             </div>
         </div>
@@ -1038,7 +1038,7 @@
     </section>
 
     <!-- our offers section -->
-    <section class="our-offers relative min-h-auto md:min-h-[86vh] py-8 bg-black/40">
+    <section class="our-offers relative min-h-auto md:min-h-[86vh] py-8 pt-20 bg-black/40">
         <div class="container relative max-w-[95%] mx-auto px-3 md:px-10">
             <div class="flex justify-between items-center">
                 <div class="max-w-2xl">
@@ -1931,23 +1931,32 @@
             }
         });
 
-        // play and pause video
-        const video = document.getElementById('heroVideo');
+        const videos = document.getElementsByClassName('heroVideo');
         const pauseBtn = document.getElementById('pauseBtn');
         const playBtn = document.getElementById('playBtn');
 
+        function getActiveVideo() {
+            // Find the one that is currently visible (not display: none)
+            return Array.from(videos).find(v => v.offsetParent !== null);
+        }
+
         pauseBtn.addEventListener('click', () => {
-            video.pause();
-            pauseBtn.classList.add('hidden');
-            playBtn.classList.remove('hidden');
+            const video = getActiveVideo();
+            if (video) {
+                video.pause();
+                pauseBtn.classList.add('hidden');
+                playBtn.classList.remove('hidden');
+            }
         });
 
         playBtn.addEventListener('click', () => {
-            video.play();
-            playBtn.classList.add('hidden');
-            pauseBtn.classList.remove('hidden');
+            const video = getActiveVideo();
+            if (video) {
+                video.play();
+                playBtn.classList.add('hidden');
+                pauseBtn.classList.remove('hidden');
+            }
         });
-
         // pauseBtn.addEventListener('mouseleave', () => {
         //     playBtn.classList.remove('hidden');
         //     pauseBtn.classList.add('hidden');
