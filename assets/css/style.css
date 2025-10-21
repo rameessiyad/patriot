@@ -673,6 +673,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 770px) {
+    .why-choose-us {
+        min-height: 66vh !important;
+    }
+} 
+
 @media screen and (max-width: 768px) {
     .title-red {
         font-size: 32px;
