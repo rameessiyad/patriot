@@ -563,6 +563,13 @@ footer {
     }
 }
 
+/* @media screen and ((min-width: 767px) and (max-width: 1000px)) {
+    .calltoAction {
+        margin-bottom: 440px !important;
+        margin-right: 10px !important;
+    }
+} */
+
 @media screen and (max-width: 991px) {
     .title-red {
         font-size: 32px;
