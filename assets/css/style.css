@@ -464,10 +464,62 @@ footer {
         }
     }
 
+    .ourMissionCardIcon {
+        margin-left: -10px !important;
+    }
+
     footer {
         .footer-bottom-img {
             height: 90px;
         }
+    }
+}
+
+@media screen and ((min-width: 1000px) and (max-width: 1024px)) {
+    .ourMissionCardIcon {
+        margin-left: -10px !important;
+    }
+}
+
+@media screen and ((min-width: 912px) and (max-width: 1000px)) {
+    .ourMissionCardIcon {
+        margin-left: 20px !important;
+    }
+}
+
+@media screen and ((min-width: 817px) and (max-width: 912px)) {
+    .ourMissionCardIcon {
+        margin-left: 8px !important;
+    }
+}
+
+@media screen and ((min-width: 769px) and (max-width: 817px)) {
+    .ourMissionCardIcon {
+        margin-left: -5px !important;
+    }
+}
+
+@media screen and ((min-width: 500px) and (max-width: 768px)) {
+    .ourMissionCardIcon {
+        margin-left: -6px !important;
+    }
+}
+
+@media screen and ((min-width: 376px) and (max-width: 500px)) {
+    .ourMissionCardIcon {
+        margin-left: 10px !important;
+    }
+}
+
+@media screen and ((min-width: 330px) and (max-width: 376px)) {
+    .ourMissionCardIcon {
+        margin-left: 5px !important;
+    }
+}
+
+@media screen and ((min-width: 319px) and (max-width: 330px)) {
+    .ourMissionCardIcon {
+        margin-left: -1px !important;
     }
 }
 
