@@ -137,7 +137,7 @@
 
                 <!-- call to action box -->
                 <div
-                    class="calltoAction flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 md:mt-70 lg:mt-90 mb-30 md:mb-20">
+                    class="calltoAction flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 md:mt-70 lg:mt-100 mb-30 md:mb-20">
                     <p
                         class="text-lg sm:text-xl md:text-[1.4rem] lg:text-[1.5rem] xl:text-[2rem] text-center md:text-left xl:ml-14">
                         “Arrive in style, on time, every time. Book your luxury ride now.”
@@ -186,7 +186,7 @@
             </div>
 
             <!-- slider section -->
-            <div class="relative w-full mt-50">
+            <div class="relative w-full mt-30 md:mt-42 lg:mt-30 xl:mt-50">
                 <div class="w-full slider-container md:p-4 mt-12">
                     <!-- Slider main container -->
                     <div class="swiper fleetSwiper min-h-[20vh] pt-20">
@@ -409,13 +409,8 @@
                                 </div>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
-
-
-
 
                 <!-- Mobile Filter -->
                 <div
@@ -460,7 +455,7 @@
                 </div>
             </div>
             <!-- Navigation buttons -->
-            <div class="absolute top-64 right-10 flex flex-col gap-2 z-10 p-4">
+            <div class="absolute top-90 md:top-64 right-0 md:right-10 flex flex-col gap-2 z-10 p-4">
                 <div class="flex gap-2 self-end">
                     <div class="swiper-button-prev !static inline-flex items-center justify-center">
                         <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-12">
@@ -522,13 +517,13 @@
     <section class="our-services min-h-screen py-8"
         style="background: url('./assets/images/home/ourservices-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container max-w-[95%] mx-auto px-3 md:px-10">
-            <div class="flex flex-col lg:flex-row gap-4 md:gap-8 justify-between lg:items-center">
-                <div class=" lg:max-w-[45%] flex flex-col gap-4 md:gap-0">
+            <div class="flex flex-col xl:flex-row gap-4 md:gap-8 justify-between xl:items-center">
+                <div class=" xl:max-w-[45%] flex flex-col gap-4 md:gap-0">
                     <h3 class="font-thin text-2xl">Our Services</h3>
-                    <h1 class="sub-title">Everything That <span class="ml-48">You Seek For</span> <span>Your Perfect
+                    <h1 class="sub-title py-2 lg:py-0 ">Everything That <span class="ml-48">You Seek For</span> <br class="lg:hidden" /> <span>Your Perfect
                             Ride</span>
                     </h1>
-                    <a href="" class="book-now-btn lg:ml-auto mr-16 mt-2"><span>Book Now</span>
+                    <a href="" class="book-now-btn xl:ml-auto mr-16 mt-2"><span>Book Now</span>
                         <img src="./assets/svg-icons/arrow-top-right.svg" class="arrow-default" alt="arrow">
                         <img src="./assets/svg-icons/arrow-top-right-red.svg" class="arrow-hover hidden" alt="arrow">
                     </a>
@@ -831,13 +826,14 @@
     </section>
 
     <!-- our benefits section -->
-    <section class="our-benefits min-h-[95vh] h-auto py-6 relative"
+    <section class="our-benefits min-h-screen lg:min-h-[105vh] xl:min-h-screen h-auto py-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col justify-between">
             <div class="flex flex-col lg:flex-row gap-4 md:gap-6 justify-between lg:items-center">
-                <div class="lg:max-w-[45%] gap-4 md:gap-0">
+                <div class="lg:max-w-[45%] gap-4 md:gap-0 mt-18">
                     <h3 class="font-thin text-2xl">Our Benefits</h3>
-                    <h1 class="sub-title mt-4 md:mt-0">Benefits That <br /> <span class="ml-48">You Get With</span>
+                    <h1 class="sub-title mt-4 md:mt-0">Benefits That <br class="md:hidden lg:block" /> <span
+                            class="ml-48">You Get With</span>
                         <br /> <span>Our
                             Premium
                             Ride</span>
@@ -862,7 +858,7 @@
             </div>
         </div>
         <div
-            class="relative ml-auto mt-10 md:mt-0 md:absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
+            class="relative ml-auto mt-10 md:mt-20 md:absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
             <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-8 h-8 md:w-12 md:h-12 opacity-20">
             <p class="text-lg md:text-xl font-extralight leading-7 md:leading-8 lg:leading-9">Trust Patriot Limousine
                 for
@@ -878,51 +874,58 @@
     <!-- achievements section desktop -->
     <section class="hidden lg:block achievements h-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <div class="relative">
+            <!-- 1 -->
+            <div class="relative h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden">
                 <img src="./assets/images/home/achievements-images/img-1.png" alt="Years of Excellence"
-                    class="w-full h-full object-cover">
-                <div class="absolute bottom-12 left-12 flex flex-col gap-3 px-6">
-                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">12+</h2>
-                    <p class="text-white text-xl ml-3">Years of Excellence</p>
+                    class="w-full h-full object-cover" />
+                <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">12+</h2>
+                    <p class="text-white text-base sm:text-lg ml-2">Years of Excellence</p>
                 </div>
             </div>
 
-            <div class="relative">
-                <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles" class="w-full h-full">
-                <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">900k</h2>
-                    <p class="text-white text-xl ml-3">Total Miles</p>
+            <!-- 2 -->
+            <div class="relative h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden">
+                <img src="./assets/images/home/achievements-images/img-2.png" alt="Total Miles"
+                    class="w-full h-full object-cover" />
+                <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">900k</h2>
+                    <p class="text-white text-base sm:text-lg ml-2">Total Miles</p>
                 </div>
             </div>
 
-            <div class="relative">
+            <!-- 3 -->
+            <div class="relative h-56 sm:h-72 md:h-80 lg:h-96 overflow-hidden">
                 <img src="./assets/images/home/achievements-images/img-3.png" alt="Happy Customers"
-                    class="w-full h-full">
-                <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">50k</h2>
-                    <p class="text-white text-xl ml-3">Happy Customers</p>
+                    class="w-full h-full object-cover" />
+                <div class="absolute bottom-6 left-6 flex flex-col gap-2 px-4">
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl text-white">50k</h2>
+                    <p class="text-white text-base sm:text-lg ml-2">Happy Customers</p>
                 </div>
             </div>
         </div>
+
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2">
-            <div class="relative">
-                <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets" class="w-full h-full">
-                <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">72+</h2>
-                    <p class="text-white text-xl ml-3">Total Fleets</p>
+            <div class="relative h-72 sm:h-80 lg:h-96 overflow-hidden">
+                <img src="./assets/images/home/achievements-images/img-4.png" alt="Total Fleets"
+                    class="w-full h-full object-cover" />
+                <div class="absolute bottom-6 left-6 flex flex-col gap-2 justify-center">
+                    <h2 class="text-5xl md:text-7xl text-white">72+</h2>
+                    <p class="text-white text-lg ml-2">Total Fleets</p>
                 </div>
             </div>
 
-            <div class="relative">
+            <div class="relative h-72 sm:h-80 lg:h-96 overflow-hidden">
                 <img src="./assets/images/home/achievements-images/img-5.png" alt="Qualified Chauffeurs"
-                    class="w-full h-full object-cover">
-                <div class="absolute bottom-12 left-12 flex flex-col gap-3 justify-center px-6">
-                    <h2 class="text-6xl md:text-7xl lg:text-8xl text-white">100k</h2>
-                    <p class="text-white text-xl ml-3">Qualified Chauffeurs</p>
+                    class="w-full h-full object-cover" />
+                <div class="absolute bottom-6 left-6 flex flex-col gap-2 justify-center">
+                    <h2 class="text-5xl md:text-7xl text-white">100k</h2>
+                    <p class="text-white text-lg ml-2">Qualified Chauffeurs</p>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- achievements section tab -->
@@ -1138,7 +1141,7 @@
                 <div class="swiper-pagination"></div>
             </div>
             <!-- Navigation buttons -->
-            <div class="absolute top-30 md:top-40 lg:top-38 xl:top-36 right-0 md:right-8 flex gap-2 z-10 p-4">
+            <div class="absolute top-30 md:top-20 lg:top-38 xl:top-36 right-0 md:right-8 flex gap-2 z-10 p-4">
                 <div class="swiper-button-prev !static inline-flex items-center justify-center">
                     <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow"
                         class="w-14 lg:w-10 xl:w-14 h-14">
@@ -1154,7 +1157,7 @@
     <!-- pricing section -->
     <section class="pricing min-h-screen py-10"
         style="background: url('./assets/images/home/pricing-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="max-w-5xl flex flex-col gap-4 items-center px-8 md:px-0">
+        <div class="max-w-full flex flex-col gap-4 items-center px-8 md:px-0">
             <h1 class="text-[2rem] md:text-3xl text-5xl">Professional Car Rental Solutions at the Best Price</h1>
             <p class="text-base font-light">We Offer the best rates for all types of customers in Dubai</p>
         </div>
@@ -1692,7 +1695,7 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-black mb-0 px-1">
+    <footer class="bg-black mb-0 px-1 py-20 md:py-2">
         <div class="footerContent flex flex-col gap-3 px-2 md:px-4 pb-4">
             <!-- Footer top cta -->
             <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto hidden md:flex items-center rounded-lg"
