@@ -386,9 +386,7 @@ footer {
 }
 
 @media screen and (min-height: 500px) and (max-height: 630px) {
-    .our-benefits {
-        height: 130vh !important;
-    }
+   
 }
 
 @media screen and (min-height: 720px) and (max-height: 780px) {
@@ -517,13 +515,6 @@ footer {
 
 /* ipad mini */
 @media screen and (max-width: 768px) and (max-height: 1024px) {
-    /* .calltoAction {
-        margin-bottom: -34px;
-    } */
-
-    .our-benefits {
-        height: 70vh;
-    }
 
 }
 
