@@ -385,9 +385,6 @@ footer {
 
 }
 
-
-@media screen and (min-height: 500px) and (max-height: 630px) {}
-
 @media screen and (min-height: 720px) and (max-height: 780px) {
     /* .calltoAction {
         margin-bottom: 50px !important;
