@@ -339,13 +339,13 @@ header {
 
 /* service sub styles */
 
-
-
 footer {
     .logo {
         width: 170px;
     }
 }
+
+
 
 /* responsive styles */
 @media screen and (min-height: 1023px) and (max-height: 1375px) {
@@ -373,6 +373,14 @@ footer {
         .ourOffersNav {
             margin-top: 1px !important;
         }
+    }
+
+    .calltoAction {
+        margin-bottom: -34px;
+    }
+
+    .ourFleetNav {
+        top: 170px;
     }
 
 }
@@ -442,6 +450,88 @@ footer {
 
             img {
                 width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1278px) and (max-width: 1420px) {
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 440px;
+            height: 600px;
+            border-radius: 20px;
+        }
+
+        .our-story-man {
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 1154px) and (max-width: 1278px) {
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 440px;
+            height: 670px;
+            border-radius: 20px;
+        }
+
+        .our-story-man {
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 967px) {
+    .our-story {
+
+        .our-story-card,
+        .our-story-man {
+            width: 440px;
+            height: 440px !important;
+            border-radius: 20px;
+        }
+
+        .our-story-man {
+            object-fit: cover;
+        }
+    }
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+    .calltoAction {
+        margin-bottom: -34px;
+    }
+}
+
+/* ipad mini */
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+    .calltoAction {
+        margin-bottom: -34px;
+    }
+
+    .our-benefits {
+        .our-benefitsContent {
+            flex-direction: row;
+
+            .know-more-content {
+                margin-top: 100px;
+
+                .know-more {
+                    span {
+                        font-size: 18px;
+                    }
+
+                    img {
+                        width: 40px;
+                        margin-left: -20px;
+                    }
+                }
             }
         }
     }
@@ -678,7 +768,13 @@ footer {
     .why-choose-us {
         min-height: 66vh !important;
     }
-} 
+}
+
+@media screen and (min-width: 600px) and (max-width: 769px) {
+    .ourFleetNav {
+        top: 170px;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .title-red {
