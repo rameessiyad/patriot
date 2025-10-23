@@ -32,7 +32,7 @@
 
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
+        <div class="header-content w-full max-w-full md:max-w-[93%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
                 <nav class="ml-3 hidden lg:block">
@@ -115,7 +115,7 @@
 
         <!-- Content container -->
         <div
-            class="relative z-10 w-full flex flex-col items-start justify-center min-h-screen px-4 md:px-10 lg:px-20 pt-30">
+            class="content relative z-10 w-full flex flex-col items-start justify-around min-h-screen px-4 md:px-10 lg:px-20 pt-30">
 
             <!-- About text -->
             <div class="max-w-[90%] md:max-w-[50%] flex flex-col gap-4 md:gap-6 text-white">
@@ -133,19 +133,27 @@
                 </h3>
             </div>
 
-            <!-- Call to action box -->
-            <div class="w-full mt-20 md:mt-30 lg:mt-40">
-                <div
-                    class="flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-6 md:mt-0 mb-10">
-                    <p class="text-lg sm:text-xl md:text-[1.5rem] lg:text-[2rem] text-center md:text-left lg:ml-14">
-                        Comfortable Hotel Transfers – Where Every Journey Feels First-Class
-                    </p>
-                    <a href=""
-                        class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-3 lg:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
-                        <span class="">Book a Ride Now</span>
-                        <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
-                    </a>
-                </div>
+            <!-- call to action box -->
+            <div
+                class="calltoActionAbout w-full flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mb-30 md:mb-0">
+
+                <p class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.5rem] text-center md:text-left xl:ml-14">
+                    Luxury on Demand – Your Premium Limousine Ride is Just a Click Away.
+                </p>
+                <a href=""
+                    class="hidden md:flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-3 lg:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
+                    <span class="">Book a Ride Now</span>
+                    <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
+                </a>
+            </div>
+            <div class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
+                id="mobile-book-bar">
+                <a href=""
+                    class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm"
+                    id="book-btn">
+                    <span class="text-[1.3rem] font-semibold">Book a Ride Now</span>
+                    <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-8 mr-2">
+                </a>
             </div>
         </div>
     </section>
@@ -559,6 +567,179 @@
         </div>
     </section>
 
+    <!-- how it works section -->
+    <section class="how-it-works-service bg-black min-h-screen py-8">
+        <div class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row justify-between">
+            <div class="flex flex-col lg:flex-row gap-4 justify-between lg:items-center">
+                <div class="flex flex-col gap-4 w-[50%]">
+                    <div class="max-w-2xl">
+                        <h3 class="font-thin text-2xl">How It Works</h3>
+                        <h1 class="sub-title">
+                            Step By Step<br />
+                            <span class="">Booking Process</span>
+                        </h1>
+                    </div>
+                    <div class="max-w-auto">
+                        <p class="text-base md:text-lg font-extralight leading-7 xl:ml-auto">Experience luxury travel
+                            with Patriot Limousine's premium fleet featuring Lexus, BMW, Toyota, Kia, Mitsubishi and
+                            more vehicles. Our professional chauffeurs provide airport transfers, hotel pickups, and
+                            point-to-point travel throughout Abu Dhabi and Dubai with comfort, style and reliability.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="./assets/images/service/service-sub/how-it-works.png" alt="service" class="w-[700px]">
+                    </div>
+                </div>
+
+                <div class="flex w-[50%]">
+                    <div class="relative flex gap-8">
+                        <!-- LEFT column with numbers & vertical line -->
+                        <div class="w-44 relative hidden md:flex items-center">
+                            <!-- vertical line spanning container -->
+                            <div class="absolute left-1/2 -translate-x-1/2 top-6 bottom-6 w-[2px] bg-white/10"></div>
+
+                            <!-- stack of numbers (and their dots centered on the line) -->
+                            <div id="leftStack" class="z-10 flex flex-col justify-start gap-20 w-full">
+                                <!-- step item template -->
+                                <div class="relative flex items-center justify-center">
+                                    <div class="flex items-center gap-6 w-full">
+                                        <!-- the big faint number (left aligned inside the column) -->
+                                        <div class="w-20 text-right pr-6">
+                                            <span data-step-num="1"
+                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">
+                                                1
+                                            </span>
+                                        </div>
+
+                                        <!-- Invisible filler so layout keeps consistent -->
+                                        <div class="flex-1"></div>
+                                    </div>
+
+                                    <!-- dot on the center line -->
+                                    <div class="absolute left-1/2 -translate-x-1/2">
+                                        <div data-step-dot="1"
+                                            class="w-4 h-4 rounded-full bg-white/40 border-2 border-white/20 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-center justify-center">
+                                    <div class="flex items-center gap-6 w-full">
+                                        <div class="w-20 text-right pr-6">
+                                            <span data-step-num="2"
+                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">2</span>
+                                        </div>
+                                        <div class="flex-1"></div>
+                                    </div>
+                                    <div class="absolute left-1/2 -translate-x-1/2">
+                                        <div data-step-dot="2"
+                                            class="w-4 h-4 rounded-full bg-white/40 border-2 border-white/20 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-center justify-center">
+                                    <div class="flex items-center gap-6 w-full">
+                                        <div class="w-20 text-right pr-6">
+                                            <span data-step-num="3"
+                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">3</span>
+                                        </div>
+                                        <div class="flex-1"></div>
+                                    </div>
+                                    <div class="absolute left-1/2 -translate-x-1/2">
+                                        <div data-step-dot="3"
+                                            class="w-4 h-4 rounded-full bg-white/40 border-2 border-white/20 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-center justify-center">
+                                    <div class="flex items-center gap-6 w-full">
+                                        <div class="w-20 text-right pr-6">
+                                            <span data-step-num="4"
+                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">4</span>
+                                        </div>
+                                        <div class="flex-1"></div>
+                                    </div>
+                                    <div class="absolute left-1/2 -translate-x-1/2">
+                                        <div data-step-dot="4"
+                                            class="w-4 h-4 rounded-full bg-white/40 border-2 border-white/20 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="relative flex items-center justify-center">
+                                    <div class="flex items-center gap-6 w-full">
+                                        <div class="w-20 text-right pr-6">
+                                            <span data-step-num="5"
+                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">5</span>
+                                        </div>
+                                        <div class="flex-1"></div>
+                                    </div>
+                                    <div class="absolute left-1/2 -translate-x-1/2">
+                                        <div data-step-dot="5"
+                                            class="w-4 h-4 rounded-full bg-white/40 border-2 border-white/20 transition-all duration-300">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT column: tall step panels -->
+                        <div class="flex-1">
+                            <div id="rightContent" class="flex flex-col">
+                                <!-- Each panel is tall so scroll triggers; design with dark panel background -->
+                                <section data-step-panel="1"
+                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-gradient-to-b from-white/3 to-white/2 rounded-xl border border-white/6">
+                                    <h3 class="text-red-500 text-2xl font-semibold mb-3">Select Route</h3>
+                                    <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
+                                        fleet featuring Experience luxury travel with Patriot.</p>
+                                </section>
+
+                                <section data-step-panel="2"
+                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    <h3 class="text-white text-2xl font-semibold mb-3">Choose Vehicle</h3>
+                                    <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
+                                        fleet featuring Experience luxury travel with Patriot.</p>
+                                </section>
+
+                                <section data-step-panel="3"
+                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    <h3 class="text-white text-2xl font-semibold mb-3">Enter Details</h3>
+                                    <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
+                                        fleet featuring Experience luxury travel with Patriot.</p>
+                                </section>
+
+                                <section data-step-panel="4"
+                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    <h3 class="text-white text-2xl font-semibold mb-3">Confirm & Pay</h3>
+                                    <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
+                                        fleet featuring Experience luxury travel with Patriot.</p>
+                                </section>
+
+                                <section data-step-panel="5"
+                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    <h3 class="text-white text-2xl font-semibold mb-3">Track Status</h3>
+                                    <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
+                                        fleet featuring Experience luxury travel with Patriot.</p>
+                                </section>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+
+    </section>
+
     <!-- why choose us section -->
     <section class="why-choose-us min-h-screen py-8 lg:py-16"
         style="background: url('./assets/images/about/why-choose-us-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
@@ -913,6 +1094,83 @@
                 },
             },
         });
+
+        // scroll animation
+        const obsRightPanels = document.querySelectorAll('[data-step-panel]');
+        const leftNumbers = document.querySelectorAll('[data-step-num]');
+        const leftDots = document.querySelectorAll('[data-step-dot]');
+
+        // helper to clear active styles
+        function clearActiveDesktop() {
+            leftNumbers.forEach(n => {
+                n.classList.remove('bg-clip-text', 'text-transparent', 'bg-gradient-to-b', 'from-red-500', 'to-red-700');
+                n.classList.add('text-white/10');
+            });
+            leftDots.forEach(d => {
+                d.classList.remove('bg-white', 'ring-2', 'ring-white/20');
+                d.classList.add('bg-white/40');
+            });
+
+            // reset right titles
+            obsRightPanels.forEach(panel => {
+                const h = panel.querySelector('h3');
+                if (h) {
+                    h.classList.remove('text-red-500');
+                    h.classList.add('text-white');
+                }
+                panel.classList.remove('scale-[1.01]');
+                panel.classList.add('opacity-80');
+            });
+        }
+
+        // set active by index (1-based)
+        function setActiveDesktop(index) {
+            clearActiveDesktop();
+            const num = document.querySelector(`[data-step-num="${index}"]`);
+            const dot = document.querySelector(`[data-step-dot="${index}"]`);
+            const panel = document.querySelector(`[data-step-panel="${index}"]`);
+
+            if (num) {
+                num.classList.remove('text-white/10');
+                // Tailwind gradient text classes
+                num.classList.add('bg-clip-text', 'text-transparent', 'bg-gradient-to-b', 'from-red-500', 'to-red-700');
+            }
+            if (dot) {
+                dot.classList.remove('bg-white/40');
+                dot.classList.add('bg-white', 'ring-2', 'ring-white/20');
+            }
+            if (panel) {
+                const h = panel.querySelector('h3');
+                if (h) {
+                    h.classList.remove('text-white');
+                    h.classList.add('text-red-500');
+                }
+                // subtle emphasis on active panel
+                panel.classList.add('scale-[1.01]');
+                panel.classList.remove('opacity-80');
+            }
+        }
+
+        // IntersectionObserver: activate when panel is at least 45% in view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.45
+        };
+
+        const panelObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const idx = entry.target.getAttribute('data-step-panel');
+                    setActiveDesktop(idx);
+                }
+            });
+        }, observerOptions);
+
+        obsRightPanels.forEach(panel => panelObserver.observe(panel));
+
+        // set initial active (first)
+        setActiveDesktop(1);
     </script>
 
 </body>
