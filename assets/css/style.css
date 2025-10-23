@@ -50,6 +50,62 @@ body {
     overflow: visible !important;
 }
 
+.custom-checkbox {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.custom-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid red;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.desktop-checkbox {
+    width: 18px;
+    height: 18px;
+    appearance: none;
+    border: 2px solid red;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s ease;
+}
+
+.desktop-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0px;
+    width: 6px;
+    height: 10px;
+    border: solid red;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+#desktopDropdownMenu li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
 
 .thin-border {
     border: 0.5px solid white !important;
@@ -316,10 +372,14 @@ header {
 .our-story {
 
     .our-story-card,
-    .our-story-man {
-        width: 440px;
+    .image-wrapper {
+        width: 33%;
         height: 515px;
         border-radius: 20px;
+    }
+
+    .our-story-man {
+        height: 515px;
     }
 
     .our-story-card {
@@ -385,7 +445,7 @@ footer {
         }
     }
 
-     .footerContent {
+    .footerContent {
         max-width: 1800px;
         margin: 0 auto;
     }
