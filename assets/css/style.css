@@ -420,11 +420,6 @@ footer {
     } */
 }
 
-@media screen and (max-width: 1024px) and (min-height: 1366px) {
-    .calltoActionAbout {
-        margin-top: 500px;
-    }
-}
 
 @media screen and (max-width: 1468px) {
     .sub-title {
