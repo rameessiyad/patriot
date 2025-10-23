@@ -185,6 +185,35 @@ li:hover {
     }
 }
 
+.fleet-book-now-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1rem;
+    padding: 2px 4px;
+    width: 160px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03));
+    backdrop-filter: blur(8px);
+    font-size: 1.5rem;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.02));
+        color: var(--color-primary);
+
+        .arrow-default {
+            display: none;
+        }
+
+        .arrow-hover {
+            display: block;
+        }
+    }
+}
+
 .whatsapp-blink {
     display: inline-block;
     animation: fadeUpBlink 1.8s ease-in-out infinite;
