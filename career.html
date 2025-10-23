@@ -39,7 +39,7 @@
 
     <!-- header -->
     <header class="bg-black/40 backdrop-blur-md fixed top-0 left-0 right-0 px-5 z-50">
-        <div class="w-full max-w-full md:max-w-[95%] mx-auto flex items-center justify-between ">
+        <div class="header-content w-full max-w-full md:max-w-[93%] mx-auto flex items-center justify-between ">
             <div class="flex items-center gap-8">
                 <a href="index.html"><img src="./assets/images/logo.png" alt="logo" class="logo-img"></a>
                 <nav class="ml-3 hidden lg:block">
@@ -108,7 +108,7 @@
     </div>
 
     <!-- hero section -->
-    <section class="relative min-h-screen" id="about">
+    <section class="relative min-h-screen" id="home">
         <!-- Background video -->
         <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
             <source src="./assets/videos/service-banner.mp4" type="video/mp4" />
@@ -119,7 +119,7 @@
 
         <!-- Content container -->
         <div
-            class="relative z-10 w-full flex flex-col items-start justify-center min-h-screen px-4 md:px-10 lg:px-20 pt-30">
+            class="content relative z-10 w-full flex flex-col items-start justify-around min-h-screen px-4 md:px-10 lg:px-20 pt-30">
 
             <!-- About text -->
             <div class="max-w-[90%] md:max-w-[60%] flex flex-col gap-4 md:gap-6 text-white">
@@ -141,11 +141,12 @@
                 </div>
             </div>
 
-            <!-- Call to action box -->
+            <!-- call to action box -->
             <div
-                class="w-full flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-16 sm:mt-40 md:mt-50 mb-30 md:mb-20">
-                <p class="text-lg sm:text-xl md:text-[1.5rem] lg:text-[2rem] text-center md:text-left xl:ml-14">
-                    Your career is a journey — let’s make it extraordinary together.
+                class="calltoActionAbout w-full flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mb-30 md:mb-0">
+
+                <p class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.5rem] text-center md:text-left xl:ml-14">
+                    Luxury on Demand – Your Premium Limousine Ride is Just a Click Away.
                 </p>
                 <a href=""
                     class="hidden md:flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 md:p-3 lg:p-4 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
@@ -153,7 +154,7 @@
                     <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
                 </a>
             </div>
-            <div class="fixed md:hidden -bottom-1 z-70 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
+            <div class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
                 id="mobile-book-bar">
                 <a href=""
                     class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm"
@@ -167,7 +168,7 @@
 
     <!-- currently open positions section -->
     <section class="open-positions min-h-screen py-8  bg-gradient-to-br from-[#272727] to-[#1C1717]">
-        <div class="container max-w-[95%] mx-auto px-3 md:px-10">
+        <div class="content container max-w-[95%] mx-auto px-3 md:px-10">
             <div class="flex flex-col xl:flex-row gap-4 md:gap-8 justify-between xl:items-center">
                 <div class=" xl:max-w-[45%] flex flex-col gap-4 md:gap-0 mt-6">
                     <h3 class="font-thin text-2xl">Currently Open Positions</h3>
@@ -481,7 +482,7 @@
         </div>
     </section>
 
-    <section class="relative min-h-[78vh]">
+    <section class="relative min-h-[50vh] md:min-h-[78vh]">
         <video autoplay loop muted playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover">
             <source src="./assets/videos/footer-banner.mp4" type="video/mp4">
         </video>
@@ -693,7 +694,8 @@
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <
+     src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
