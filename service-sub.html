@@ -570,7 +570,7 @@
     <!-- how it works section -->
     <section class="how-it-works-service bg-black min-h-screen py-8">
         <div class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row justify-between">
-            <div class="flex flex-col lg:flex-row gap-4 justify-between lg:items-center">
+            <div class="flex flex-col lg:flex-row gap-14 justify-between lg:items-center">
                 <div class="flex flex-col gap-4 w-[50%]">
                     <div class="max-w-2xl">
                         <h3 class="font-thin text-2xl">How It Works</h3>
@@ -588,16 +588,21 @@
                     </div>
 
                     <div>
-                        <img src="./assets/images/service/service-sub/how-it-works.png" alt="service" class="w-[700px]">
+                        <img src="./assets/images/service/service-sub/how-it-works.png" alt="service" class="w-[650px]">
                     </div>
                 </div>
 
-                <div class="flex w-[50%]">
-                    <div class="relative flex gap-8">
+                <div class="flex w-[50%] lg:justify-end">
+                    <div class="relative flex gap-1">
                         <!-- LEFT column with numbers & vertical line -->
                         <div class="w-44 relative hidden md:flex items-center">
                             <!-- vertical line spanning container -->
                             <div class="absolute left-1/2 -translate-x-1/2 top-6 bottom-6 w-[2px] bg-white/10"></div>
+
+                            <!-- floating moving pointer -->
+                            <div id="movingPointer"
+                                class="absolute left-1/2 -translate-x-1/2 w-5 h-5 bg-red-500 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.7)] transition-all duration-500 ease-in-out z-20">
+                            </div>
 
                             <!-- stack of numbers (and their dots centered on the line) -->
                             <div id="leftStack" class="z-10 flex flex-col justify-start gap-20 w-full">
@@ -607,7 +612,7 @@
                                         <!-- the big faint number (left aligned inside the column) -->
                                         <div class="w-20 text-right pr-6">
                                             <span data-step-num="1"
-                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">
+                                                class="num-size text-8xl text-white/25 step-num transition-all duration-300">
                                                 1
                                             </span>
                                         </div>
@@ -628,7 +633,7 @@
                                     <div class="flex items-center gap-6 w-full">
                                         <div class="w-20 text-right pr-6">
                                             <span data-step-num="2"
-                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">2</span>
+                                                class="num-size text-8xl text-white/25 step-num transition-all duration-300">2</span>
                                         </div>
                                         <div class="flex-1"></div>
                                     </div>
@@ -643,7 +648,7 @@
                                     <div class="flex items-center gap-6 w-full">
                                         <div class="w-20 text-right pr-6">
                                             <span data-step-num="3"
-                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">3</span>
+                                                class="num-size text-8xl text-white/25 step-num transition-all duration-300">3</span>
                                         </div>
                                         <div class="flex-1"></div>
                                     </div>
@@ -658,7 +663,7 @@
                                     <div class="flex items-center gap-6 w-full">
                                         <div class="w-20 text-right pr-6">
                                             <span data-step-num="4"
-                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">4</span>
+                                                class="num-size text-8xl text-white/25 step-num transition-all duration-300">4</span>
                                         </div>
                                         <div class="flex-1"></div>
                                     </div>
@@ -673,7 +678,7 @@
                                     <div class="flex items-center gap-6 w-full">
                                         <div class="w-20 text-right pr-6">
                                             <span data-step-num="5"
-                                                class="num-size font-extrabold text-white/10 step-num transition-all duration-300">5</span>
+                                                class="num-size text-8xl text-white/25 step-num transition-all duration-300">5</span>
                                         </div>
                                         <div class="flex-1"></div>
                                     </div>
@@ -691,35 +696,35 @@
                             <div id="rightContent" class="flex flex-col">
                                 <!-- Each panel is tall so scroll triggers; design with dark panel background -->
                                 <section data-step-panel="1"
-                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-gradient-to-b from-white/3 to-white/2 rounded-xl border border-white/6">
+                                    class="mb-2 bg-gradient-to-b from-white/3 to-white/2 rounded-xl border border-white/6">
                                     <h3 class="text-red-500 text-2xl font-semibold mb-3">Select Route</h3>
                                     <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
                                         fleet featuring Experience luxury travel with Patriot.</p>
                                 </section>
 
                                 <section data-step-panel="2"
-                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    class="mb-2 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
                                     <h3 class="text-white text-2xl font-semibold mb-3">Choose Vehicle</h3>
                                     <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
                                         fleet featuring Experience luxury travel with Patriot.</p>
                                 </section>
 
                                 <section data-step-panel="3"
-                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    class="mb-2 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
                                     <h3 class="text-white text-2xl font-semibold mb-3">Enter Details</h3>
                                     <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
                                         fleet featuring Experience luxury travel with Patriot.</p>
                                 </section>
 
                                 <section data-step-panel="4"
-                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    class="mb-2 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
                                     <h3 class="text-white text-2xl font-semibold mb-3">Confirm & Pay</h3>
                                     <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
                                         fleet featuring Experience luxury travel with Patriot.</p>
                                 </section>
 
                                 <section data-step-panel="5"
-                                    class="min-h-[60vh] lg:min-h-[48vh] mb-8 p-8 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
+                                    class="mb-2 bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80">
                                     <h3 class="text-white text-2xl font-semibold mb-3">Track Status</h3>
                                     <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium
                                         fleet featuring Experience luxury travel with Patriot.</p>
@@ -730,10 +735,6 @@
 
                     </div>
                 </div>
-
-            </div>
-
-            <div>
 
             </div>
         </div>
@@ -1095,67 +1096,134 @@
             },
         });
 
-        // scroll animation
+        //scroll animation
+
+        // Select all right-side sections and corresponding left-side elements
         const obsRightPanels = document.querySelectorAll('[data-step-panel]');
         const leftNumbers = document.querySelectorAll('[data-step-num]');
         const leftDots = document.querySelectorAll('[data-step-dot]');
 
-        // helper to clear active styles
+        // Ensure default state (inactive look)
+        obsRightPanels.forEach(panel => {
+            const h = panel.querySelector('h3');
+            const p = panel.querySelector('p');
+            if (h && !h.classList.contains('text-red-500')) {
+                h.classList.add('text-white');
+                h.classList.remove('text-red-500');
+            }
+            if (p && !p.classList.contains('text-red-400')) {
+                p.classList.add('text-white/70');
+                p.classList.remove('text-red-400');
+            }
+        });
+
+        // 🔹 Reset all elements to default inactive state
         function clearActiveDesktop() {
+            // reset numbers
             leftNumbers.forEach(n => {
-                n.classList.remove('bg-clip-text', 'text-transparent', 'bg-gradient-to-b', 'from-red-500', 'to-red-700');
-                n.classList.add('text-white/10');
+                n.classList.remove(
+                    'bg-clip-text',
+                    'text-transparent',
+                    'bg-gradient-to-b',
+                    'from-red-500',
+                    'to-red-700'
+                );
+                n.classList.add('text-white/25');
             });
+
+            // reset dots
             leftDots.forEach(d => {
                 d.classList.remove('bg-white', 'ring-2', 'ring-white/20');
                 d.classList.add('bg-white/40');
             });
 
-            // reset right titles
+            // reset panels (heading + paragraph)
             obsRightPanels.forEach(panel => {
                 const h = panel.querySelector('h3');
+                const p = panel.querySelector('p');
+
                 if (h) {
                     h.classList.remove('text-red-500');
                     h.classList.add('text-white');
                 }
+
+                if (p) {
+                    p.classList.remove('text-red-400');
+                    p.classList.add('text-white/70');
+                }
+
                 panel.classList.remove('scale-[1.01]');
                 panel.classList.add('opacity-80');
             });
         }
 
-        // set active by index (1-based)
+        // 🔹 Set the active step (number, dot, text, and pointer)
         function setActiveDesktop(index) {
+            const idx = Number(index);
+            if (!idx || idx < 1) return;
+
             clearActiveDesktop();
-            const num = document.querySelector(`[data-step-num="${index}"]`);
-            const dot = document.querySelector(`[data-step-dot="${index}"]`);
-            const panel = document.querySelector(`[data-step-panel="${index}"]`);
+
+            const num = document.querySelector(`[data-step-num="${idx}"]`);
+            const dot = document.querySelector(`[data-step-dot="${idx}"]`);
+            const panel = document.querySelector(`[data-step-panel="${idx}"]`);
 
             if (num) {
-                num.classList.remove('text-white/10');
-                // Tailwind gradient text classes
-                num.classList.add('bg-clip-text', 'text-transparent', 'bg-gradient-to-b', 'from-red-500', 'to-red-700');
+                num.classList.remove('text-white/25');
+                num.classList.add(
+                    'bg-clip-text',
+                    'text-transparent',
+                    'bg-gradient-to-b',
+                    'from-red-500',
+                    'to-black/10'
+                );
             }
+
             if (dot) {
                 dot.classList.remove('bg-white/40');
                 dot.classList.add('bg-white', 'ring-2', 'ring-white/20');
             }
+
             if (panel) {
                 const h = panel.querySelector('h3');
+                const p = panel.querySelector('p');
+
                 if (h) {
                     h.classList.remove('text-white');
                     h.classList.add('text-red-500');
                 }
-                // subtle emphasis on active panel
+                if (p) {
+                    p.classList.remove('text-white/70');
+                    p.classList.add('text-red-400');
+                }
+
                 panel.classList.add('scale-[1.01]');
                 panel.classList.remove('opacity-80');
             }
+
+            // Move pointer indicator
+            movePointerToDot(dot);
         }
 
-        // IntersectionObserver: activate when panel is at least 45% in view
+        // 🔹 Move the red circular pointer smoothly to the active dot
+        function movePointerToDot(dot) {
+            const pointer = document.getElementById('movingPointer');
+            if (!pointer || !dot) return;
+
+            const dotRect = dot.getBoundingClientRect();
+            const containerRect = dot.closest('.w-44.relative').getBoundingClientRect();
+
+            // Calculate vertical offset relative to the column
+            const offset = dotRect.top - containerRect.top + dotRect.height / 2;
+
+            pointer.style.top = `${offset - pointer.offsetHeight / 2}px`;
+        }
+
+        // 🔹 Observe scroll position to activate each section
         const observerOptions = {
             root: null,
             rootMargin: '0px',
-            threshold: 0.45
+            threshold: 0.5,
         };
 
         const panelObserver = new IntersectionObserver((entries) => {
@@ -1167,10 +1235,12 @@
             });
         }, observerOptions);
 
+        // Observe all panels
         obsRightPanels.forEach(panel => panelObserver.observe(panel));
 
-        // set initial active (first)
+        // Set initial active state
         setActiveDesktop(1);
+
     </script>
 
 </body>
