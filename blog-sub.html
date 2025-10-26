@@ -173,16 +173,18 @@
     <!-- blog view section -->
     <section class="blog-view h-screen bg-black overflow-hidden">
         <div class="content container max-w-[95%] mx-auto px-3 md:px-10 pb-8 h-full">
-            <div class="w-full h-full relative flex justify-between gap-16 pt-9 pb-4">
+            <div
+                class="w-full h-full relative flex flex-col md:flex-row justify-between gap-4 md:gap-16 py-8 border-b border-white/40">
                 <!-- table of contents -->
-                <div class="hidden md:block min-h-full w-[25%]">
+                <div class="md:min-h-full md:w-[25%]">
                     <div class="px-2 py-1 flex gap-3 rounded-lg text-sm border border-white text-white w-40">
                         <img src="./assets/svg-icons/go-back.svg" alt="go-back" class="w-4">
                         <p>Click to Go Back</p>
                     </div>
 
                     <!-- table of content div -->
-                    <div class="w-full h-[90%] border border-white/40 rounded-lg flex flex-col items-center gap-3 mt-5 p-4">
+                    <div
+                        class="hidden w-full h-[90%] border border-white/40 rounded-lg md:flex flex-col items-center gap-3 mt-5 p-4">
                         <div class="p-4 border-b border-white/40">
                             <h2 class="text-3xl">Table of Contents</h2>
                         </div>
@@ -212,7 +214,7 @@
                 </div>
 
                 <!-- blog detail -->
-                <div class="w-[75%] h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide">
+                <div class="md:w-[75%] h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide">
                     <div class="md:mt-10">
                         <h2 class="md:text-4xl max-w-xl">
                             Why Patriot Limousine is the Top Limo Company in Dubai
@@ -312,6 +314,231 @@
                             every ride.
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- related posts section -->
+    <section class="bg-black py-6">
+        <div class="content container relative max-w-[95%] mx-auto px-3 md:px-10">
+            <!-- slider -->
+            <div class="swiper relatedSwiper">
+                <div class="swiper-wrapper mt-12">
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="" class="blog-card border border-white/40 p-2.5 rounded-2xl flex flex-col">
+                            <div>
+                                <img src="./assets/images/blogs/blog01.png" alt="blog" class="w-[100%] h-[310px]">
+                            </div>
+                            <div class="flex flex-col gap-4 py-5">
+                                <div class="flex flex-col xl:flex-row xl:items-center gap-3 justify-between">
+                                    <p
+                                        class="text-[1rem] lg:text-[1.1rem] xl:text-[1.3rem] leading-6 xl:leading-7 max-w-xs">
+                                        Minimalism: Design’s Impact Unleashed through simplcity.
+                                    </p>
+                                    <p class="text-[10px] xl:text-sm whitespace-nowrap">9-12-2025</p>
+                                </div>
+                                <div class="flex items-center gap-4 justify-between">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <img src="./assets/images/blogs/user.png" alt="user" class="w-4 xl:w-7">
+                                        <span class="text-[10px] xl:text-sm">Jennifer
+                                            Tylor</span>
+                                    </div>
+                                    <div class="flex gap-2 xl:gap-4">
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            6
+                                            min
+                                            read
+                                        </p>
+                                        <p class="px-3 text-[9px] xl:text-sm border border-white/50 rounded-md">
+                                            Feb
+                                            24,2025
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- navigation buttons -->
+            <div class="absolute top-1 right-1 md:right-6 flex gap-2 z-50 p-4">
+                <div class="swiper-button-prev !static inline-flex items-center justify-center">
+                    <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-10">
+                </div>
+                <div class="swiper-button-next !static inline-flex items-center justify-center">
+                    <img src="./assets/svg-icons/slider-arrow-right.svg" alt="slider-arrow" class="w-10">
                 </div>
             </div>
         </div>
@@ -564,6 +791,35 @@
                 goTopBtn.classList.add("hidden");
             }
         });
+
+        var mySwiper = new Swiper(".relatedSwiper", {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
+        })
 
     </script>
 </body>
