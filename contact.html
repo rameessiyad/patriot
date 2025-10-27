@@ -250,15 +250,24 @@
                             class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/14 backdrop-blur-lg rounded-lg"
                             placeholder="Mobile Number" required />
 
-                        <select
-                            class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/14 backdrop-blur-lg rounded-lg"
-                            required>
-                            <option value="" disabled selected class="text-black">Select services</option>
-                            <option value="web" class="text-black">Web Development</option>
-                            <option value="app" class="text-black">App Development</option>
-                            <option value="design" class="text-black">UI/UX Design</option>
-                            <option value="marketing" class="text-black">Digital Marketing</option>
-                        </select>
+                        <div class="relative w-full">
+                            <select
+                                class="w-full px-4 pr-10 py-3 border-none outline-none focus:outline-none bg-white/14 backdrop-blur-lg rounded-lg appearance-none"
+                                required>
+                                <option value="" disabled selected class="text-black">Select services</option>
+                                <option value="web" class="text-black">Web Development</option>
+                                <option value="app" class="text-black">App Development</option>
+                                <option value="design" class="text-black">UI/UX Design</option>
+                                <option value="marketing" class="text-black">Digital Marketing</option>
+                            </select>
+
+                            <!-- custom arrow -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="white"
+                                class="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
 
                         <input type="text"
                             class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/14 backdrop-blur-lg rounded-lg"
