@@ -897,11 +897,12 @@
     </section>
 
     <!-- our benefits section -->
-    <section class="our-benefits min-h-[105vh] md:min-h-[105vh] lg:min-h-[115vh] xl:min-h-[105vh] h-auto py-6 relative"
+    <section class="our-benefits relative min-h-[105vh] md:min-h-[105vh] lg:min-h-[115vh] xl:min-h-[105vh] h-auto py-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="content container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col justify-between">
+        <div class="absolute inset-0 w-full h-full bg-black/25 md:bg-black/20 z-0"></div>
+        <div class="content container max-w-[95%] mx-auto px-3 z-4 relative md:px-10 flex flex-col justify-between">
             <div class="our-benefitsContent flex flex-col lg:flex-row gap-4 md:gap-6 justify-between lg:items-center">
-                <div class="lg:max-w-[45%] gap-4 md:gap-0 mt-18">
+                <div class="lg:max-w-[45%] gap-4 md:gap-0 mt-8 md:mt-18">
                     <h3 class="font-thin text-2xl">Our Benefits</h3>
                     <h1 class="sub-title mt-4 md:mt-0">Benefits That <br class="md:hidden lg:block" /> <span
                             class="ml-48">You Get With</span>
@@ -1210,7 +1211,7 @@
             </div>
             <!-- Navigation buttons -->
             <div
-                class="ourOffersNav absolute top-30 md:top-24 lg:top-32 xl:top-40 right-0 md:right-8 flex gap-2 z-10 p-4">
+                class="ourOffersNav absolute top-30 md:top-24 lg:top-32 xl:top-38 right-0 md:right-8 flex gap-2 z-10 p-4">
                 <div class="swiper-button-prev !static inline-flex items-center justify-center">
                     <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow"
                         class="w-14 lg:w-10 xl:w-14 h-14">
