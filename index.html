@@ -485,7 +485,8 @@
                 </div>
             </div>
             <!-- Navigation buttons -->
-            <div class="ourFleetNav absolute top-90 md:top-64 right-0 md:right-10 flex flex-col gap-2 z-10 p-4">
+            <div
+                class="ourFleetNav absolute top-90 md:top-64 xl:top-54 right-0 md:right-10 flex flex-col gap-2 z-10 p-4">
                 <div class="flex gap-2 self-end">
                     <div class="swiper-button-prev-fleet !static inline-flex items-center justify-center">
                         <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-12">
@@ -614,7 +615,8 @@
                         <div class="swiper-slide">
                             <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img01.png" alt="slider" class="">
-                                <div class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
+                                <div
+                                    class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl p-4 bg-black/40">Airport Transfers</h2>
                                     <a href="" class="ml-auto mb-2 book-now pr-3">
                                         <img src="./assets/svg-icons/arrow-top-right.svg" alt="arrow"
@@ -630,7 +632,8 @@
                         <div class="swiper-slide">
                             <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img02.png" alt="slider" class="">
-                                <div class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
+                                <div
+                                    class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl p-4 bg-black/40">Hotel Transfers</h2>
                                     <a href="" class="ml-auto mb-2 book-now pr-3">
                                         <img src="./assets/svg-icons/arrow-top-right.svg" alt="arrow"
@@ -646,7 +649,8 @@
                         <div class="swiper-slide">
                             <div class="relative">
                                 <img src="./assets/images/home/our-services/slider-img03.png" alt="slider" class="">
-                                <div class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
+                                <div
+                                    class="absolute top-0 left-0 w-full text-white pb-3 h-full flex flex-col justify-between">
                                     <h2 class="text-3xl p-4 bg-black/40">Corporate Events</h2>
                                     <a href="" class="ml-auto mb-2 book-now pr-3">
                                         <img src="./assets/svg-icons/arrow-top-right.svg" alt="arrow"
@@ -712,7 +716,7 @@
                 </div>
 
                 <!-- Navigation buttons -->
-                <div class="absolute top-4 right-0 flex gap-2 z-50 p-4">
+                <div class="absolute top-4 right-0 flex gap-2 z-40 p-4">
                     <div class="swiper-button-prev !static inline-flex items-center justify-center">
                         <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow" class="w-12">
                     </div>
@@ -893,7 +897,7 @@
     </section>
 
     <!-- our benefits section -->
-    <section class="our-benefits min-h-[105vh] md:min-h-[105vh] lg:min-h-[115vh] xl:min-h-screen h-auto py-6 relative"
+    <section class="our-benefits min-h-[105vh] md:min-h-[105vh] lg:min-h-[115vh] xl:min-h-[105vh] h-auto py-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="content container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col justify-between">
             <div class="our-benefitsContent flex flex-col lg:flex-row gap-4 md:gap-6 justify-between lg:items-center">
@@ -1206,7 +1210,7 @@
             </div>
             <!-- Navigation buttons -->
             <div
-                class="ourOffersNav absolute top-30 md:top-20 lg:top-38 xl:top-36 right-0 md:right-8 flex gap-2 z-10 p-4">
+                class="ourOffersNav absolute top-30 md:top-20 lg:top-38 xl:top-32 right-0 md:right-8 flex gap-2 z-10 p-4">
                 <div class="swiper-button-prev !static inline-flex items-center justify-center">
                     <img src="./assets/svg-icons/slider-arrow-left.svg" alt="slider-arrow"
                         class="w-14 lg:w-10 xl:w-14 h-14">
@@ -2113,9 +2117,9 @@
             spaceBetween: 20,
             slidesPerGroup: 3, // jump 3 at a time
             loop: false,
-            pagination: {
-                el: ".ourServicesSlider .swiper-pagination",
-                clickable: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
             },
             navigation: {
                 nextEl: ".swiper-button-next",
