@@ -109,24 +109,23 @@
     </div>
 
     <!-- hero section -->
-    <section class="relative min-h-screen" id="about">
+    <section class="relative min-h-screen" id="service">
         <!-- Background video -->
-        <video autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover"
-            id="aboutVideo">
+        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
             <source src="./assets/videos/contact-banner.mp4" type="video/mp4" />
         </video>
 
         <!-- Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/90 to-black/10"></div>
+        <div class="absolute inset-0 bg-black/44"></div>
 
         <!-- Content container -->
         <div
-            class="relative z-10 w-full flex flex-col items-start justify-center min-h-screen px-4 md:px-10 lg:px-20 pt-30">
+            class="content relative z-10 w-full flex flex-col items-start justify-around min-h-screen px-4 md:px-10 lg:px-20 pt-30">
 
             <!-- About text -->
-            <div class="max-w-[90%] mb-20 md:mb-22 lg:mb-0 md:max-w-2xl flex flex-col gap-4 md:gap-6 text-white">
-                <div class="flex gap-2 py-1 about-us-title-div w-fit pr-4">
-                    <span class="text-xl md:text-2xl lg:text-3xl">Contact Us</span>
+            <div class="max-w-full xl:max-w-[40%] flex flex-col gap-4 md:gap-6 text-white mb-30 md:mb-10 lg:mb-0">
+                <div class="flex gap-2 py-1 about-us-title-div w-fit">
+                    <span class="text-xl md:text-2xl lg:text-3xl pr-4">Contact Us</span>
                 </div>
 
                 <h1 class="text-4xl lg:text-5xl leading-tight lg:leading-[1.3]">
@@ -145,9 +144,9 @@
 
             <!-- call to action box -->
             <div
-                class="w-full flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mt-30 md:mt-90 lg:mt-100 xl:mt-40">
+                class="calltoActionAbout w-full flex flex-col lg:flex-row items-center mx-auto justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-4 mb-30 md:mb-0">
 
-                <p class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.76rem] text-center md:text-left xl:ml-14">
+                <p class="text-lg sm:text-xl md:text-[1.2rem] xl:text-[1.5rem] text-center md:text-left xl:ml-14">
                     Let’s start your journey with a simple conversation
                 </p>
                 <a href=""
@@ -168,10 +167,12 @@
         </div>
     </section>
 
+
     <!-- contact form section -->
     <section class="min-h-screen py-8"
         style="background: url('./assets/images/contact/contact-form-banner.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-        <div class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row justify-between gap-4 md:gap-24 py-10">
+        <div
+            class="container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row justify-between gap-4 md:gap-24 py-10">
             <div class="flex flex-col justify-between gap-8 w-full lg:w-[50%]">
                 <h1 class="sub-title">
                     We’re Just a <br /> <span class="ml-3x0"> Message Away </span>
@@ -230,8 +231,7 @@
 
             <!-- contact form -->
             <div class="w-full lg:w-[50%] flex xl:justify-end">
-                <form action=""
-                    class="bg-white/14 rounded-lg p-5 flex flex-col gap-4 w-full xl:w-[70%] lg:mt-4">
+                <form action="" class="bg-white/14 rounded-lg p-5 flex flex-col gap-4 w-full xl:w-[70%] lg:mt-4">
                     <div>
                         <h2 class="text-3xl">Your Details</h2>
                         <p class="text-sm font-thin mt-2">Let us know how to get back to you.</p>
