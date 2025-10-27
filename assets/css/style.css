@@ -217,6 +217,35 @@ li:hover {
     }
 }
 
+.book-now-btn-overview {
+    display: inline-flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    padding: 4px 6px;
+    width: 234px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.03));
+    backdrop-filter: blur(8px);
+    font-size: 1.5rem;
+    transition: all ease 0.3s;
+
+    &:hover {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.02));
+        color: var(--color-primary);
+
+        .arrow-default {
+            display: none;
+        }
+
+        .arrow-hover {
+            display: block;
+        }
+    }
+}
+
 .book-now-btn-service-sub {
     display: none;
 }
@@ -865,6 +894,12 @@ footer {
 @media screen and ((min-width: 769px) and (max-width: 817px)) {
     .ourMissionCardIcon {
         margin-left: -5px !important;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .book-now-btn-overview {
+        display: none;
     }
 }
 
