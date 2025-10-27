@@ -657,7 +657,8 @@
 
     <!-- how it works section -->
     <section class="how-it-works-service bg-black min-h-screen xl:min-h-[90vh] py-8 xl:py-12">
-        <div class="content container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row xl:items-center justify-between">
+        <div
+            class="content container max-w-[95%] mx-auto px-3 md:px-10 flex flex-col lg:flex-row xl:items-center justify-between">
             <div class="flex flex-col lg:flex-row gap-14 justify-between lg:items-center">
                 <div class="flex flex-col gap-4 lg:w-[50%]">
                     <div class="max-w-2xl">
@@ -681,74 +682,59 @@
                 </div>
 
                 <div class="flex lg:w-[50%] lg:justify-end">
-                    <div class="grid grid-cols-[auto_1fr] gap-10 relative lg:mt-10">
+                    <div class="grid grid-cols-[auto_1fr] gap-12 relative lg:mt-10" id="steps-container">
                         <!-- Vertical line -->
                         <div class="absolute left-[4.3rem] top-6 bottom-6 w-[2px] bg-white/10"></div>
 
                         <!-- Numbers + Dots -->
-                        <div class="flex flex-col justify-between">
-                            <div class="relative flex items-center">
-                                <span
-                                    class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent">1</span>
-                                <div
-                                    class="absolute left-[4.3rem] -translate-x-1/2 w-5 h-5 rounded-full bg-red-500 shadow-[0_0_15px_rgba(239,68,68,0.7)]">
+                        <div class="flex flex-col justify-between gap-4 relative" id="steps-numbers">
+                            <!-- step items (1–5) -->
+                            <template id="number-template">
+                                <div class="relative flex items-center step-item">
+                                    <span
+                                        class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent step-number"></span>
+                                    <div
+                                        class="absolute left-[4.3rem] -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-white/20 step-dot transition-all duration-500">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="relative flex items-center">
-                                <span
-                                    class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent">2</span>
-                                <div
-                                    class="absolute left-[4.3rem] -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-white/20">
-                                </div>
-                            </div>
-                            <div class="relative flex items-center">
-                                <span
-                                    class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent">3</span>
-                                <div
-                                    class="absolute left-[4.3rem] -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-white/20">
-                                </div>
-                            </div>
-                            <div class="relative flex items-center">
-                                <span
-                                    class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent">4</span>
-                                <div
-                                    class="absolute left-[4.3rem] -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-white/20">
-                                </div>
-                            </div>
-                            <div class="relative flex items-center">
-                                <span
-                                    class="text-7xl xl:text-8xl bg-gradient-to-b from-white/50 to-white/1 bg-clip-text text-transparent">5</span>
-                                <div
-                                    class="absolute left-[4.3rem] -translate-x-1/2 w-4 h-4 rounded-full bg-white border-2 border-white/20">
-                                </div>
-                            </div>
+                            </template>
                         </div>
 
-                        <!-- Texts aligned with numbers -->
-                        <div class="flex flex-col justify-between">
-                            <div class="bg-gradient-to-b from-white/3 to-white/2 rounded-xl border border-white/6 p-4">
+                        <!-- Texts -->
+                        <div class="flex flex-col justify-between gap-4" id="steps-texts">
+                            <div
+                                class="step-text bg-gradient-to-b from-white/3 to-white/2 rounded-xl border border-white/6 p-4 transition-all duration-500">
                                 <h3 class="text-red-500 text-2xl font-semibold mb-3">Select Route</h3>
-                                <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium fleet
+                                <p class="step-para text-white/70">Experience luxury travel with Patriot Limousine's
+                                    premium fleet
                                     featuring Experience luxury travel with Patriot.</p>
                             </div>
-                            <div class="bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4">
+                            <div
+                                class="step-text bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4 transition-all duration-500">
                                 <h3 class="text-white text-2xl font-semibold mb-3">Choose Vehicle</h3>
-                                <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium fleet
+                                <p class="step-para text-white/70">Experience luxury travel with Patriot Limousine's
+                                    premium fleet
                                     featuring Experience luxury travel with Patriot.</p>
                             </div>
-                            <div class="bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4">
+                            <div
+                                class="step-text bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4 transition-all duration-500">
                                 <h3 class="text-white text-2xl font-semibold mb-3">Enter Details</h3>
-                                <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium fleet
+                                <p class="step-para text-white/70">Experience luxury travel with Patriot Limousine's
+                                    premium fleet
                                     featuring Experience luxury travel with Patriot.</p>
                             </div>
-                            <div class="bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4">
+                            <div
+                                class="step-text bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4 transition-all duration-500">
                                 <h3 class="text-white text-2xl font-semibold mb-3">Confirm & Pay</h3>
-                                <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium fleet
+                                <p class="step-para text-white/70">Experience luxury travel with Patriot Limousine's
+                                    premium fleet
                                     featuring Experience luxury travel with Patriot.</p>
                             </div>
-                            <div class="bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4">
+                            <div
+                                class="step-text bg-[#0d0d0d] rounded-xl border border-white/6 opacity-80 p-4 transition-all duration-500">
                                 <h3 class="text-white text-2xl font-semibold mb-3">Track Status</h3>
-                                <p class="text-white/70">Experience luxury travel with Patriot Limousine's premium fleet
+                                <p class="step-para text-white/70">Experience luxury travel with Patriot Limousine's
+                                    premium fleet
                                     featuring Experience luxury travel with Patriot.</p>
                             </div>
                         </div>
@@ -1350,7 +1336,124 @@
             console.log("Desktop selected filters:", selectedValues);
         });
 
+        // Step-by-step animation
 
+        // Dynamically add numbers 1–5
+        const numbersContainer = document.getElementById("steps-numbers");
+        const numberTemplate = document.getElementById("number-template").content;
+        for (let i = 1; i <= 5; i++) {
+            const clone = numberTemplate.cloneNode(true);
+            clone.querySelector(".step-number").textContent = i;
+            numbersContainer.appendChild(clone);
+        }
+
+        const dots = document.querySelectorAll(".step-dot");
+        const texts = document.querySelectorAll(".step-text");
+        const numbers = document.querySelectorAll(".step-number");
+
+        let currentStep = 0;
+
+        function activateStep(index) {
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.add(
+                        "bg-white",
+                        "border-8",
+                        "p-2",
+                        "border-gray-500",
+                        "shadow-[0_0_15px_rgba(239,68,68,0.7)]",
+                        "w-5",
+                        "h-5"
+                    );
+                    dot.classList.remove("border-white/20");
+                } else {
+                    dot.classList.remove(
+                        "bg-white",
+                        "border-8",
+                        "p-2",
+                        "border-gray-500",
+                        "shadow-[0_0_15px_rgba(239,68,68,0.7)]",
+                        "w-5",
+                        "h-5"
+                    );
+                    dot.classList.add("bg-white", "border-white/20");
+                }
+            });
+
+            texts.forEach((text, i) => {
+                // select the actual title and paragraph nodes inside this text block
+                const title = text.querySelector("h3");
+                const para = text.querySelector(".step-para");
+                const number = numbers[i];
+
+                if (i === index) {
+                    // Active: make title and para red, number solid red
+                    text.classList.remove("opacity-80");
+                    text.classList.add("border-red-500");
+
+                    if (title) {
+                        title.classList.remove("text-white");
+                        title.classList.add("text-red-500");
+                    }
+                    if (para) {
+                        para.classList.remove("text-white/70");
+                        para.classList.add("text-red-500");
+                    }
+
+                    // Number -> solid red (remove gradient classes)
+                    if (number) {
+                        number.classList.remove(
+                            "bg-gradient-to-b",
+                            "from-white/50",
+                            "to-white/1",
+                            "bg-clip-text",
+                            "text-transparent"
+                        );
+                        number.classList.add(
+                            "bg-gradient-to-b",
+                            "from-red-500",
+                            "to-black/1",
+                            "bg-clip-text",
+                            "text-transparent"
+                        );
+                    }
+                } else {
+                    // Inactive: restore defaults
+                    text.classList.remove("border-red-500");
+                    text.classList.add("opacity-80");
+
+                    if (title) {
+                        title.classList.remove("text-red-500");
+                        title.classList.add("text-white");
+                    }
+                    if (para) {
+                        para.classList.remove("text-red-500");
+                        para.classList.add("text-white/70");
+                    }
+
+                    // Number -> restore gradient look
+                    if (number) {
+                        number.classList.add(
+                            "bg-gradient-to-b",
+                            "from-white/50",
+                            "to-white/1",
+                            "bg-clip-text",
+                            "text-transparent"
+                        );
+                        number.classList.remove("text-red-500");
+                    }
+                }
+            });
+        }
+
+        // Animate steps in a loop
+        function nextStep() {
+            activateStep(currentStep);
+            currentStep = (currentStep + 1) % dots.length;
+        }
+
+        activateStep(0);
+        setInterval(nextStep, 1500);
     </script>
 
 </body>
