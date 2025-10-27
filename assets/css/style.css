@@ -565,9 +565,7 @@ footer {
         margin-top: 40px;
     }
 
-    .ourOffersNav {
-        margin-top: 45px;
-    }
+   
 
     .footer {
         padding-bottom: 20px;
@@ -578,9 +576,7 @@ footer {
     .our-offers {
         min-height: 44vh !important;
 
-        .ourOffersNav {
-            margin-top: 1px !important;
-        }
+        
     }
 
     /* .calltoAction {
