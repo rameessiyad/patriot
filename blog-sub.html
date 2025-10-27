@@ -210,7 +210,8 @@
                 </div>
 
                 <!-- blog detail -->
-                <div class="md:w-[75%] h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide">
+                <div id="scrollableDiv"
+                    class="md:w-[75%] h-full flex flex-col gap-3 overflow-y-hidden scrollbar-hide transition-all duration-300">
                     <div class="md:mt-14 xl:mt-20">
                         <h2 class="md:text-3xl xl:text-4xl max-w-xl">
                             Why Patriot Limousine is the Top Limo Company in Dubai
@@ -788,6 +789,21 @@
             } else {
                 goTopBtn.classList.remove("block");
                 goTopBtn.classList.add("hidden");
+            }
+        });
+
+        const scrollableDiv = document.getElementById('scrollableDiv');
+
+        window.addEventListener('scroll', () => {
+            const rect = scrollableDiv.getBoundingClientRect();
+
+            // if the top of the div is at or above the viewport top
+            if (rect.top <= 2) {
+                scrollableDiv.classList.add('overflow-y-auto');
+                scrollableDiv.classList.remove('overflow-y-hidden');
+            } else {
+                scrollableDiv.classList.add('overflow-y-hidden');
+                scrollableDiv.classList.remove('overflow-y-auto');
             }
         });
 
