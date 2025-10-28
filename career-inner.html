@@ -112,9 +112,9 @@
         <div class="content container max-w-[95%] mx-auto px-3 md:px-10 mt-18">
             <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 lg:gap-10 py-4 lg:py-10">
                 <div class="lg:w-[50%]">
-                    <a href="" class="px-2 py-1 flex gap-3 rounded-lg text-sm border border-white text-white w-40">
+                    <a href="" class="px-2 py-1 flex gap-3 rounded-full md:rounded-lg text-sm border border-white text-white w-fit md:w-40">
                         <img src="./assets/svg-icons/go-back.svg" alt="go-back" class="w-4">
-                        <p>Click to Go Back</p>
+                        <p class="hidden md:block">Click to Go Back</p>
                     </a>
 
                     <div class="flex flex-col gap-6 mt-5">
@@ -203,20 +203,20 @@
 
                         <div class="input-container flex flex-col gap-4 w-full">
                             <input type="text"
-                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg"
                                 placeholder="Full Name" required />
 
                             <input type="email"
-                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg"
                                 placeholder="Email Id" required />
 
                             <input type="tel"
-                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg"
                                 placeholder="Mobile Number" required />
 
                             <div class="relative w-full">
                                 <select
-                                    class="w-full px-4 pr-10 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg appearance-none"
+                                    class="w-full px-4 pr-10 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg appearance-none"
                                     required>
                                     <option value="" disabled selected class="text-black">Select Job Title</option>
                                     <option value="web" class="text-black">Web Development</option>
@@ -234,11 +234,11 @@
                             </div>
 
                             <textarea name="" id="" rows="3"
-                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg"
                                 placeholder="Message"></textarea>
 
                             <input type="file"
-                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-gradient-to-r from-white/3 to-black/30 backdrop-blur-lg rounded-lg"
                                 required />
 
                             <div class="flex flex-col gap-4 md:flex-row md:items-center justify-between">
@@ -246,7 +246,7 @@
 
                                 <button type="submit"
                                     class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
-                                    <span class="text-sm">Send a message</span>
+                                    <span class="text-sm">Apply Now</span>
                                     <img src="./assets/svg-icons/arrow-top.svg" alt="arrow"
                                         class="w-4 h-4 md:w-6 md:h-6">
                                 </button>
