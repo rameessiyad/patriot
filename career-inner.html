@@ -109,37 +109,151 @@
 
     <!-- career section -->
     <section class="career-view h-auto py-8 bg-gradient-to-r from-[#272727] to-[#1C1717]">
-        <div class="content container max-w-[95%] mx-auto px-3 md:px-10">
-            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 lg:gap-10">
+        <div class="content container max-w-[95%] mx-auto px-3 md:px-10 mt-18">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 lg:gap-10 py-4 lg:py-10">
                 <div class="lg:w-[50%]">
                     <a href="" class="px-2 py-1 flex gap-3 rounded-lg text-sm border border-white text-white w-40">
                         <img src="./assets/svg-icons/go-back.svg" alt="go-back" class="w-4">
                         <p>Click to Go Back</p>
                     </a>
 
-                    <div class="flex flex-col gap-3 mt-5">
+                    <div class="flex flex-col gap-6 mt-5">
                         <div>
                             <h3 class="text-3xl">We’re Hiring: Human Resource Manager</h3>
-                            <div class="mt-3 flex gap-4">
+                            <div class="mt-3 flex gap-10 font-light">
                                 <div class="flex gap-2 border-b border-white/60">
-                                    <img src="./assets/svg-icons/career-location.svg" alt="location" class="w-6">
+                                    <img src="./assets/svg-icons/career-location.svg" alt="location" class="w-4">
                                     <p class="text-lg font-extralight">Dubai</p>
                                 </div>
 
-                                 <div class="flex gap-2 border-b border-white/60">
+                                <div class="flex gap-2 border-b border-white/60">
                                     <img src="./assets/svg-icons/package.svg" alt="package" class="w-6">
                                     <p class="text-lg font-extralight">3k - 4k AED</p>
+                                </div>
 
-                                 <div class="border-b border-white/60">
+                                <div class="border-b border-white/60">
                                     <p class="text-lg font-extralight">Full Time</p>
                                 </div>
                             </div>
                         </div>
+
+                        <div>
+                            <h2 class="text-2xl">Job Description</h2>
+                            <div class="mt-3 font-light">
+                                <p class="text-lg leading-8">
+                                    We’re looking for a passionate and experienced Human Resource Manager to join our
+                                    growing team at Patriot Limousine. The ideal candidate will lead all aspects of HR
+                                    operations — from talent acquisition and employee relations to performance
+                                    management and company culture
+                                </p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl">Key Responsibilities:</h2>
+                            <ul class="mt-3 list-disc pl-5 text-lg font-light">
+                                <li>
+                                    <p>Oversee recruitment, onboarding, and training processes</p>
+                                </li>
+                                <li>
+                                    <p>Develop and implement HR strategies aligned with company goals</p>
+                                </li>
+                                <li>
+                                    <p>Maintain compliance with UAE labor laws and regulations</p>
+                                </li>
+                                <li>
+                                    <p>Manage employee relations and foster a positive workplace culture</p>
+                                </li>
+                                <li>
+                                    <p>Handle payroll coordination and HR documentation</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 class="text-2xl">Requirements:</h2>
+                            <ul class="mt-3 list-disc pl-5 text-lg font-light">
+                                <li>
+                                    <p>Bachelor’s degree in Human Resources, Business Administration, or related field
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Minimum 3–5 years of HR management experience</p>
+                                </li>
+                                <li>
+                                    <p>Strong knowledge of HR policies and UAE labor laws</p>
+                                </li>
+                                <li>
+                                    <p>Excellent communication, leadership, and organizational skills</p>
+                                </li>
+                                <li>
+                                    <p>Passion for people and continuous improvement</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
 
-                    
+
                 </div>
-                <div class="lg:w-[50%]"></div>
+                <div class="w-full lg:w-[50%] flex lg:justify-end">
+                    <!-- form -->
+                    <form action=""
+                        class="rounded-xl p-4 bg-white/20 backdrop-blur-xl flex flex-col items-center gap-4 w-full xl:w-[70%]">
+                        <h2 class="text-center text-3xl">Apply for this Position</h2>
+
+                        <div class="input-container flex flex-col gap-4 w-full">
+                            <input type="text"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                placeholder="Full Name" required />
+
+                            <input type="email"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                placeholder="Email Id" required />
+
+                            <input type="tel"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                placeholder="Mobile Number" required />
+
+                            <div class="relative w-full">
+                                <select
+                                    class="w-full px-4 pr-10 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg appearance-none"
+                                    required>
+                                    <option value="" disabled selected class="text-black">Select Job Title</option>
+                                    <option value="web" class="text-black">Web Development</option>
+                                    <option value="app" class="text-black">App Development</option>
+                                    <option value="design" class="text-black">UI/UX Design</option>
+                                    <option value="marketing" class="text-black">Digital Marketing</option>
+                                </select>
+
+                                <!-- custom arrow -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                    stroke="white"
+                                    class="w-5 h-5 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </div>
+
+                            <textarea name="" id="" rows="3"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                placeholder="Message"></textarea>
+
+                            <input type="file"
+                                class="w-full px-4 py-3 border-none outline-none focus:outline-none bg-white/3 backdrop-blur-lg rounded-lg"
+                                required />
+
+                            <div class="flex flex-col gap-4 md:flex-row md:items-center justify-between">
+                                <span>Captcha</span>
+
+                                <button type="submit"
+                                    class="flex items-center gap-2 bg-[var(--color-primary)] text-white px-4 py-3 rounded-xl justify-center md:justify-end hover:bg-black hover:border border-white transition duration-300 text-sm sm:text-base">
+                                    <span class="text-sm">Send a message</span>
+                                    <img src="./assets/svg-icons/arrow-top.svg" alt="arrow"
+                                        class="w-4 h-4 md:w-6 md:h-6">
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
