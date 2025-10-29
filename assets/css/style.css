@@ -565,7 +565,7 @@ footer {
         margin-top: 40px;
     }
 
-   
+
 
     .footer {
         padding-bottom: 20px;
@@ -576,7 +576,7 @@ footer {
     .our-offers {
         min-height: 44vh !important;
 
-        
+
     }
 
     /* .calltoAction {
@@ -1044,10 +1044,6 @@ footer {
         height: 38px !important;
     }
 
-    .book-now-btn {
-        display: none;
-    }
-
     .book-now-btn-service {
         display: inline-flex;
         align-items: center;
@@ -1186,6 +1182,12 @@ footer {
         }
     }
 
+}
+
+@media screen and (max-width: 760px) {
+    .book-now-btn {
+        display: none;
+    }
 }
 
 @media screen and ((min-width: 450px) and (max-width: 767px)) {
