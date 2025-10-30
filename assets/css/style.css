@@ -621,11 +621,7 @@ footer {
     }
 
     header {
-        .nav-items {
-            .nav-item {
-                font-size: 0.87rem !important;
-            }
-        }
+       
 
         .header-button {
             padding: 8px 10px !important;
