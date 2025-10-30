@@ -811,7 +811,7 @@
             const rect = scrollableDiv.getBoundingClientRect();
 
             // if the top of the div is at or above the viewport top
-            if (rect.top <= 2) {
+            if (rect.top <= 50) {
                 scrollableDiv.classList.add('overflow-y-auto');
                 scrollableDiv.classList.remove('overflow-y-hidden');
             } else {
