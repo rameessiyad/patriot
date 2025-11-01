@@ -29,6 +29,38 @@ body {
     /* Firefox */
 }
 
+@keyframes orbitOut {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-80px, -15px) scale(0.9) rotate(-1deg);
+    }
+}
+
+@keyframes orbitIn {
+    0% {
+        opacity: 0;
+        transform: translate(80px, 80px) scale(0.8) rotate(1deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0) scale(1) rotate(0deg);
+    }
+}
+
+.orbit-out {
+    animation: orbitOut 0.8s ease-in forwards;
+}
+
+.orbit-in {
+    animation: orbitIn 0.8s ease-out forwards;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
     display: none;
@@ -565,7 +597,7 @@ footer {
 }
 
 @media screen and (min-height: 1023px) and (max-height: 1375px) {
-    
+
 
     .ourFleetNav {
         margin-top: 40px;
@@ -629,7 +661,7 @@ footer {
     }
 
     header {
-       
+
 
         .header-button {
             padding: 8px 10px !important;

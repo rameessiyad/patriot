@@ -762,7 +762,7 @@
 
             <div class="mt-20 hidden lg:flex items-center">
                 <div class="car-card-container grid grid-cols-1 md:grid-cols-2 gap-14 w-full">
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -799,7 +799,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -836,7 +836,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -873,7 +873,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -910,7 +910,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -947,7 +947,7 @@
                             </a>
                         </div>
                     </div>
-                    
+
                     <div
                         class="car-card relative w-full h-90 lg:h-100 xl:h-120 bg-gradient-to-br from-white/40 to-black/1 backdrop-blur-md hover:bg-gradient-to-br hover:from-gray-900 hover:to-white/10 p-3 rounded-2xl flex flex-col gap-2 items-center border border-white/20">
                         <div class="flex justify-between px-2 w-full items-center">
@@ -1620,7 +1620,7 @@
             }
         })
 
-     
+
         const dropdownMenu = document.getElementById("dropdownMenu");
         const allCheckbox = document.getElementById("all");
         const optionCheckboxes = dropdownMenu.querySelectorAll(".custom-checkbox:not(#all)");
@@ -1736,17 +1736,14 @@
             console.log("Desktop selected filters:", selectedValues);
         });
 
-        // Select all cards
         const cards = document.querySelectorAll('.car-card-handy');
-
-        // Select each car image and name separately
         const carImages = Array.from(cards).map(card => card.querySelector('img[alt="slider-img"]'));
         const carNames = Array.from(cards).map(card => card.querySelector('.absolute p'));
 
         function rotateCars() {
-            // Fade out effect
-            carImages.forEach(img => img.style.opacity = 0);
-            carNames.forEach(name => name.style.opacity = 0);
+            // Start rotation-out animation
+            carImages.forEach(img => img.classList.add('orbit-out'));
+            carNames.forEach(name => name.classList.add('orbit-out'));
 
             setTimeout(() => {
                 // Rotate anticlockwise — move first to last
@@ -1758,22 +1755,28 @@
                     carNames[i].textContent = carNames[i + 1].textContent;
                 }
 
-                // Move first to last position
                 carImages[carImages.length - 1].src = firstImgSrc;
                 carNames[carNames.length - 1].textContent = firstName;
 
-                // Fade back in
-                carImages.forEach(img => img.style.opacity = 1);
-                carNames.forEach(name => name.style.opacity = 1);
-            }, 500); // matches fade duration
+                // Animate new ones coming in
+                carImages.forEach(img => {
+                    img.classList.remove('orbit-out');
+                    img.classList.add('orbit-in');
+                });
+                carNames.forEach(name => {
+                    name.classList.remove('orbit-out');
+                    name.classList.add('orbit-in');
+                });
+
+                setTimeout(() => {
+                    carImages.forEach(img => img.classList.remove('orbit-in'));
+                    carNames.forEach(name => name.classList.remove('orbit-in'));
+                }, 800);
+            }, 800);
         }
 
-        // Add smooth fade transition
-        carImages.forEach(img => (img.style.transition = 'opacity 0.6s ease'));
-        carNames.forEach(name => (name.style.transition = 'opacity 0.6s ease'));
+        setInterval(rotateCars, 2500);
 
-        // Rotate every 4 seconds
-        setInterval(rotateCars, 4000);
     </script>
 </body>
 
