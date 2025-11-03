@@ -1736,46 +1736,142 @@
             console.log("Desktop selected filters:", selectedValues);
         });
 
-        const cards = document.querySelectorAll('.car-card-handy');
-        const carImages = Array.from(cards).map(card => card.querySelector('img[alt="slider-img"]'));
-        const carNames = Array.from(cards).map(card => card.querySelector('.absolute p'));
+        // Car carousel rotation functionality
+        class CarCarousel {
+            constructor() {
+                this.isAnimating = false;
+                this.autoRotateInterval = null;
+            }
 
-        function rotateCars() {
-            // Start rotation-out animation
-            carImages.forEach(img => img.classList.add('orbit-out'));
-            carNames.forEach(name => name.classList.add('orbit-out'));
+            // Rotate anticlockwise (move last car's image and name to first position)
+            rotateAnticlockwise() {
+                if (this.isAnimating) return;
 
-            setTimeout(() => {
-                // Rotate anticlockwise — move first to last
-                const firstImgSrc = carImages[0].src;
-                const firstName = carNames[0].textContent;
+                this.isAnimating = true;
+                const cards = document.querySelectorAll('.car-card-handy');
 
-                for (let i = 0; i < carImages.length - 1; i++) {
-                    carImages[i].src = carImages[i + 1].src;
-                    carNames[i].textContent = carNames[i + 1].textContent;
+                if (cards.length === 0) {
+                    this.isAnimating = false;
+                    return;
                 }
 
-                carImages[carImages.length - 1].src = firstImgSrc;
-                carNames[carNames.length - 1].textContent = firstName;
+                // Get all car images and names
+                const carImages = [];
+                const carNames = [];
 
-                // Animate new ones coming in
-                carImages.forEach(img => {
-                    img.classList.remove('orbit-out');
-                    img.classList.add('orbit-in');
+                cards.forEach(card => {
+                    const img = card.querySelector('img[alt="slider-img"]');
+                    const name = card.querySelector('.absolute.bottom-0 p');
+
+                    if (img && name) {
+                        carImages.push(img.src);
+                        carNames.push(name.textContent.trim());
+                    }
                 });
-                carNames.forEach(name => {
-                    name.classList.remove('orbit-out');
-                    name.classList.add('orbit-in');
+
+                // Add fade-out animation to images and names only
+                cards.forEach((card) => {
+                    const img = card.querySelector('img[alt="slider-img"]');
+                    const name = card.querySelector('.absolute.bottom-0 p');
+
+                    if (img) {
+                        img.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        img.style.opacity = '0';
+                        img.style.transform = 'scale(0.9)';
+                    }
+                    if (name) {
+                        name.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                        name.style.opacity = '0';
+                        name.style.transform = 'translateY(-10px)';
+                    }
                 });
 
                 setTimeout(() => {
-                    carImages.forEach(img => img.classList.remove('orbit-in'));
-                    carNames.forEach(name => name.classList.remove('orbit-in'));
-                }, 800);
-            }, 800);
+                    // Rotate arrays anticlockwise (move last to first)
+                    const lastImage = carImages.pop();
+                    const lastName = carNames.pop();
+                    carImages.unshift(lastImage);
+                    carNames.unshift(lastName);
+
+                    // Update images and names
+                    cards.forEach((card, index) => {
+                        const img = card.querySelector('img[alt="slider-img"]');
+                        const name = card.querySelector('.absolute.bottom-0 p');
+
+                        if (img) {
+                            img.src = carImages[index];
+                        }
+                        if (name) {
+                            name.textContent = carNames[index];
+                        }
+                    });
+
+                    // Fade back in
+                    setTimeout(() => {
+                        cards.forEach((card) => {
+                            const img = card.querySelector('img[alt="slider-img"]');
+                            const name = card.querySelector('.absolute.bottom-0 p');
+
+                            if (img) {
+                                img.style.opacity = '1';
+                                img.style.transform = 'scale(1)';
+                            }
+                            if (name) {
+                                name.style.opacity = '1';
+                                name.style.transform = 'translateY(0)';
+                            }
+                        });
+                    }, 50);
+
+                    setTimeout(() => {
+                        this.isAnimating = false;
+                    }, 350);
+                }, 300);
+            }
+
+            // Start auto-rotation
+            startAutoRotate(interval = 3000) {
+                this.stopAutoRotate();
+                this.autoRotateInterval = setInterval(() => {
+                    this.rotateAnticlockwise();
+                }, interval);
+            }
+
+            // Stop auto-rotation
+            stopAutoRotate() {
+                if (this.autoRotateInterval) {
+                    clearInterval(this.autoRotateInterval);
+                    this.autoRotateInterval = null;
+                }
+            }
         }
 
-        setInterval(rotateCars, 2500);
+        // Initialize carousel
+        const carCarousel = new CarCarousel();
+
+        // Start auto-rotation every 3 seconds (adjust as needed)
+        carCarousel.startAutoRotate(3000);
+
+        // Optional: Add manual control button
+        // Example: <button id="rotateBtn">Rotate Cars</button>
+        const rotateBtn = document.getElementById('rotateBtn');
+        if (rotateBtn) {
+            rotateBtn.addEventListener('click', () => {
+                carCarousel.rotateAnticlockwise();
+            });
+        }
+
+        // Optional: Pause on hover
+        const cardsContainer = document.querySelector('.xl\\:flex.items-center.justify-between');
+        if (cardsContainer) {
+            cardsContainer.addEventListener('mouseenter', () => {
+                carCarousel.stopAutoRotate();
+            });
+
+            cardsContainer.addEventListener('mouseleave', () => {
+                carCarousel.startAutoRotate(3000);
+            });
+        }
 
     </script>
 </body>

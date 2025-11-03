@@ -29,36 +29,46 @@ body {
     /* Firefox */
 }
 
-@keyframes orbitOut {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0) scale(1) rotate(0deg);
-    }
 
-    100% {
+/* Car image and name animation styles */
+.car-card-handy img[alt="slider-img"] {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: opacity, transform;
+}
+
+.car-card-handy .absolute.bottom-0 p {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    will-change: opacity, transform;
+}
+
+/* Optional: Add smooth hover effects */
+.car-card-handy img[alt="slider-img"]:hover {
+    transform: scale(1.05);
+}
+
+/* Fade animation for smoother transitions */
+@keyframes fadeInScale {
+    from {
         opacity: 0;
-        transform: translate(-80px, -15px) scale(0.9) rotate(-1deg);
-    }
-}
-
-@keyframes orbitIn {
-    0% {
-        opacity: 0;
-        transform: translate(80px, 80px) scale(0.8) rotate(1deg);
+        transform: scale(0.9);
     }
 
-    100% {
+    to {
         opacity: 1;
-        transform: translate(0, 0) scale(1) rotate(0deg);
+        transform: scale(1);
     }
 }
 
-.orbit-out {
-    animation: orbitOut 0.8s ease-in forwards;
-}
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
 
-.orbit-in {
-    animation: orbitIn 0.8s ease-out forwards;
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .swiper-button-next::after,
