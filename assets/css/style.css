@@ -622,14 +622,14 @@ header {
 .our-mission-card-container::after {
     content: "";
     position: absolute;
-    width: 3rem;
+    width: 2.7rem;
     height: 3.2rem;
     /* background-color: red; */
     top: 0.8rem;
-    left: 0.8rem;
+    left: 1.1rem;
     border-bottom-right-radius: 14px;
-    border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 0.2px solid rgba(255, 255, 255, 0.5);
 }
 
 .our-mission-card-container {
