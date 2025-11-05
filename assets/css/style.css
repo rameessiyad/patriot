@@ -585,7 +585,7 @@ header {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-right: 2px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
     position: relative;
 
     .top-div {
@@ -594,7 +594,7 @@ header {
         width: 85.2%;
         margin-left: auto;
         border-top-left-radius: 20px;
-        border-top: 2px solid rgba(255, 255, 255, 0.5);
+        border-top: 1.5px solid rgba(255, 255, 255, 0.5);
 
         h3 {
             color: #fff;
@@ -611,8 +611,8 @@ header {
         /* background-color: blue; */
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-        border-left: 2px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.5);
+        border-left: 1.5px solid rgba(255, 255, 255, 0.5);
 
         p {
             color: #fff;
@@ -628,14 +628,14 @@ header {
 .our-mission-card-container::after {
     content: "";
     position: absolute;
-    width: 2.7rem;
-    height: 3.2rem;
+    width: 2.8rem;
+    height: 3.1rem;
     /* background-color: red; */
-    top: 0.8rem;
-    left: 1.1rem;
-    border-bottom-right-radius: 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    border-right: 0.2px solid rgba(255, 255, 255, 0.5);
+    top: 0.9rem;
+    left: 1rem;
+    border-bottom-right-radius: 12px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+    border-right: 0.5px solid rgba(255, 255, 255, 0.35);
 }
 
 .our-mission-card-container {
@@ -655,7 +655,15 @@ header {
     }
 }
 
+.our-mission-card-container:hover {
+    .top-div {
+        background: rgba(255, 255, 255, 0.08);
+    }
 
+    .bottom-div {
+        background: rgba(255, 255, 255, 0.08);
+    }
+}
 
 /* career page styles */
 .career-card {
@@ -824,6 +832,38 @@ footer {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .our-mission-card-container::after {
+        content: "";
+        position: absolute;
+        width: 2.8rem;
+        height: 3.1rem;
+        /* background-color: red; */
+        top: 0.9rem;
+        left: 1rem;
+        border-bottom-right-radius: 12px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.35);
+        border-right: 0.5px solid rgba(255, 255, 255, 0.35);
+    }
+
+    .our-mission-card-container {
+        .icon {
+            position: absolute;
+            top: 3px;
+            left: 14px;
+            width: 50px;
+            height: 50px;
+            padding: 1px;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 767px) and (max-width: 967px) {
     .our-story {
 
@@ -850,7 +890,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -859,7 +899,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -876,8 +916,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -931,7 +971,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -940,7 +980,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -957,8 +997,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1013,7 +1053,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -1022,7 +1062,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -1039,8 +1079,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1062,8 +1102,8 @@ footer {
         top: 1rem;
         left: 0.8rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
     }
 
     .our-mission-card-container {
@@ -1094,7 +1134,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -1103,7 +1143,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -1120,8 +1160,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1143,8 +1183,8 @@ footer {
         top: 1rem;
         left: 0.8rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
     }
 
     .our-mission-card-container {
@@ -1175,7 +1215,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -1184,7 +1224,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -1201,8 +1241,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1224,8 +1264,8 @@ footer {
         top: 1rem;
         left: 0.8rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
     }
 
     .our-mission-card-container {
@@ -1256,7 +1296,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -1265,7 +1305,7 @@ footer {
             width: 91.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -1282,8 +1322,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1299,14 +1339,14 @@ footer {
     .our-mission-card-container::after {
         content: "";
         position: absolute;
-        width: 3.1rem;
+        width: 3rem;
         height: 3.1rem;
         /* background-color: red; */
         top: 1rem;
-        left: 0.8rem;
+        left: 0.75rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.35);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.35);
     }
 
     .our-mission-card-container {
@@ -1908,7 +1948,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -1934,8 +1974,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -1957,8 +1997,8 @@ footer {
         top: 0.8rem;
         left: 0.8rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.38);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.38);
     }
 
     .our-mission-card-container {
@@ -2016,7 +2056,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -2025,7 +2065,7 @@ footer {
             width: 84.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -2042,8 +2082,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -2097,7 +2137,7 @@ footer {
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        border-right: 2px solid rgba(255, 255, 255, 0.5);
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
         position: relative;
 
         .top-div {
@@ -2106,7 +2146,7 @@ footer {
             width: 84.5%;
             margin-left: auto;
             border-top-left-radius: 20px;
-            border-top: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
 
             h3 {
                 color: #fff;
@@ -2123,8 +2163,8 @@ footer {
             /* background-color: blue; */
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.5);
-            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
 
             p {
                 color: #fff;
@@ -2140,21 +2180,21 @@ footer {
     .our-mission-card-container::after {
         content: "";
         position: absolute;
-        width: 2.9rem;
-        height: 2rem;
+        width: 2.7rem;
+        height: 1.8rem;
         /* background-color: red; */
-        top: 0.7rem;
+        top: 0.8rem;
         left: 0.7rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 1.6px solid rgba(255, 255, 255, 0.5);
-        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.4);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.4);
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 1px;
+            left: 8px;
             width: 34px;
             height: 34px;
             padding: 1px;
@@ -2193,5 +2233,85 @@ footer {
         }
     }
 
+}
 
+@media screen and (max-width: 330px) {
+    .our-mission-card-container {
+        /* background-color: red; */
+        /* width: fit-content; */
+        width: 100%;
+        height: fit-content;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+
+        .top-div {
+            /* background-color: green; */
+            height: 42%;
+            width: 84.5%;
+            margin-left: auto;
+            border-top-left-radius: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+            h3 {
+                color: #fff;
+                font-size: 1.2rem;
+                padding-left: 10px;
+                font-weight: 400;
+                margin-top: 14px;
+            }
+        }
+
+        .bottom-div {
+            height: 58%;
+            width: 100%;
+            /* background-color: blue; */
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+            p {
+                color: #fff;
+                padding: 6px 3px;
+                font-size: 0.8rem;
+                margin-top: 0;
+                font-weight: lighter;
+            }
+        }
+
+    }
+
+    .our-mission-card-container::after {
+        content: "";
+        position: absolute;
+        width: 2.2rem;
+        height: 1.8rem;
+        /* background-color: red; */
+        top: 0.8rem;
+        left: 0.7rem;
+        border-bottom-right-radius: 14px;
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.3);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .our-mission-card-container {
+        .icon {
+            position: absolute;
+            top: 2px;
+            left: 8px;
+            width: 34px;
+            height: 34px;
+            padding: 1px;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
