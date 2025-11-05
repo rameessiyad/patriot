@@ -2288,14 +2288,14 @@ footer {
     .our-mission-card-container::after {
         content: "";
         position: absolute;
-        width: 2.2rem;
-        height: 1.8rem;
+        width: 1.8rem;
+        height: 1.35rem;
         /* background-color: red; */
-        top: 0.8rem;
-        left: 0.7rem;
+        top: 1.05rem;
+        left: 1.05rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 0.3px solid rgba(255, 255, 255, 0.3);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
     }
 
     .our-mission-card-container {
