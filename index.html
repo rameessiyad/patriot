@@ -738,7 +738,8 @@
                 <div class="swiper keyOfferings-swiper">
                     <div class="swiper-wrapper">
 
-                        <div class="swiper-slide">
+                        <div class="swiper-slide relative">
+                            <div class="absolute inset-0 bg-black/40"></div>
                             <div class="p-3">
                                 <img src="./assets/images/home/key-offerings-slider/slider-img01.png" alt="slider-img"
                                     class="slider-img relative">
@@ -755,9 +756,11 @@
                         </div>
 
                         <div class="swiper-slide">
-                            <div class="p-3">
+                            <div class="p-3 overflow-hidden relative">
                                 <img src="./assets/images/home/key-offerings-slider/slider-img02.png" alt="slider-img"
-                                    class="slider-img relative">
+                                class="slider-img w-full h-full object-cover">
+
+                                <div class="absolute inset-0 bg-black/40"></div>
                                 <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
                                     <p class="text-2xl font-light">Hotel Transfers</p>
                                     <a href="" class="book-now ml-auto cursor-pointer">
@@ -905,7 +908,7 @@
 
     <!-- our benefits section -->
     <section
-        class="our-benefits relative min-h-[105vh] md:min-h-[70vh] lg:min-h-[100vh] xl:min-h-[105vh] h-auto py-6 relative"
+        class="our-benefits relative min-h-auto md:min-h-[70vh] lg:min-h-[100vh] xl:min-h-[105vh] h-auto md:py-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="absolute inset-0 w-full h-full bg-black/25 md:bg-black/20 z-0"></div>
         <div class="content container max-w-[95%] mx-auto px-3 z-4 relative md:px-10 flex flex-col justify-between">
@@ -938,7 +941,7 @@
             </div>
         </div>
         <div
-            class="relative ml-auto mt-10 md:mt-20 md:absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
+            class="relative ml-auto mt-10 md:mt-20 absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
             <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-8 h-8 md:w-12 md:h-12 opacity-20">
             <p class="text-lg md:text-xl font-extralight leading-7 md:leading-8 lg:leading-9">Trust Patriot Limousine
                 for
