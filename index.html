@@ -25,7 +25,7 @@
 <body class="relative text-white bg-black/70">
 
     <!-- whatsapp icon -->
-    <div class="whatsapp-blink fixed bottom-14 md:bottom-12 right-3 md:right-5 z-100">
+    <div class="whatsapp-blink fixed bottom-20 right-3 md:right-5 z-100">
         <a href="https://wa.me/+97125511255">
             <img src="./assets/svg-icons/whatsapp-icon.svg" alt="whatsapp" class="w-10 md:w-12">
         </a>
@@ -153,7 +153,7 @@
                         <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-4 h-4 md:w-6 md:h-6">
                     </a>
                 </div>
-                <div class="fixed md:hidden -bottom-1 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
+                <div class="fixed md:hidden bottom-0 z-50 w-[93%] flex flex-col lg:flex-row items-center justify-between gap-4 bg-white/13 backdrop-blur-lg rounded-xl p-2"
                     id="mobile-book-bar">
                     <a href=""
                         class="md:hidden flex items-center w-full gap-2 bg-[var(--color-primary)] text-white pl-4 py-3 rounded-xl justify-center border-whitetext-sm"
@@ -175,7 +175,7 @@
                 <div class="max-w-2xl">
                     <h3 class="font-thin text-2xl">Our Fleet</h3>
                     <h1 class="sub-title">
-                        The Perfect Luxury <span class=""> Fleet For Every Need </span>
+                        The Perfect Luxury <br class="hidden xl:block"/> <span class="xl:ml-30">  Fleet For Every Need </span>
                     </h1>
                 </div>
                 <div class="max-w-xl">
@@ -211,7 +211,7 @@
                                     <div class="flex flex-col gap-1 items-center">
                                         <img src="./assets/images/home/fleet-options-slider/slider01.png"
                                             alt="slider-img" class="w-64">
-                                        <p class="text-xl font-light mb-4">Mercedes Benz S Class S500</p>
+                                        <p class="text-lg font-light mb-4">Mercedes Benz S Class S500</p>
                                     </div>
                                     <a href="" class="slider-book-now-btn">
                                         <span>Book Now</span>
@@ -593,7 +593,7 @@
                 <div class=" xl:max-w-[45%] flex flex-col gap-4 md:gap-0">
                     <h3 class="font-thin text-2xl">Our Services</h3>
                     <h1 class="sub-title py-2 lg:py-0">Everything That <span class="ml-48 lg:ml-0"> <br
-                                class="block sm:hidden" /> You Seek For</span>  <span class="">Your
+                                class="block sm:hidden" /> You Seek For</span> <br />  <span class="">Your
                             Perfect
                             Ride</span>
                     </h1>
@@ -740,7 +740,7 @@
 
                         <div class="swiper-slide relative">
                             <div class="absolute inset-0 bg-black/40"></div>
-                            <div class="p-3">
+                            <div class="overflow-hidden bg-blue-300">
                                 <img src="./assets/images/home/key-offerings-slider/slider-img01.png" alt="slider-img"
                                     class="slider-img relative">
                                 <div class="absolute inset-0 w-full pl-8 pr-8 py-8 flex flex-col justify-between">
@@ -908,7 +908,7 @@
 
     <!-- our benefits section -->
     <section
-        class="our-benefits relative min-h-auto md:min-h-[70vh] lg:min-h-[100vh] xl:min-h-[105vh] h-auto md:py-6 relative"
+        class="our-benefits relative min-h-auto md:min-h-[70vh] lg:min-h-[100vh] xl:min-h-[105vh] h-auto md:pt-6 relative"
         style="background: url('./assets/images/home/ourbenefits-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="absolute inset-0 w-full h-full bg-black/25 md:bg-black/20 z-0"></div>
         <div class="content container max-w-[95%] mx-auto px-3 z-4 relative md:px-10 flex flex-col justify-between">
@@ -941,7 +941,7 @@
             </div>
         </div>
         <div
-            class="relative ml-auto mt-10 md:mt-20 absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
+            class="relative ml-auto mt-10 md:mt-20 md:absolute bottom-0 right-0 max-w-[92%] md:max-w-2xl flex flex-col gap-6 px-4 py-3 md:px-10 md:py-6 rounded-tl-2xl bg-gradient-to-br from-white/22 to-black/10 backdrop-blur-sm border border-white/50">
             <img src="./assets/svg-icons/steering.svg" alt="steering" class="w-8 h-8 md:w-12 md:h-12 opacity-20">
             <p class="text-lg md:text-xl font-extralight leading-7 md:leading-8 lg:leading-9">Trust Patriot Limousine
                 for
@@ -1140,6 +1140,7 @@
                         <div class="relative">
                             <img src="assets/images/home/our-offers-slider/our-offers-slider01.png"
                                 class="w-full h-100 lg:h-auto object-cover rounded-lg" alt="slider">
+                                <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
                             <div class="absolute top-2 left-4 text-white p-3 rounded-lg max-w-sm myOffersContent">
                                 <div class="flex gap-2 md:gap-5 items-center top-content"><img
                                         src="./assets/svg-icons/percentage-color.svg" alt="percentage-icon"
