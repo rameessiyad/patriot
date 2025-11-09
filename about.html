@@ -25,14 +25,14 @@
 <body class="relative text-white bg-black">
 
     <!-- whatsapp icon -->
-    <div class="whatsapp-blink fixed bottom-14 md:bottom-12 right-3 md:right-5 z-100">
+    <div class="whatsapp-blink fixed bottom-20 md:bottom-16 lg:bottom-12 right-3 md:right-5 z-100">
         <a href="https://wa.me/+97125511255">
             <img src="./assets/svg-icons/whatsapp-icon.svg" alt="whatsapp" class="w-10 md:w-12">
         </a>
     </div>
 
     <!-- go to top button -->
-    <div id="goTopBtn" class="fixed bottom-20 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
+    <div id="goTopBtn" class="fixed bottom-26 left-5 rounded-full bg-black/40 backdrop-blur-md hidden z-50 lg:hidden">
         <a href="#about">
             <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
         </a>
@@ -122,7 +122,7 @@
     </div>
 
     <!-- hero section -->
-    <section class="about-hero relative min-h-screen" id="about">
+    <section class="about-hero relative" id="about">
         <!-- Background video -->
         <video autoplay muted loop playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover"
             id="aboutVideo">
@@ -179,7 +179,7 @@
 
 
     <!-- our story section -->
-    <section class="our-story h-auto py-8 lg:py-16"
+    <section class="our-story h-auto py-8 "
         style="background: url('./assets/images/about/our-story-bg.png'); background-repeat: no-repeat; background-size: cover; background-position: center;">
         <div class="content container mx-auto max-w-[90%]">
             <h1 class="text-3xl md:text-4xl lg:text-5xl text-[var(--color-about-section-title)]">Our Story</h1>
@@ -249,20 +249,21 @@
                         our mission is to deliver more than just transportation—we
                     </p>
 
-                    <div class="flex flex-col gap-4 sm:gap-1 max-w-2xl mt-10">
+                    <div class="flex w-full max-w-2xl mt-10">
                         <img src="./assets/images/about/our-mission/quotes-start.svg" alt="quotes"
-                            class="w-8 md:w-10 self-start">
+                            class="w-8 md:w-10 self-start -mt-4">
                         <div class="items-center -ml-6 sm:-ml-0">
-                            <p class="text-3xl md:text-4xl font-thin ml-10">Every journey with Patriot Limousine is a
+                            <p class="text-3xl md:text-4xl font-thin ml-6 relative">Every journey with Patriot Limousine
+                                is a
                                 promise of
                                 comfort,
                                 reliability, and professionalism. </p>
                         </div>
                         <img src="./assets/images/about/our-mission/quotes-end.svg" alt="quotes"
-                            class="w-8 md:w-10 mr-10 md:mr-80 lg:mr-6 xl:mr-80 -mt-3 md:-mt-4 self-end">
+                            class="w-8 md:w-10 self-end -mb-4">
                     </div>
                 </div>
-                <div class="flex flex-col gap-3 md:gap-2 md:w-[100%] lg:w-[50%] lg:ml-10 mx-auto lg:mx-0 mt-4 lg:mt-0">
+                <div class="flex flex-col gap-3 md:gap-2 md:w-[100%] lg:w-[50%] lg:ml-10 mx-auto lg:mx-0 mt-[30px]">
                     <div class="our-mission-card-container">
                         <div class="icon">
                             <img src="./assets/images/about/our-mission/card-icon01.svg" alt="card-icon"
@@ -333,9 +334,9 @@
     </section>
 
     <!-- our vision section -->
-    <section
-        class="our-vision h-auto py-8 lg:py-16 bg-gradient-to-br from-[#2E2E2E] to-[#131313]">
-        <div class="content container flex flex-col xl:flex-row justify-between gap-5 md:gap-3 lg:gap-4 xl:gap-20 mx-auto  max-w-[90%]">
+    <section class="our-vision h-auto py-8 lg:py-16 bg-gradient-to-br from-[#2E2E2E] to-[#131313]">
+        <div
+            class="content container flex flex-col xl:flex-row justify-between gap-5 md:gap-3 lg:gap-4 xl:gap-20 mx-auto  max-w-[90%]">
             <div class="xl:w-[50%]">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl text-[var(--color-about-section-title)]">Our Vision</h1>
                 <h1 class="text-3xl md:text-4xl lg:text-5xl mt-6">The Principles We Stand By</h1>
@@ -446,7 +447,8 @@
             <div class="hidden md:flex flex-col gap-6 mt-10 w-auto">
                 <div class="flex gap-6">
                     <div class="flex gap-6 relative">
-                        <img src="./assets/images/about/why-choose-us/why-choose-card-img01.png" alt="why-choose-card" class="rounded-2xl">
+                        <img src="./assets/images/about/why-choose-us/why-choose-card-img01.png" alt="why-choose-card"
+                            class="rounded-2xl">
                         <div class="absolute inset-0 bg-black/34 rounded-2xl"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Professional Chauffeurs</h2>
@@ -622,137 +624,106 @@
     </section>
 
     <!-- footer -->
-    <footer class="bg-black mb-0 px-1 py-20 md:py-2"">
+    <footer class="bg-black mb-0 px-1 pb-20 md:py-2">
         <div class=" footerContent flex flex-col gap-3 px-2 md:px-4 pb-4">
-        <!-- Footer top cta -->
-        <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto hidden md:flex items-center rounded-lg"
-            style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
-            <div class="w-full flex items-center justify-between sm:pl-10 md:px-0 footer-bottom-img">
-                <p class="text-base font-extralight md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">
-                    Book a Ride Now
-                </p>
-                <div class="w-20 md:w-30 h-full md:h-30 flex items-center justify-center border-l border-black/50 p-1">
-                    <a href="" class="w-full h-full flex items-center justify-center rounded-lg hover:bg-white/14">
-                        <img src="./assets/svg-icons/arrow-footer.svg" alt="arrow" class="mt-3 w-8 md:w-8 mb-2">
-                    </a>
+            <!-- Footer top cta -->
+            <div class="relative mt-6 sm:mt-10 h-20 md:h-24 lg:h-30  md:h-auto hidden md:flex items-center rounded-lg"
+                style="background: url('./assets/images/footer-bottom.png'); background-size: cover; background-position: center">
+                <div class="w-full flex items-center justify-between sm:pl-10 md:px-0 footer-bottom-img">
+                    <p class="text-base font-extralight md:text-xl lg:text-2xl text-center sm:text-left ml-6 md:ml-10">
+                        Book a Ride Now
+                    </p>
+                    <div
+                        class="w-20 md:w-30 h-full md:h-30 flex items-center justify-center border-l border-black/50 p-1">
+                        <a href="" class="w-full h-full flex items-center justify-center rounded-lg hover:bg-white/14">
+                            <img src="./assets/svg-icons/arrow-footer.svg" alt="arrow" class="mt-3 w-8 md:w-8 mb-2">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 pt-10 lg:ml-10">
-            <div class="hidden lg:block">
-                <img src="./assets/images/logo.png" alt="logo" class="logo" style="width: 200px">
-            </div>
-
-            <!-- mobile logo and social links  -->
-            <div class="flex flex-col items-center justify-center lg:hidden">
-                <img src="./assets/images/logo.png" alt="logo" class="logo">
-                <p class="font-thin text-base text-gray-300">Follow Us On</p>
-                <div class="flex gap-4 mt-4">
-                    <a href=""><img src="./assets/svg-icons/facebook.svg" alt="facebook" class="w-10"></a>
-                    <a href=""><img src="./assets/svg-icons/instagram.svg" alt="instagram" class="w-10"></a>
-                    <a href=""><img src="./assets/svg-icons/linkedin.svg" alt="linkedin" class="w-10"></a>
-                    <a href=""><img src="./assets/svg-icons/twitter.svg" alt="twitter" class="w-10"></a>
+            <div class="flex flex-col xl:flex-row gap-10 lg:gap-12 pt-10 lg:ml-10">
+                <div class="hidden lg:block">
+                    <img src="./assets/images/logo.png" alt="logo" class="logo" style="width: 200px">
                 </div>
-            </div>
 
-            <div class="flex flex-col md:flex-row mt-3 justify-around w-full lg:h-[260px]">
-                <!-- OUr Services -->
-                <div class="flex flex-col lg:flex-row gap-10 lg:mb-16">
-                    <div class="flex items-center gap-10 md:gap-10 lg:gap-12">
-                        <div class="w-[50%] md:w-auto lg:mb-9">
-                            <p class="font-thin text-lg lg:text-xl text-gray-300">Our Services</p>
+                <!-- mobile logo and social links  -->
+                <div class="flex flex-col items-center justify-center lg:hidden">
+                    <img src="./assets/images/logo.png" alt="logo" class="logo">
+                    <p class="font-thin text-base text-gray-300">Follow Us On</p>
+                    <div class="flex gap-4 mt-4">
+                        <a href=""><img src="./assets/svg-icons/facebook.svg" alt="facebook" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/instagram.svg" alt="instagram" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/linkedin.svg" alt="linkedin" class="w-10"></a>
+                        <a href=""><img src="./assets/svg-icons/twitter.svg" alt="twitter" class="w-10"></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row mt-3 justify-around w-full lg:h-[260px]">
+                    <!-- OUr Services -->
+                    <div class="flex flex-col lg:flex-row gap-10 lg:mb-16">
+                        <div class="flex items-center gap-10 md:gap-10 lg:gap-12">
+                            <div class="w-[50%] md:w-auto lg:mb-9">
+                                <p class="font-thin text-lg lg:text-xl text-gray-300">Our Services</p>
+                                <div
+                                    class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                                    <a href="">Airport Transfers</a>
+                                    <a href="">Hotel Transfers</a>
+                                    <a href="">Corporate Events</a>
+                                    <a href="">City Tour</a>
+                                    <a href="">Intercity Transfer</a>
+                                </div>
+                            </div>
+
                             <div
-                                class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                                <a href="">Airport Transfers</a>
-                                <a href="">Hotel Transfers</a>
-                                <a href="">Corporate Events</a>
-                                <a href="">City Tour</a>
-                                <a href="">Intercity Transfer</a>
+                                class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full mt-10 lg:max-w-sm lg:mt-2 w-[50%] md:w-auto">
+                                <a href="">Point To Point</a>
+                                <a href="">Luxury Bus Rental</a>
+                                <a href="">Staff Transfers</a>
+                                <a href="">Wedding Events</a>
+                                <a href="">Dedicated Chaufferus</a>
                             </div>
                         </div>
+                    </div>
 
+                    <!-- Quick Links -->
+                    <div class="mt-5 lg:mt-0 hidden lg:block">
+                        <p class="font-thin text-lg lg:text-xl text-gray-300">Quick Links</p>
                         <div
-                            class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full mt-10 lg:max-w-sm lg:mt-2 w-[50%] md:w-auto">
-                            <a href="">Point To Point</a>
-                            <a href="">Luxury Bus Rental</a>
-                            <a href="">Staff Transfers</a>
-                            <a href="">Wedding Events</a>
-                            <a href="">Dedicated Chaufferus</a>
+                            class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                            <a href="">Home</a>
+                            <a href="">About</a>
+                            <a href="">Services</a>
+                            <a href="">Our Fleets</a>
+                            <a href="">Book Now</a>
+                            <a href="">Blogs</a>
+                            <a href="">Contact Us</a>
                         </div>
                     </div>
-                </div>
 
-                <!-- Quick Links -->
-                <div class="mt-5 lg:mt-0 hidden lg:block">
-                    <p class="font-thin text-lg lg:text-xl text-gray-300">Quick Links</p>
-                    <div class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Services</a>
-                        <a href="">Our Fleets</a>
-                        <a href="">Book Now</a>
-                        <a href="">Blogs</a>
-                        <a href="">Contact Us</a>
-                    </div>
-                </div>
-
-                <!-- Contact Us -->
-                <div class="mt-8 md:mt-0 hidden md:block">
-                    <p class="font-thin text-lg lg:text-xl text-gray-300 lg:ml-8">Contact Us</p>
-                    <div class="flex flex-col gap-1 font-light mt-2">
-                        <div class="flex gap-2"> <img src="./assets/svg-icons/footer-call-icon.svg" alt="call"
-                                class="w-6"><span><a href="tel" class="text-sm">+971 2 551 1255</a></span></div>
-                        <a href="tel" class="ml-8 text-base">+971 56 409 0108</a>
-                        <a href="tel" class="ml-8 text-base">+971 56 334 0108</a>
-
-                        <div class="mt-2 flex gap-2">
-                            <img src="./assets/svg-icons/footer-mail-icon.svg" alt="mail" class="w-6"><span><a
-                                    href="mailto:info@patriotlimo.ae" class="text-base">info@patriotlimo.ae</a></span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Location -->
-                <div class="mt-8 md:mt-0 hidden md:block">
-                    <p class="font-thin text-lg lg:text-xl text-gray-300 lg:ml-8">Location</p>
-                    <div class="flex items-start justify-start gap-2">
-                        <img src="./assets/svg-icons/footer-location-icon.svg" alt="location" class="w-6 mt-2">
-                        <div class="mt-2 max-w-full lg:max-w-[10rem]">
-                            <p class="font-light text-sm lg:text-base">
-                                Office No.M4 <br>
-                                Building No. 5948 <br>
-                                8- Azha St - E11<br>
-                                Al Danah-Abu Dhabi
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- mobile -->
-                <div class="flex flex-row sm:items-center gap-6 footerMobileContentBelow">
                     <!-- Contact Us -->
-                    <div class="mt-8 lg:mt-0 md:hidden w-[50%]">
-                        <p class="font-thin text-lg text-gray-300 lg:ml-8">Contact Us</p>
+                    <div class="mt-8 md:mt-0 hidden md:block">
+                        <p class="font-thin text-lg lg:text-xl text-gray-300 lg:ml-8">Contact Us</p>
                         <div class="flex flex-col gap-1 font-light mt-2">
                             <div class="flex gap-2"> <img src="./assets/svg-icons/footer-call-icon.svg" alt="call"
                                     class="w-6"><span><a href="tel" class="text-sm">+971 2 551 1255</a></span></div>
-                            <a href="tel" class="ml-8 text-sm">+971 56 409 0108</a>
-                            <a href="tel" class="ml-8 text-sm">+971 56 334 0108</a>
+                            <a href="tel" class="ml-8 text-base">+971 56 409 0108</a>
+                            <a href="tel" class="ml-8 text-base">+971 56 334 0108</a>
 
                             <div class="mt-2 flex gap-2">
                                 <img src="./assets/svg-icons/footer-mail-icon.svg" alt="mail" class="w-6"><span><a
-                                        href="mailto:info@patriotlimo.ae" class="text-sm">info@patriotlimo.ae</a></span>
+                                        href="mailto:info@patriotlimo.ae"
+                                        class="text-base">info@patriotlimo.ae</a></span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Location -->
-                    <div class="mt-8 md:hidden w-[50%]">
-                        <p class="font-thin text-lg text-gray-300 lg:ml-8">Location</p>
+                    <div class="mt-8 md:mt-0 hidden md:block">
+                        <p class="font-thin text-lg lg:text-xl text-gray-300 lg:ml-8">Location</p>
                         <div class="flex items-start justify-start gap-2">
                             <img src="./assets/svg-icons/footer-location-icon.svg" alt="location" class="w-6 mt-2">
                             <div class="mt-2 max-w-full lg:max-w-[10rem]">
-                                <p class="font-light text-sm">
+                                <p class="font-light text-sm lg:text-base">
                                     Office No.M4 <br>
                                     Building No. 5948 <br>
                                     8- Azha St - E11<br>
@@ -761,52 +732,91 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- bottom content -->
-        <div
-            class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 md:px-8 lg:pb-10">
-            <!-- Left Section -->
-            <div
-                class="hidden lg:flex w-full lg:w-[32%] justify-between sm:justify-start lg:justify-between ml-0 lg:ml-2 items-center sm:items-start">
-                <!-- Go to Top -->
-                <div class="flex flex-col items-center sm:items-start gap-2">
-                    <a href="#about">
-                        <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
-                    </a>
-                    <p class="text-xs font-extralight hidden md:block">Go to Top</p>
-                </div>
+                    <!-- mobile -->
+                    <div class="flex flex-row sm:items-center gap-6 footerMobileContentBelow">
+                        <!-- Contact Us -->
+                        <div class="mt-8 lg:mt-0 md:hidden w-[50%]">
+                            <p class="font-thin text-lg text-gray-300 lg:ml-8">Contact Us</p>
+                            <div class="flex flex-col gap-1 font-light mt-2">
+                                <div class="flex gap-2"> <img src="./assets/svg-icons/footer-call-icon.svg" alt="call"
+                                        class="w-6"><span><a href="tel" class="text-sm">+971 2 551 1255</a></span></div>
+                                <a href="tel" class="ml-8 text-sm">+971 56 409 0108</a>
+                                <a href="tel" class="ml-8 text-sm">+971 56 334 0108</a>
 
-                <!-- Social Links -->
-                <div class="pb-6 sm:pb-10 lg:pb-14ml-0">
-                    <p class="font-thin text-center sm:text-left">Follow Us on</p>
-                    <div class="flex gap-4 mt-2 justify-center sm:justify-start flex-wrap">
-                        <a href="">
-                            <img src="./assets/svg-icons/instagram.svg" alt="social-icon" class="w-7 h-7 sm:w-8 sm:h-8">
-                        </a>
-                        <a href="">
-                            <img src="./assets/svg-icons/facebook.svg" alt="social-icon" class="w-7 h-7 sm:w-8 sm:h-8">
-                        </a>
-                        <a href="">
-                            <img src="./assets/svg-icons/linkedin.svg" alt="social-icon" class="w-7 h-7 sm:w-8 sm:h-8">
-                        </a>
-                        <a href="">
-                            <img src="./assets/svg-icons/twitter.svg" alt="social-icon" class="w-7 h-7 sm:w-8 sm:h-8">
-                        </a>
+                                <div class="mt-2 flex gap-2">
+                                    <img src="./assets/svg-icons/footer-mail-icon.svg" alt="mail" class="w-6"><span><a
+                                            href="mailto:info@patriotlimo.ae"
+                                            class="text-sm">info@patriotlimo.ae</a></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="mt-8 md:hidden w-[50%]">
+                            <p class="font-thin text-lg text-gray-300 lg:ml-8">Location</p>
+                            <div class="flex items-start justify-start gap-2">
+                                <img src="./assets/svg-icons/footer-location-icon.svg" alt="location" class="w-6 mt-2">
+                                <div class="mt-2 max-w-full lg:max-w-[10rem]">
+                                    <p class="font-light text-sm">
+                                        Office No.M4 <br>
+                                        Building No. 5948 <br>
+                                        8- Azha St - E11<br>
+                                        Al Danah-Abu Dhabi
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Right Section -->
+            <!-- bottom content -->
             <div
-                class="flex flex-col gap-4 sm:gap-6 items-left lg:items-end text-left lg:text-right w-full lg:w-auto -ml-[14px] md:-ml-4 lg:-ml-0 mt-10 lg:mt-0">
+                class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 md:px-8 lg:pb-10">
+                <!-- Left Section -->
+                <div
+                    class="hidden lg:flex w-full lg:w-[32%] justify-between sm:justify-start lg:justify-between ml-0 lg:ml-2 items-center sm:items-start">
+                    <!-- Go to Top -->
+                    <div class="flex flex-col items-center sm:items-start gap-2">
+                        <a href="#about">
+                            <img src="./assets/svg-icons/footer-top-arrow.svg" alt="arrow" class="w-10 h-10">
+                        </a>
+                        <p class="text-xs font-extralight hidden md:block">Go to Top</p>
+                    </div>
 
-                <!-- copyright -->
-                <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousine</p>
+                    <!-- Social Links -->
+                    <div class="pb-6 sm:pb-10 lg:pb-14ml-0">
+                        <p class="font-thin text-center sm:text-left">Follow Us on</p>
+                        <div class="flex gap-4 mt-2 justify-center sm:justify-start flex-wrap">
+                            <a href="">
+                                <img src="./assets/svg-icons/instagram.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/facebook.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/linkedin.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
+                            </a>
+                            <a href="">
+                                <img src="./assets/svg-icons/twitter.svg" alt="social-icon"
+                                    class="w-7 h-7 sm:w-8 sm:h-8">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Section -->
+                <div
+                    class="flex flex-col gap-4 sm:gap-6 items-left lg:items-end text-left lg:text-right w-full lg:w-auto -ml-[14px] md:-ml-4 lg:-ml-0 mt-10 lg:mt-0">
+
+                    <!-- copyright -->
+                    <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousine</p>
+                </div>
             </div>
-        </div>
 
 
         </div>
@@ -820,25 +830,38 @@
     <script src="./assets/js/script.js"></script>
     <script>
 
-        // header animation on scroll
+        // Header animation on scroll (Safari-safe)
         const header = document.querySelector("header");
         let lastScrollY = window.scrollY;
 
         window.addEventListener("scroll", () => {
-            if (window.scrollY > lastScrollY) {
+            const currentScroll = window.scrollY;
+
+            // Always show header when near the very top (Safari fix)
+            if (currentScroll <= 10) {
+                header.style.transform = "translateY(0)";
+                header.style.backdropFilter = "blur(5px)";
+                header.style.webkitBackdropFilter = "blur(5px)";
+                header.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
+            }
+            else if (currentScroll > lastScrollY) {
                 // Scrolling down → hide header
                 header.style.transform = "translateY(-100%)";
                 header.style.backdropFilter = "none";
+                header.style.webkitBackdropFilter = "none";
                 header.style.backgroundColor = "transparent";
-            } else {
-                // Scrolling up → show header + add blur
+            }
+            else {
+                // Scrolling up → show header
                 header.style.transform = "translateY(0)";
                 header.style.backdropFilter = "blur(5px)";
+                header.style.webkitBackdropFilter = "blur(5px)";
                 header.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
             }
 
-            lastScrollY = window.scrollY;
+            lastScrollY = currentScroll;
         });
+
 
         const bookBtn = document.getElementById("book-btn");
         let lastsScrollY = window.scrollY;
