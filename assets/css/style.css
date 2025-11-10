@@ -859,6 +859,16 @@ footer {
             }
         }
     }
+
+    .our-mission-card-container:hover {
+        .top-div {
+            background: transparent;
+        }
+
+        .bottom-div {
+            background: transparent;
+        }
+    }
 }
 
 @media screen and (min-width: 767px) and (max-width: 967px) {
@@ -2124,7 +2134,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 400px) and (min-width: 367px) {
+@media screen and (max-width: 400px) and (min-width: 375px) {
     .our-mission-card-container {
         /* background-color: red; */
         /* width: fit-content; */
@@ -2158,8 +2168,8 @@ footer {
             height: 58%;
             width: 100%;
             /* background-color: blue; */
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
             border-left: 1px solid rgba(255, 255, 255, 0.5);
 
@@ -2177,22 +2187,103 @@ footer {
     .our-mission-card-container::after {
         content: "";
         position: absolute;
-        width: 2.7rem;
-        height: 1.8rem;
+        width: 2.4rem;
+        height: 1.4rem;
         /* background-color: red; */
-        top: 0.8rem;
-        left: 0.7rem;
+        top: 1rem;
+        left: 1.08rem;
         border-bottom-right-radius: 14px;
-        border-bottom: 0.3px solid rgba(255, 255, 255, 0.4);
-        border-right: 0.3px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
     }
 
     .our-mission-card-container {
         .icon {
             position: absolute;
             top: 2px;
-            left: 8px;
-            width: 34px;
+            left: 6px;
+            width: 40px;
+            height: 34px;
+            padding: 1px;
+            border-radius: 12px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) and (min-width: 365px) {
+    .our-mission-card-container {
+        /* background-color: red; */
+        /* width: fit-content; */
+        width: 100%;
+        height: fit-content;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+
+        .top-div {
+            /* background-color: green; */
+            height: 42%;
+            width: 84.5%;
+            margin-left: auto;
+            border-top-left-radius: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+            h3 {
+                color: #fff;
+                font-size: 1.2rem;
+                padding-left: 10px;
+                font-weight: 400;
+                margin-top: 14px;
+            }
+        }
+
+        .bottom-div {
+            height: 58%;
+            width: 100%;
+            /* background-color: blue; */
+            border-top-left-radius: 18px;
+            border-bottom-left-radius: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+
+            p {
+                color: #fff;
+                padding: 6px 3px;
+                font-size: 0.8rem;
+                margin-top: 0;
+                font-weight: lighter;
+            }
+        }
+
+    }
+
+    .our-mission-card-container::after {
+        content: "";
+        position: absolute;
+        width: 2.2rem;
+        height: 1.2rem;
+        /* background-color: red; */
+        top: 1.2rem;
+        left: 1.08rem;
+        border-bottom-right-radius: 14px;
+        border-bottom: 0.3px solid rgba(255, 255, 255, 0.2);
+        border-right: 0.3px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .our-mission-card-container {
+        .icon {
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 40px;
             height: 34px;
             padding: 1px;
             border-radius: 12px;
