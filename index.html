@@ -1797,6 +1797,83 @@
         </div>
     </section>
 
+    <!-- explore more section -->
+    <section class="explore-more h-auto py-8 bg-black">
+        <div class="content relative container max-w-[95%] mx-auto px-3 md:px-10">
+            <div class="flex flex-col xl:flex-row gap-4 justify-between xl:items-center">
+                <div class="max-w-2xl">
+                    <h1 class="sub-title">
+                        Explore More About Us
+                    </h1>
+                </div>
+                <div class="max-w-xl">
+                    <p class="text-base font-extralight leading-tight xl:ml-auto">Experience luxury travel with
+                        Patriot Limousine's
+                        premium fleet featuring Lexus, BMW, Toyota,
+                        Kia, Mitsubishi and more vehicles. Our professional chauffeurs provide airport transfers, hotel
+                        pickups, and point-to-point travel throughout Abu Dhabi and Dubai with comfort, style and
+                        reliability.</p>
+                </div>
+            </div>
+        </div>
+        <!-- slider section -->
+        <div class="mt-15">
+            <div class="swiper exploreSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="relative h-[350px] overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full rounded-2xl"
+                                src="https://www.youtube.com/embed/jlY8jGuNnmg?rel=0&showinfo=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative h-[350px] overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full rounded-2xl"
+                                src="https://www.youtube.com/embed/g3JxHOPTEWY?rel=0&showinfo=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative h-[350px] overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full rounded-2xl"
+                                src="https://www.youtube.com/embed/TYPaz8kPALM?rel=0&showinfo=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative h-[350px] overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full rounded-2xl"
+                                src="https://www.youtube.com/embed/Mb1sOPaKJs8?rel=0&showinfo=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="relative h-[350px] overflow-hidden shadow-lg">
+                            <iframe class="w-full h-full rounded-2xl"
+                                src="https://www.youtube.com/embed/V7YN_ZKajXo?rel=0&showinfo=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
     <footer class="bg-black mb-0 px-1 py-20 md:py-2">
         <div class="footerContent flex flex-col gap-3 px-2 md:px-4 pb-4">
@@ -2194,7 +2271,16 @@
             },
         });
 
-
+        var exploreSwiper = new Swiper(".exploreSwiper", {
+            slidesPerView: 2.3,
+            spaceBetween: 30,
+            loop: true,
+            autoheight: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false
+            },
+        })
 
         const dropdownMenu = document.getElementById("dropdownMenu");
         const allCheckbox = document.getElementById("all");
