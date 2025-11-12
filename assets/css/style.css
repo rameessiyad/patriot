@@ -549,6 +549,113 @@ header {
     }
 }
 
+.travel-card {
+    position: relative;
+    border-radius: 16px;
+    /* your content space */
+    background: transparent;
+    /* true transparent background */
+    z-index: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.travel-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 4px;
+    /* border thickness */
+    background: linear-gradient(to top right, #898888, #1a1a1a);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+
+/* Card height animation */
+@keyframes expandCard {
+
+    0%,
+    10% {
+        max-height: 320px;
+        /* expanded height showing p */
+    }
+
+    33%,
+    100% {
+        max-height: 80px;
+        /* collapsed height hides p */
+    }
+}
+
+/* Reveal effect — instead of opacity, we use smooth clipping */
+.travel-card .reveal-para {
+    transform-origin: top;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+/* When expanded, paragraph appears naturally */
+.travel-card.expanded .reveal-para {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Animation timing for each card */
+.travel-card:nth-child(1) {
+    animation: expandCard 9s infinite;
+    animation-delay: 0s;
+}
+
+.travel-card:nth-child(2) {
+    animation: expandCard 9s infinite;
+    animation-delay: 3s;
+}
+
+.travel-card:nth-child(3) {
+    animation: expandCard 9s infinite;
+    animation-delay: 6s;
+}
+
+/* Sync reveal with expansion using animation delay trick */
+.travel-card:nth-child(1) .reveal-para {
+    animation: revealText 9s infinite;
+    animation-delay: 0s;
+}
+
+.travel-card:nth-child(2) .reveal-para {
+    animation: revealText 9s infinite;
+    animation-delay: 3s;
+}
+
+.travel-card:nth-child(3) .reveal-para {
+    animation: revealText 9s infinite;
+    animation-delay: 6s;
+}
+
+/* Optional reveal animation (for extra realism) */
+@keyframes revealText {
+
+    0%,
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    33%,
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+
 .our-vision {
     .our-vision-card-img {
         transition: all ease 0.3s;
