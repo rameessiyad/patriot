@@ -489,25 +489,25 @@
             <!-- count -->
             <div class="w-full flex flex-col lg:flex-row justify-between lg:items-center gap-10 mt-10">
                 <div class="flex flex-col gap-3 text-center">
-                    <h2 class="text-7xl text-gray-300">1253</h2>
+                    <h2 class="count text-7xl text-gray-300" data-target="1253">100</h2>
                     <p class="text-[1.7rem] text-gray-300">
                         Successful tours in the last 5 years
                     </p>
                 </div>
                 <div class="flex flex-col gap-3 text-center">
-                    <h2 class="text-7xl text-gray-300">823</h2>
+                    <h2 class="count text-7xl text-gray-300" data-target="823">90</h2>
                     <p class="text-[1.7rem] text-gray-300">
                         Premium members worldwide
                     </p>
                 </div>
                 <div class="flex flex-col gap-3 text-center">
-                    <h2 class="text-7xl text-gray-300">550</h2>
+                    <h2 class="count text-7xl text-gray-300" data-target="550">80</h2>
                     <p class="text-[1.7rem] text-gray-300">
                         International Corporate Partners
                     </p>
                 </div>
                 <div class="flex flex-col gap-3 text-center">
-                    <h2 class="text-7xl text-gray-300">823</h2>
+                    <h2 class="count text-7xl text-gray-300" data-target="823">90</h2>
                     <p class="text-[1.7rem] text-gray-300">
                         Local & Global Clients
                     </p>
@@ -969,6 +969,41 @@
                 goTopBtn.classList.remove("block");
                 goTopBtn.classList.add("hidden");
             }
+        });
+
+        // count animation
+        const counters = document.querySelectorAll('.count');
+        const speed = 100; 
+
+        const animateCount = (counter) => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                const increment = Math.ceil(target / speed);
+
+                if (count < target) {
+                    counter.innerText = count + increment;
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+
+            updateCount();
+        };
+
+        // Use IntersectionObserver to trigger when visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    animateCount(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach((counter) => {
+            observer.observe(counter);
         });
 
         const swiper = new Swiper(".ourVisionSwiper", {
