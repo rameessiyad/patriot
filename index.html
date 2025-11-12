@@ -1799,7 +1799,7 @@
 
     <!-- explore more section -->
     <section class="explore-more h-auto py-8 bg-black">
-        <div class="content relative container max-w-[95%] mx-auto px-3 md:px-10">
+        <div class="content relative container max-w-[95%] mx-auto md:px-10">
             <div class="flex flex-col xl:flex-row gap-4 justify-between xl:items-center">
                 <div class="max-w-2xl">
                     <h1 class="sub-title">
@@ -1817,7 +1817,7 @@
             </div>
         </div>
         <!-- slider section -->
-        <div class="mt-15">
+        <div class="mt-15 h-[380px] px-10 lg:px-0">
             <div class="swiper exploreSwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -1869,6 +1869,11 @@
                                 allowfullscreen></iframe>
                         </div>
                     </div>
+                </div>
+
+                <!-- pagination dots -->
+                <div class="mt-10">
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </div>
@@ -2280,6 +2285,24 @@
                 delay: 1500,
                 disableOnInteraction: false
             },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                0: {            // mobile
+                    slidesPerView: 1,
+                },
+                900: {          // small tablets
+                    slidesPerView: 2,
+                },
+                1024: {         // laptops
+                    slidesPerView: 2.3,
+                },
+                1280: {         // desktops
+                    slidesPerView: 2.3,
+                },
+            }
         })
 
         const dropdownMenu = document.getElementById("dropdownMenu");
