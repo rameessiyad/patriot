@@ -565,9 +565,9 @@ header {
     position: absolute;
     inset: 0;
     border-radius: inherit;
-    padding: 3px;
+    padding: 2px;
     /* border thickness */
-    background: linear-gradient(to top right, #898888, #1a1a1a);
+    background: linear-gradient(to top right, #c2c1c1, #2b220b);
     -webkit-mask:
         linear-gradient(#fff 0 0) content-box,
         linear-gradient(#cd9a3a 0 0);
@@ -626,7 +626,7 @@ header {
 
 .travel-card:nth-child(3) {
     animation: expandCard 5s infinite;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
     animation-timing-function: ease-in;
 
 }
@@ -644,7 +644,7 @@ header {
 
 .travel-card:nth-child(3) .reveal-para {
     animation: revealText 5s infinite;
-    animation-delay: 3.5s;
+    animation-delay: 2.6s;
 }
 
 
