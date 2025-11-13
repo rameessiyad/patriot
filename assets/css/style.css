@@ -626,7 +626,7 @@ header {
 
 .travel-card:nth-child(3) {
     animation: expandCard 5s infinite;
-    animation-delay: 2.5s;
+    animation-delay: 2.9s;
     animation-timing-function: ease-in;
 
 }
