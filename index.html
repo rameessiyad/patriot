@@ -468,7 +468,7 @@
                         <span
                             class="flex items-center justify-center px-10 gap-2 p-2 rounded-xl bg-[var(--color-primary)] text-white">
                             <span
-                                class="block truncate whitespace-nowrap overflow-hidden text-ellipsis text-base">Apply</span>
+                                class="block text-base">Apply</span>
                             <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-6" />
                         </span>
                     </button>
@@ -2142,20 +2142,7 @@
         const bookBtn = document.getElementById("book-btn");
         let lastsScrollY = window.scrollY;
 
-        window.addEventListener("scroll", () => {
-            if (window.scrollY > lastsScrollY) {
-                // Scrolling down → shrink the button
-                bookBtn.classList.remove("py-3");
-                bookBtn.classList.add("py-1");
-            } else {
-                // Scrolling up → restore normal size
-                bookBtn.classList.remove("py-1");
-                bookBtn.classList.add("py-3");
-            }
-
-            lastsScrollY = window.scrollY;
-        });
-
+     
         // go to top button
         window.addEventListener("scroll", () => {
             // Show after scrolling 200vh
