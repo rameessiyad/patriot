@@ -124,8 +124,8 @@
     <!-- hero section -->
     <section class="about-hero relative" id="about">
         <!-- Background video -->
-        <video autoplay muted loop playsinline webkit-playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover"
-            id="aboutVideo">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto"
+            class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
             <source src="./assets/videos/about-banner.mp4" type="video/mp4" />
         </video>
 
@@ -923,6 +923,11 @@
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
     <script>
+
+        document.addEventListener("touchstart", () => {
+            const v = document.getElementById("aboutVideo");
+            if (v.paused) v.play();
+        }, { once: true });
 
         // Header animation on scroll (Safari-safe)
         const header = document.querySelector("header");
