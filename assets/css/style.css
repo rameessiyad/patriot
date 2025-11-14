@@ -191,12 +191,12 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.exploreSwiper iframe {
-    pointer-events: none;
+.exploreSwiper .swiper-slide iframe {
+    pointer-events: none !important;
 }
 
-.exploreSwiper .swiper-slide-active iframe {
-    pointer-events: auto;
+.exploreSwiper .swiper-slide.swiper-slide-active iframe {
+    pointer-events: auto !important;
 }
 
 
