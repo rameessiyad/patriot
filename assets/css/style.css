@@ -579,83 +579,56 @@ header {
 
 /* Card height animation */
 @keyframes expandCard {
-
-    0%{
+    0% {
         max-height: 80px;
-        /* collapsed height hides p */
     }
+
     20% {
         max-height: 300px;
-        /* expanded height showing p */
     }
 
     33%,
     100% {
         max-height: 80px;
-        /* collapsed height hides p */
     }
 }
 
-/* Reveal effect — instead of opacity, we use smooth clipping */
+/* Reveal effect */
 .travel-card .reveal-para {
     transform-origin: top;
     transform: translateY(20px);
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.8s ease;
+    transition: opacity 0.4s ease, transform 0.6s ease;
 }
 
-/* When expanded, paragraph appears naturally */
 .travel-card.expanded .reveal-para {
     transform: translateY(0);
     opacity: 1;
 }
 
-/* Animation timing for each card */
 .travel-card:nth-child(1) {
-    animation: expandCard 5s infinite;
-    animation-delay: 280ms;
-    animation-timing-function: ease-in;
-    
+    animation: expandCard 3.9s infinite ease-in;
+    animation-delay: 0s;
 }
 
 .travel-card:nth-child(2) {
-    animation: expandCard 5s infinite;
-    animation-delay: 1.4s;
-    animation-timing-function: ease-in;
+    animation: expandCard 3.9s infinite ease-in;
+    animation-delay: 1.3s;
 }
 
 .travel-card:nth-child(3) {
-    animation: expandCard 5s infinite;
-    animation-delay: 2.4s;
-    animation-timing-function: ease-in;
-
+    animation: expandCard 3.9s infinite ease-in;
+    animation-delay: 2.6s;
 }
 
-/* Sync reveal with expansion using animation delay trick */
-.travel-card:nth-child(1) .reveal-para {
-    animation: revealText 5s infinite;
-    animation-delay: 280ms;
-}
-
-.travel-card:nth-child(2) .reveal-para {
-    animation: revealText 5s infinite;
-    animation-delay: 1.5s;
-}
-
-.travel-card:nth-child(3) .reveal-para {
-    animation: revealText 5s infinite;
-    animation-delay: 2.3s;
-}
-
-
-/* Optional reveal animation (for extra realism) */
+/* Reveal animation synced */
 @keyframes revealText {
-
-    0%{
-         opacity: 0;
+    0% {
+        opacity: 0;
         transform: translateY(20px);
     }
-    30% {
+
+    20% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -666,6 +639,22 @@ header {
         transform: translateY(20px);
     }
 }
+
+.travel-card:nth-child(1) .reveal-para {
+    animation: revealText 3.9s infinite;
+    animation-delay: 0s;
+}
+
+.travel-card:nth-child(2) .reveal-para {
+    animation: revealText 3.9s infinite;
+    animation-delay: 1.3s;
+}
+
+.travel-card:nth-child(3) .reveal-para {
+    animation: revealText 3.9s infinite;
+    animation-delay: 2.6s;
+}
+
 
 
 .our-vision {
