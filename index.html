@@ -467,8 +467,7 @@
                         class="flex items-center justify-center flex-1 px-4 py-2 text-white text-sm font-medium hover:bg-white/10 transition text-lg">
                         <span
                             class="flex items-center justify-center px-10 gap-2 p-2 rounded-xl bg-[var(--color-primary)] text-white">
-                            <span
-                                class="block text-base">Apply</span>
+                            <span class="block text-base">Apply</span>
                             <img src="./assets/svg-icons/arrow-top.svg" alt="arrow" class="w-6" />
                         </span>
                     </button>
@@ -2142,7 +2141,7 @@
         const bookBtn = document.getElementById("book-btn");
         let lastsScrollY = window.scrollY;
 
-     
+
         // go to top button
         window.addEventListener("scroll", () => {
             // Show after scrolling 200vh
@@ -2304,6 +2303,8 @@
                 delay: 1500,
                 disableOnInteraction: false
             },
+            touchRatio: 1,
+            simulateTouch: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
