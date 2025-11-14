@@ -127,7 +127,8 @@
     <!-- hero section -->
     <section class="relative h-auto" id="service">
         <!-- Background video -->
-        <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
+        <video autoplay muted loop playsinline webkit-playsinline preload="auto"
+            class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
             <source src="./assets/videos/blogs-banner.mp4" type="video/mp4" />
         </video>
 
@@ -1024,6 +1025,16 @@
     <script src="./assets/js/script.js"></script>
 
     <script>
+        const vid = document.getElementById("aboutVideo");
+        vid.muted = true;
+        vid.play();
+
+        document.addEventListener("touchstart", () => {
+            const vid = document.getElementById("aboutVideo");
+            if (vid.paused) vid.play();
+        }, { once: true });
+
+
         // header animation on scroll
         const header = document.querySelector("header");
         let lastScrollY = window.scrollY;
