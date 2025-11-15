@@ -125,6 +125,35 @@ body {
     z-index: inherit;
 }
 
+#scrollableDiv {
+    ul {
+        li {
+            list-style: disc;
+        }
+    }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+    scrollbar-width: none;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.scroll-container {
+    height: 100vh;
+    /* IMPORTANT */
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    /* prevent bouncing */
+}
+
 /* Prevent Swiper default from hiding bullet text */
 .swiper-pagination-custom {
     border: 2px solid rgba(255, 255, 255, 0.2);

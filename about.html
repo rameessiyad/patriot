@@ -125,8 +125,13 @@
     <section class="about-hero relative" id="about">
         <!-- Background video -->
         <video autoplay muted loop playsinline webkit-playsinline preload="auto" x-webkit-airplay="allow"
-            class="absolute inset-0 w-full h-full object-cover" id="aboutVideo">
+            class="hidden lg:block absolute inset-0 w-full h-full object-cover" id="aboutVideo">
             <source src="./assets/videos/about-banner.mp4" type="video/mp4" />
+        </video>
+
+        <!-- mobile video  -->
+        <video autoplay muted playsinline preload="auto" class="lg:hidden absolute inset-0 w-full h-full object-cover">
+            <source src="./assets/videos/about-banner.mp4" type="video/mp4">
         </video>
 
         <!-- Overlay -->

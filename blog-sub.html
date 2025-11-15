@@ -193,7 +193,7 @@
 
                     <!-- table of content div -->
                     <div
-                        class="hidden w-full h-[90%] border-l border-r border-t border-b border-l-white/50 border-t-white/40 border-b-white/40 border-r-white/1 rounded-lg bg-gradient-to-r from-[#322F2F] to-[#110202] md:flex flex-col items-center gap-3 mt-5 p-4 px-3 xl:px-5">
+                        class="hidden w-full h-[90%] border-l border-r border-t border-b border-l-white/50 border-t-white/40 border-b-white/40 border-r-white/1 rounded-lg bg-gradient-to-r from-[#322F2F] to-[#110202] md:flex flex-col items-center gap-3 mt-5 p-4 px-3 xl:px-5 overflow-y-auto overflow-x-hidden no-scrollbar">
                         <div class="py-4 border-b border-white/40">
                             <h2 class="text-lg lg:text-2xl xl:text-3xl">Table of Contents</h2>
                         </div>
@@ -204,6 +204,18 @@
                                 </li>
                                 <li class="my-4">
                                     <p>A Tech-Forward Vision Driving Innovation </p>
+                                </li>
+                                <li class="my-4">
+                                    <p>A Digitally Engaged, Mobile-First Population</p>
+                                </li>
+                                <li class="my-4">
+                                    <p>Embracing Advanced Technologies </p>
+                                </li>
+                                <li class="my-4">
+                                    <p>Security, Compliance, and Quality as Top Priorities </p>
+                                </li>
+                                <li class="my-4">
+                                    <p>Let’s Turn Your App Vision into Reality </p>
                                 </li>
                                 <li class="my-4">
                                     <p>A Digitally Engaged, Mobile-First Population</p>
@@ -811,6 +823,7 @@
             const rect = scrollableDiv.getBoundingClientRect();
 
             // if the top of the div is at or above the viewport top
+            console.log(rect.top, 'recttt')
             if (rect.top <= 50) {
                 scrollableDiv.classList.add('overflow-y-auto');
                 scrollableDiv.classList.remove('overflow-y-hidden');
