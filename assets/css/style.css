@@ -122,7 +122,7 @@ body {
 }
 
 .btn-blog {
-    z-index: inherit;
+    z-index: 9;
 }
 
 #scrollableDiv {
