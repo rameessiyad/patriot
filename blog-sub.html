@@ -180,7 +180,7 @@
     </section>
 
     <!-- blog view section -->
-    <section class="blog-view h-screen bg-black overflow-hidden">
+    <section class="blog-view h-auto bg-black">
         <div class="content container max-w-[95%] mx-auto px-3 md:px-10 pb-8 h-full">
             <div
                 class="w-full h-full relative flex flex-col md:flex-row justify-between gap-4 md:gap-10 xl:gap-16 py-8 border-b border-white/40">
@@ -193,7 +193,7 @@
 
                     <!-- table of content div -->
                     <div
-                        class="hidden w-full h-[90%] border-l border-r border-t border-b border-l-white/50 border-t-white/40 border-b-white/40 border-r-white/1 rounded-lg bg-gradient-to-r from-[#322F2F] to-[#110202] md:flex flex-col items-center gap-3 mt-5 p-4 px-3 xl:px-5 overflow-y-auto overflow-x-hidden no-scrollbar">
+                        class="hidden sticky top-20 w-full h-fit border-l border-r border-t border-b border-l-white/50 border-t-white/40 border-b-white/40 border-r-white/1 rounded-lg bg-gradient-to-r from-[#322F2F] to-[#110202] md:flex flex-col items-center gap-3 mt-5 p-4 px-3 xl:px-5 overflow-y-auto overflow-x-hidden no-scrollbar">
                         <div class="py-4 border-b border-white/40">
                             <h2 class="text-lg lg:text-2xl xl:text-3xl">Table of Contents</h2>
                         </div>
@@ -220,23 +220,13 @@
                                 <li class="my-4">
                                     <p>A Digitally Engaged, Mobile-First Population</p>
                                 </li>
-                                <li class="my-4">
-                                    <p>Embracing Advanced Technologies </p>
-                                </li>
-                                <li class="my-4">
-                                    <p>Security, Compliance, and Quality as Top Priorities </p>
-                                </li>
-                                <li class="my-4">
-                                    <p>Let’s Turn Your App Vision into Reality </p>
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
                 <!-- blog detail -->
-                <div id="scrollableDiv"
-                    class="md:w-[75%] h-full flex flex-col gap-3 overflow-y-hidden scrollbar-hide transition-all duration-300">
+                <div class="md:w-[75%] h-full flex flex-col gap-3 overflow-y-auto scrollbar-hide transition-all duration-300">
                     <div class="md:mt-14 xl:mt-20">
                         <h2 class="text-2xl md:text-3xl xl:text-4xl max-w-xl">
                             Why Patriot Limousine is the Top Limo Company in Dubai
