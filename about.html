@@ -543,11 +543,11 @@
             <h1 class="text-3xl md:text-4xl lg:text-5xl text-[var(--color-about-section-title)]">Why Choose Us</h1>
             <h1 class="text-3xl md:text-4xl lg:text-5xl mt-6">Committed to Comfort and Reliability</h1>
 
-            <div class="hidden md:flex flex-col gap-6 mt-10 w-auto">
-                <div class="flex flex-col xl:flex-row gap-6">
-                    <div class="flex gap-6 relative w-fit rounded-2xl">
+            <div class="hidden lg:flex flex-col gap-6 mt-10 w-auto">
+                <div class="flex flex-row gap-6">
+                    <div class="relative overflow-hidden rounded-2xl w-flex-1 md:h-[300px]">
                         <img src="./assets/images/about/why-choose-us/why-choose-card-img01.png" alt="why-choose-card"
-                            class="rounded-2xl">
+                            class="rounded-2xl w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/34 rounded-2xl"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-2xl lg:text-2xl xl:text-3xl">Professional Chauffeurs</h2>
@@ -559,9 +559,10 @@
                         </div>
                     </div>
                     <div class="flex gap-6">
-                        <div class="relative">
+                        <div class="relative overflow-hidden rounded-2xl flex-1 md:h-[300px]">
                             <img src="./assets/images/about/why-choose-us/why-choose-card-img02.png"
-                                alt="why-choose-card">
+                                alt="why-choose-card"
+                                class="rounded-2xl border border-white/80 w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                             <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                                 <h2 class="md:text-2xl lg:text-2xl xl:text-3xl">Female Chauffeurs</h2>
@@ -574,9 +575,10 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="relative">
+                        <div class="relative overflow-hidden rounded-2xl flex-1 md:h-[300px]">
                             <img src="./assets/images/about/why-choose-us/why-choose-card-img03.png"
-                                alt="why-choose-card">
+                                alt="why-choose-card"
+                                class="rounded-2xl border border-white/80 w-full h-full object-cover">
                             <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                             <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                                 <h2 class="md:text-2xl lg:text-2xl xl:text-3xl">24/7 Availability</h2>
@@ -590,10 +592,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col xl:flex-row gap-6">
-                    <div class="relative overflow-hidden">
+                <div class="flex flex-row gap-6">
+                    <div class="relative overflow-hidden w-[33%] xl:w-[25%] rounded-2xl md:h-[300px]">
                         <img src="./assets/images/about/why-choose-us/why-choose-card-img04.png" alt="why-choose-card"
-                            class="w-full h-full">
+                            class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Luxury Fleet</h2>
@@ -605,9 +607,9 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative overflow-hidden rounded-2xl bg-blue-200">
+                    <div class="relative overflow-hidden rounded-2xl w-[33%] xl:w-[25%] md:h-[300px]">
                         <img src="./assets/images/about/why-choose-us/airport-cordination.png" alt="why-choose-card"
-                            class="rounded-2xl border border-white/80 w-full h-full">
+                            class="rounded-2xl border border-white/80 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Airport Coordinator</h2>
@@ -620,9 +622,9 @@
                         </div>
                     </div>
 
-                    <div class="relative overflow-hidden">
+                    <div class="relative overflow-hidden rounded-2xl w-[33%] xl:w-[50%] md:h-[300px]">
                         <img src="./assets/images/about/why-choose-us/insurance.png" alt="why-choose-card"
-                            class="rounded-2xl border border-white/80 w-full h-full">
+                            class="rounded-2xl border border-white/80 w-full h-full object-cover">
                         <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Insurances</h2>
@@ -639,7 +641,7 @@
             </div>
 
             <!-- slider for mobile -->
-            <div class="block md:hidden mt-10">
+            <div class="block lg:hidden mt-10">
                 <div class="swiper whyChooseSwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -1092,6 +1094,14 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1, 
+                },
+                768: {
+                    slidesPerView: 2,
+                }
+            }
         })
     </script>
 
