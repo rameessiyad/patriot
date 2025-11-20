@@ -590,9 +590,10 @@
                     </div>
                 </div>
 
-                <div class="flex gap-6">
-                    <div class="relative">
-                        <img src="./assets/images/about/why-choose-us/why-choose-card-img04.png" alt="why-choose-card">
+                <div class="flex flex-col xl:flex-row gap-6">
+                    <div class="relative overflow-hidden">
+                        <img src="./assets/images/about/why-choose-us/why-choose-card-img04.png" alt="why-choose-card"
+                            class="w-full h-full">
                         <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
                             <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Luxury Fleet</h2>
@@ -604,16 +605,33 @@
                             </p>
                         </div>
                     </div>
-                    <div class="relative">
-                        <img src="./assets/images/about/why-choose-us/why-choose-card-img05.png" alt="why-choose-card">
+                    <div class="relative overflow-hidden rounded-2xl bg-blue-200">
+                        <img src="./assets/images/about/why-choose-us/airport-cordination.png" alt="why-choose-card"
+                            class="rounded-2xl border border-white/80 w-full h-full">
                         <div class="absolute inset-0 bg-black/25 rounded-lg"></div>
                         <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
-                            <h2 class="md:text-xl lg:text-2xl xl:text-3xl">On-Time Guarantee</h2>
+                            <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Airport Coordinator</h2>
                             <p
                                 class="md:text-xs lg:text-sm xl:text-lg font-light md:font-semibold lg:font-light max-w-xs">
-                                We respect your
-                                time—every ride is punctual,
-                                reliable, and stress-free.
+                                Professional airport
+                                coordinators for organized,
+                                timely passenger handling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative overflow-hidden">
+                        <img src="./assets/images/about/why-choose-us/insurance.png" alt="why-choose-card"
+                            class="rounded-2xl border border-white/80 w-full h-full">
+                        <div class="absolute inset-0 bg-black/40 rounded-lg"></div>
+                        <div class="absolute top-0 w-full h-full flex flex-col p-4 justify-between h-full">
+                            <h2 class="md:text-xl lg:text-2xl xl:text-3xl">Insurances</h2>
+                            <p
+                                class="md:text-xs lg:text-sm xl:text-lg font-light md:font-semibold lg:font-light max-w-xs">
+                                1.Employer’s Liability Insurance <br />
+                                2.Third Party (Public) Liability Insurance <br />
+                                3.Third Party Motor or Automobile Liability Insurance <br />
+                                4.Workmen’s Compensation Insurance
                             </p>
                         </div>
                     </div>
@@ -757,28 +775,46 @@
                 </div>
 
                 <div class="flex flex-col md:flex-row mt-3 justify-around w-full lg:h-[260px]">
-                    <!-- OUr Services -->
-                    <div class="flex flex-col lg:flex-row gap-10 lg:mb-16">
-                        <div class="flex items-center gap-10 md:gap-10 lg:gap-12">
-                            <div class="w-[50%] md:w-auto lg:mb-9">
-                                <p class="font-thin text-lg lg:text-xl text-gray-300">Our Services</p>
-                                <div
-                                    class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
-                                    <a href="">Airport Transfers</a>
-                                    <a href="">Hotel Transfers</a>
-                                    <a href="">Corporate Events</a>
-                                    <a href="">City Tour</a>
-                                    <a href="">Intercity Transfer</a>
-                                </div>
+                    <div>
+                        <!-- certificates -->
+                        <div class="w-auto">
+                            <p class="font-thin text-lg lg:text-xl text-gray-300">Certificates</p>
+                            <div class="flex gap-2 mt-2">
+                                <img src="./assets/images/certificates/1.png" alt="certificate"
+                                    class="w-auto h-7 object-cover">
+                                <img src="./assets/images/certificates/2.png" alt="certificate"
+                                    class="w-auto h-7 object-cover">
+                                <img src="./assets/images/certificates/3.png" alt="certificate"
+                                    class="w-auto h-7 object-cover">
+                                <img src="./assets/images/certificates/4.png" alt="certificate"
+                                    class="w-auto h-7 object-cover">
+                                <img src="./assets/images/certificates/5.png" alt="certificate"
+                                    class="w-auto h-7 object-cover">
                             </div>
+                        </div>
+                        <!-- OUr Services -->
+                        <div class="flex flex-col lg:flex-row gap-10 mt-6">
+                            <div class="flex items-center gap-10 md:gap-10 lg:gap-12">
+                                <div class="w-[50%] md:w-auto lg:mb-9">
+                                    <p class="font-thin text-lg lg:text-xl text-gray-300">Our Services</p>
+                                    <div
+                                        class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full lg:max-w-sm mt-2">
+                                        <a href="">Airport Transfers</a>
+                                        <a href="">Hotel Transfers</a>
+                                        <a href="">Corporate Events</a>
+                                        <a href="">City Tour</a>
+                                        <a href="">Intercity Transfer</a>
+                                    </div>
+                                </div>
 
-                            <div
-                                class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full mt-10 lg:max-w-sm lg:mt-2 w-[50%] md:w-auto">
-                                <a href="">Point To Point</a>
-                                <a href="">Luxury Bus Rental</a>
-                                <a href="">Staff Transfers</a>
-                                <a href="">Wedding Events</a>
-                                <a href="">Dedicated Chaufferus</a>
+                                <div
+                                    class="text-sm lg:text-base font-extralight flex flex-col gap-1 max-w-full mt-10 lg:max-w-sm lg:mt-2 w-[50%] md:w-auto">
+                                    <a href="">Point To Point</a>
+                                    <a href="">Luxury Bus Rental</a>
+                                    <a href="">Staff Transfers</a>
+                                    <a href="">Wedding Events</a>
+                                    <a href="">Dedicated Chaufferus</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -871,7 +907,7 @@
 
             <!-- bottom content -->
             <div
-                class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 md:px-8 lg:pb-10">
+                class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-0 px-4 md:px-8 lg:pb-1">
                 <!-- Left Section -->
                 <div
                     class="hidden lg:flex w-full lg:w-[32%] justify-between sm:justify-start lg:justify-between ml-0 lg:ml-2 items-center sm:items-start">
@@ -883,8 +919,15 @@
                         <p class="text-xs font-extralight hidden md:block">Go to Top</p>
                     </div>
 
+
+                </div>
+
+                <!-- Right Section -->
+                <div
+                    class="flex flex-col gap-4 sm:gap-6 items-left lg:items-end text-left lg:text-right w-full lg:w-auto -ml-[14px] md:-ml-4 lg:-ml-0 mt-10 lg:mt-0 lg:mr-10">
+
                     <!-- Social Links -->
-                    <div class="pb-6 sm:pb-10 lg:pb-14ml-0">
+                    <div class="pb-6 sm:pb-10 lg:pb-1 ml-0 hidden lg:block">
                         <p class="font-thin text-center sm:text-left">Follow Us on</p>
                         <div class="flex gap-4 mt-2 justify-center sm:justify-start flex-wrap">
                             <a href="">
@@ -905,11 +948,6 @@
                             </a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Right Section -->
-                <div
-                    class="flex flex-col gap-4 sm:gap-6 items-left lg:items-end text-left lg:text-right w-full lg:w-auto -ml-[14px] md:-ml-4 lg:-ml-0 mt-10 lg:mt-0">
 
                     <!-- copyright -->
                     <p class="font-thin text-xs">© 2025 All Rights Reserved by Patriot Limousine</p>
