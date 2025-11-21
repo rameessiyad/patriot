@@ -849,7 +849,6 @@ footer {
 
 @media screen and (min-height: 1023px) and (max-height: 1375px) {
 
-
     .ourFleetNav {
         margin-top: 40px;
     }
@@ -864,13 +863,7 @@ footer {
 @media screen and (min-width: 1024px) and (min-height: 1365px) {
     .our-offers {
         min-height: 44vh !important;
-
-
     }
-
-    /* .calltoAction {
-        margin-bottom: -34px;
-    } */
 
     .ourFleetNav {
         top: 170px;
@@ -1791,9 +1784,15 @@ footer {
 }
 
 
-@media screen and (min-width: 600px) and (max-width: 769px) {
+@media screen and (min-width: 600px) and (max-width: 768px) {
     .ourFleetNav {
         top: 170px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 769px) {
+    .ourFleetNav {
+        top: 220px !important;
     }
 }
 
