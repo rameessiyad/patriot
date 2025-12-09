@@ -722,7 +722,48 @@
     <!-- our certificates section -->
     <section class="our-certificates h-auto py-8 lg:py-10 bg-gradient-to-r from-[#2E2E2E] to-[#131313]">
         <div class="content container mx-auto max-w-[90%]">
-            
+            <div class="slider-container">
+                <div class="swiper certificatesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/1.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/2.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/3.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/4.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/5.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div
+                                class="w-40 h-40 p-4 bg-gradient-to-r from-[#2E2E2E] to-[#131313] flex items-center justify-center">
+                                <img src="./assets/images/about/certificates/6.png" alt="certificate" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -1107,6 +1148,29 @@
                 },
                 768: {
                     slidesPerView: 2,
+                }
+            }
+        })
+
+        const certificatesSwiper = new Swiper(".certificatesSwiper", {
+            loop: true,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false
+            },
+            breakpoints: {
+                300: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 3.2,
+                },
+                1024: {
+                    slidesPerView: 4.3,
+                },
+                1280: {
+                    slidesPerView: 5.2,
                 }
             }
         })
